@@ -1,0 +1,102 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  color: white;
+  margin-top: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  margin: 4rem;
+}
+
+.navFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+@media (max-width: 560px) {
+  .navFlex {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 560px) {
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .description {
+    font-size: 110%;
+    margin: 2rem
+  }
+}
+
+@media (max-width: 430px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+.navLink {
+  color: #58aeff;
+}
+
+.navLink:where(:hover, :focus) {
+  color: #00bbff;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.item {
+  background-color: rgba(0, 0, 0, .2);
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: .2rem;
+}
+
+.itemEx {
+  width: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: .2rem;
+  max-width: calc(100vw - calc(2rem + 3rem))
+}

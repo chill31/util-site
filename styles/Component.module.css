@@ -1,0 +1,154 @@
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #222;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0,0,0, .75);
+  color: white;
+}
+
+.footerLink {
+  color: #0bcaff;
+}
+
+.menu_main {
+  position: absolute;
+  top: 1.5rem;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: rgba(0, 0, 0, .5);
+  width: 50rem;
+  max-width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2.5rem;
+  border-radius: .5rem;
+  color: white;
+}
+
+.menu_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3ch;
+  color: #0bcaff;
+}
+
+.division1, .division2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1ch;
+  align-items: center;
+  height: 100%;
+  font-size: 1.3rem;
+}
+
+.avatar {
+  height: 3rem;
+  width: 3rem;
+}
+
+.division1 * {
+  transition: color 200ms ease;
+}
+
+.division2 * {
+  transition: color 200ms ease;
+}
+
+.division1 *:where(:hover, :focus), .division2 *:where(:hover, :focus) {
+  color: #2293fa;
+}
+
+.text_invite {
+  color: #2293fa;
+}
+
+.text_invite:hover {
+  color: #0bcaff;
+}
+
+.menu_mobile {
+  display: none;
+}
+
+@media (max-width: 700px) {
+
+  .menu_main {
+    display: none;
+  }
+
+  .menu_mobile {
+    display: block;
+  }
+
+}
+
+.menu_mobile .icon {
+  cursor: pointer;
+  font-size: 2rem;
+  fill: white
+}
+
+.close_icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.mobile_menu_main {
+  position: fixed;
+  top: 0;
+  left: -300%;
+  transition: left 250ms ease;
+  background-color: #0a0a0a;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2rem;
+  gap: 1.25rem;
+  flex-direction: column;
+  color: white;
+}
+
+.mobile_menu_main[open] {
+  left: 0;
+}
+
+.properties {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: .5rem;
+  flex-flow: row-reverse;
+  width: 100%;
+}
+
+.divider {
+  height: 2px;
+  width: 90%;
+  background-color: rgba(100, 100, 100, .75);
+}
+
+.mobile_content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1.2rem;
+  gap: .5rem;
+  flex-direction: column;
+}
+
+.mobile_footer {
+  text-align: center;
+}
