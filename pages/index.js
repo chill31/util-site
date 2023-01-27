@@ -102,7 +102,7 @@ import {functionName} from 'utility-text';
 `}
         </code></pre>
 
-        <button className={styles.docsBtn}><BsFileEarmarkMedical /> Visit Docs</button>
+        <Link className={styles.docsBtn} href="/docs/main"><BsFileEarmarkMedical /> Visit Docs</Link>
 
       </section>
     </div>
