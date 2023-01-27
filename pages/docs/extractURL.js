@@ -61,7 +61,7 @@ console.log(extracted);
         <ul className={styles.paramList}>
           <li className={styles.parameter}>&lt;text&gt;<span className={styles.invertCode}>String</span> <br /><span className={styles.paramSub}>the same text but wrapped with the given wrap parameters</span></li>
           <br />
-          <li className={styles.parameter}>&lt;urls&gt;<span className={styles.invertCode}>Array</span> <br /><span className={styles.paramSub}>the extracted urls' list</span></li>
+          <li className={styles.parameter}>&lt;urls&gt;<span className={styles.invertCode}>Array</span> <br /><span className={styles.paramSub}>the extracted urls&apos; list</span></li>
         </ul>
 
       </main>
