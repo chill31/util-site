@@ -50,7 +50,7 @@ console.log(extracted);
         <ul className={styles.paramList}>
           <li className={styles.parameter}>text <span className={styles.invertCode}>String</span> <span className={styles.important}>*</span></li>
           <br />
-          <li className={styles.parameter}>wrap <span className={styles.invertCode}>Array [2 items]</span> <span className={styles.important}>*</span><br /><span className={styles.paramSub}>specifies the two wraps around all the mails.<br />If you do not want a wrap, leave the 2 items empty <code className={styles.invertCode}>["", ""]</code></span></li>
+          <li className={styles.parameter}>wrap <span className={styles.invertCode}>Array [2 items]</span> <span className={styles.important}>*</span><br /><span className={styles.paramSub}>specifies the two wraps around all the mails.<br />If you do not want a wrap, leave the 2 items empty <code className={styles.invertCode}>[&quot;&quot;, &quot;&quot;]</code></span></li>
 
         </ul>
 
