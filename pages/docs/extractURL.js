@@ -59,7 +59,7 @@ console.log(extracted);
         <legend className={styles.invertCodeLegend}>Object</legend>
 
         <ul className={styles.paramList}>
-          <li className={styles.parameter}>&lt;text&gt;<span className={styles.invertCode}>String</span> <br /><span className={styles.paramSub}>the same text but wrapped with the given wrap parameters</span></li>
+          <li className={styles.parameter}>&lt;text&gt;<span className={styles.invertCode}>String</span> <br /><span className={styles.paramSub}>the same text, wrapped with the given wrap parameters</span></li>
           <br />
           <li className={styles.parameter}>&lt;urls&gt;<span className={styles.invertCode}>Array</span> <br /><span className={styles.paramSub}>the extracted urls&apos; list</span></li>
         </ul>
