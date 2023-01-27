@@ -152,3 +152,42 @@
 .mobile_footer {
   text-align: center;
 }
+
+/* --- SYMBOLS --- */
+
+.parameter_symbol {
+  border-radius: 500px;
+  padding: .2rem;
+  background-color: indianred;
+  height: 2rem;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info_symbol {
+  border-radius: 500px;
+  padding: .2rem;
+  background-color: rgb(65, 148, 162);
+  height: 2rem;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.method_symbol {
+  border-radius: 500px;
+  padding: .2rem;
+  background-color: rgb(224, 118, 69);
+  height: 2rem;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parameter_symbol, .method_symbol, .info_symbol {
+  user-select: none;
+}

@@ -1,16 +1,16 @@
 import '../styles/globals.css'
 import Layout from '../components/Layout'
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 
 function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
-  document.querySelector(".mobile_menu_main").removeAttribute("open");
+    document.querySelector(".mobile_menu_main").removeAttribute("open");
   });
 
   return <div>
     <Layout>
-     <Component {...pageProps} />
+      <Component {...pageProps} />
     </Layout>
   </div>
 

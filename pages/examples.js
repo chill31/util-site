@@ -33,7 +33,7 @@ export default function Home() {
 
         <div className={styles.flex}>
           <pre><code className="js">
-{`const {advanceReplace} = require("utility-text"); // instead of importing all functions, you only import the ones you need
+            {`const {advanceReplace} = require("utility-text"); // instead of importing all functions, you only import the ones you need
 const str = "this is a sentence with a lot of spaces     ";
 
 const replaced = advanceReplace({
@@ -50,7 +50,7 @@ console.log(replaced); // no function replaces or manipulates the original strin
 `}</code></pre>
 
           <pre><code className="js">
-{`const {toggleCase, capitalize} = require("utility-text");
+            {`const {toggleCase, capitalize} = require("utility-text");
 const text = "This is a very normal sentence.";
 
 const changed = toggleCase(text);
@@ -60,11 +60,11 @@ console.log(changed, changed2);
 // returns =>
 // tHIS iS a vERY nORMAL sENTENCE.
 // This Is A Very Normal Sentence.
-`}          
-</code></pre>
+`}
+          </code></pre>
 
-        <pre><code className="js">
-{`const {extractURL, extractEmail} = require("utility-text");
+          <pre><code className="js">
+            {`const {extractURL, extractEmail} = require("utility-text");
 const str =  "my website is https://chill31.github.io. Mail me at igotnomail@chill31.com";
 
 const urls = extractURL({
@@ -92,7 +92,7 @@ console.log(urls, mails);
 }
 */
 `}
-</code></pre>
+          </code></pre>
 
         </div>
       </main>

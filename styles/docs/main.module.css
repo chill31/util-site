@@ -1,0 +1,102 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 650px;
+  padding: 4rem 0;
+  padding-top: 10rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  color: white;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin-left: 4rem;
+  margin-right: 4rem;
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 560px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .title {
+    font-size: 2.6rem;
+  }
+}
+
+.docs {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+  position: relative;
+  top: 6rem;
+}
+
+.entries {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  place-items: center;
+  position: relative;
+  width: 60rem;
+  min-height: max-content;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 570px) {
+  .entries {
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .entries {
+    grid-template-columns: auto;
+    row-gap: 1.5rem;
+  }
+}
+
+.entry {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.refLink {
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+  color: white;
+  font-size: 1.2rem;
+  transition: 120ms ease;
+  border-bottom: solid 1px transparent;
+  transition-property: border-bottom-color, color;
+}
+
+.refLink:where(:hover, :focus) {
+  border-bottom-color: #0bcaff;
+  color: #0bcaff
+}

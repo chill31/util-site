@@ -1,9 +1,14 @@
 .container {
   padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0;
 }
 
 .main {
-  min-height: 100vh;
+  min-height: 650px;
   padding: 4rem 0;
   flex: 1;
   display: flex;
@@ -14,6 +19,7 @@
 
 .title {
   margin: 0;
+  margin-top: 10rem;
   line-height: 1.15;
   font-size: 4rem;
   color: white;
@@ -28,6 +34,10 @@
   margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
+}
+
+.code {
+  cursor: pointer;
 }
 
 @media (max-width: 560px) {
@@ -63,4 +73,57 @@
 
 .navLink:where(:hover, :focus) {
   color: #00bbff;
+}
+
+.divider {
+  width: 65vw;
+  height: 2px;
+  background-color: rgb(100, 100, 100);
+  margin-top: 7rem;
+}
+
+.section {
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rem;
+  margin-top: -10rem;
+}
+
+.section .description {
+  margin-bottom: 7rem;
+}
+
+.section code {
+  border-radius: .5rem;
+}
+
+.section .subTitle {
+  font-size: 2.15rem;
+}
+
+.docsBtn {
+  margin-top: 4.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, .4);
+  color: white;
+  border: solid 1px white;
+  border-radius: .3rem;
+  transition: 300ms ease;
+  transition-property: color, border-color, background-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .4rem;
+}
+
+.docsBtn:where(:focus, :focus-within, :hover) {
+  color: black;
+  background-color: white;
+  border-color: black;
+  outline: none !important;
 }

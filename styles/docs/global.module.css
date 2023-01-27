@@ -1,0 +1,117 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 650px;
+  padding: 4rem 0;
+  padding-top: 10rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  color: white;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin-left: 4rem;
+  margin-right: 4rem;
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 560px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .title {
+    font-size: 2.6rem;
+  }
+}
+
+.headCode {
+  padding: 0 !important;
+  background-color: transparent !important;
+  font-size: 3rem !important;
+}
+
+.headCode_L {
+  padding: 0 !important;
+  background-color: transparent !important;
+  font-size: 3rem !important;
+}
+
+.subTitle {
+  font-size: 2rem;
+  align-self: flex-start;
+  margin-top: 4rem;
+}
+
+.paramList {
+  align-self: flex-start;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.invertCode {
+  display: inline !important;
+  padding: 0 !important;
+  font-size: 1.2rem !important;
+  background: transparent !important;
+  font-style: italic;
+  margin-left: .5rem;
+}
+
+.invertCodeLegend {
+  display: inline !important;
+  padding: 0 !important;
+  font-size: 1.35rem !important;
+  background: transparent !important;
+  font-style: italic;
+  margin-left: .5rem;
+  color: white;
+  align-self: flex-start !important;
+}
+
+.main code {
+  border-radius: .5rem;
+}
+
+.important {
+  color: rgb(240, 79, 79);
+}
+
+@media (max-width: 400px) {
+  .headCode {
+    font-size: 2.6rem !important;
+  }
+
+  .headCode_L {
+    font-size: 2rem !important;
+  }
+
+  .description {
+    font-size: 1.3rem;
+  }
+}
+
+.paramSub {
+  font-size: 80%;
+  color: #d1d1d1;
+}
