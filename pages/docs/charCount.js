@@ -54,7 +54,7 @@ console.log(changed);
         <legend className={styles.invertCodeLegend}>Object</legend>
 
         <ul className={styles.paramList}>
-          <li className={styles.parameter}>charCount<span className={styles.invertCode}>Number</span> <br /><span className={styles.paramSub}>simply the text's length but removing the exceptions</span></li>
+          <li className={styles.parameter}>charCount<span className={styles.invertCode}>Number</span> <br /><span className={styles.paramSub}>simply the text&apos;s length but removing the exceptions</span></li>
           <br />
           <li className={styles.parameter}>wordCount<span className={styles.invertCode}>Number</span> <br /><span className={styles.paramSub}>the number of words in the sentence</span></li>
           <br />
