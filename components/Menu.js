@@ -1,10 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import cStyles from "../styles/Component.module.css";
 
 import { BsList } from "react-icons/bs";
 import { BsXLg } from "react-icons/bs";
-import { useEffect } from "react";
 
 export default function Menu() {
 

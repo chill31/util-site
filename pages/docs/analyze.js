@@ -49,7 +49,7 @@ console.log(analyzed);
         <ul className={styles.paramList}>
           <li className={styles.parameter}>text <span className={styles.invertCode}>String</span> <span className={styles.important}>*</span></li>
           <br />
-          <li className={styles.parameter}>occurence <span className={styles.invertCode}>String</span> <span className={styles.important}>*</span> <br /> <span className={styles.paramSub}>the text you want the number of occurences for</span></li>
+          <li className={styles.parameter}>charSet <span className={styles.invertCode}>String</span> <span className={styles.important}>*</span> <br /> <span className={styles.paramSub}>the set of characters you want the count of.</span></li>
           <br />
           <li className={styles.parameter}>strict <span className={styles.invertCode}>Boolean</span> <br /><span className={styles.paramSub}>specifies whether the checking should be strict or not (if false, converts text to lowercase and then checks)</span></li>
 

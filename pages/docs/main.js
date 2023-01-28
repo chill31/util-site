@@ -32,21 +32,23 @@ export default function Home() {
               <Link href="/docs/capitalize" className={styles.refLink}>capitalize()</Link>
               <Link href="/docs/reverse" className={styles.refLink}>reverse()</Link>
               <Link href="/docs/toggleCase" className={styles.refLink}>toggleCase()</Link>
+              <Link href="/docs/oppositeCase" className={styles.refLink}>oppositeCase()</Link>
             </div>
 
             <div className={styles.entry}>
-              <Link href="/docs/oppositeCase" className={styles.refLink}>oppositeCase()</Link>
               <Link href="/docs/advanceReplace" className={styles.refLink}>advanceReplace()</Link>
               <Link href="/docs/analyze" className={styles.refLink}>analyze()</Link>
               <Link href="/docs/extractURL" className={styles.refLink}>extractURL()</Link>
               <Link href="/docs/extractEmail" className={styles.refLink}>extractEmail()</Link>
+              <Link href="/docs/slug" className={styles.refLink}>slug()</Link>
+              <Link href="/docs/camelCase" className={styles.refLink}>camelCase()</Link>
             </div>
 
             <div className={styles.entry}>
-              <Link href="/docs/slug" className={styles.refLink}>slug()</Link>
-              <Link href="/docs/camelCase" className={styles.refLink}>camelCase()</Link>
               <Link href="/docs/snakeCase" className={styles.refLink}>snakeCase()</Link>
               <Link href="/docs/formatNumber" className={styles.refLink}>formatNumber()</Link>
+              <Link href="/docs/isValidEmail" className={styles.refLink}>isValidEmail()</Link>
+              <Link href="/docs/isValidURL" className={styles.refLink}>isValidURL()</Link>
             </div>
 
           </div>

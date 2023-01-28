@@ -73,8 +73,6 @@ export default function Home() {
           <Link className={styles.navLink} href="/help">Help</Link>
 
         </div>
-
-        <span className={styles.divider}></span>
       </main>
 
       <section className={styles.section}>
