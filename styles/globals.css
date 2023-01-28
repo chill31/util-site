@@ -132,3 +132,11 @@ code.hljs {
 .hljs-link {
   text-decoration: underline
 }
+
+[data-paramTitle] code {
+  margin-top: 4rem !important;
+}
+
+[data-paramTitle] code:hover {
+  text-decoration: underline 1px;
+}

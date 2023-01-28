@@ -63,7 +63,7 @@
 
 @media (max-width: 560px) {
   .navFlex {
-    flex-direction: column;
+    font-size: 1.5rem;
   }
 }
 
@@ -85,27 +85,51 @@
 .section {
   min-height: 650px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10rem;
-  margin-top: -10rem;
+  flex-direction: column;
+  padding: 4rem 0;
+  padding-top: 0 !important;
 }
 
-.section .description {
-  margin-bottom: 5rem;
-  margin-top: .5rem;
+.subTitle {
+  font-size: 2.3rem;
 }
 
-.section code {
+.codeFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pre code {
+  width: 40rem;
+  max-width: 45vw !important;
   border-radius: .5rem;
 }
 
-.section .subTitle {
-  font-size: 2.15rem;
+@media (max-width: 700px) {
+  .codeFlex {
+    flex-direction: column;
+  }
+
+  .pre code {
+    width: 40rem;
+    max-width: 85vw !important;
+  }
+
+  .subTitle {
+    font-size: 1.8rem;
+  }
+
+  .docsBtn {
+    font-size: 1.05rem !important;
+  }
 }
 
 .docsBtn {
+  max-width: fit-content;
   margin-top: 4.5rem;
   padding: 1rem 2rem;
   font-size: 1.4rem;

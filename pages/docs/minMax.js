@@ -25,16 +25,16 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}><code className={styles.headCode}>isValidEmail()</code></h1>
+        <h1 className={styles.title}><code className={styles.headCode}>minMax()</code></h1>
 
-        <p className={styles.description}>checks if the given text is an email or not.</p>
+        <p className={styles.description}>returns the longest and shortest word of a sentence.</p>
 
         <pre><code className="js">
-          {`const {isValidEmail} = require("utility-text");
-const myEmail = "Igotnomail@chill31.com";
+          {`const {minMax} = require("utility-text");
+const myText = "this is just a normal string";
 
-const checked = isValidEmail(myEmail);
-console.log(checked);
+const changed = minMax(myText);
+console.log(changed);
 `}
         </code></pre>
 
@@ -45,9 +45,13 @@ console.log(checked);
         </ul>
 
         <h2 className={styles.subTitle}>Returns</h2>
+
+        <legend className={styles.invertCodeLegend}>Object</legend>
         
         <ul className={styles.paramList}>
-          <li className={styles.parameter}>&lt;check&gt; <span className={styles.invertCode}>Boolean</span> <br /><span className={styles.paramSub}>whether the given text is an email or not.</span></li>
+          <li className={styles.parameter}>&lt;longest&gt; <span className={styles.invertCode}>String</span> <br /><span className={styles.paramSub}>the longest word in the string</span></li>
+          <br />
+          <li className={styles.parameter}>&lt;shortest&gt; <span className={styles.invertCode}>String</span> <br /><span className={styles.paramSub}>the shortest word in the string</span></li>
         </ul>
 
       </main>

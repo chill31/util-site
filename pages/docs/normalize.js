@@ -3,9 +3,11 @@ import styles from "../../styles/docs/global.module.css";
 
 import hljs from "highlight.js/lib/core";
 import javascript from "highlight.js/lib/languages/javascript";
+
 hljs.registerLanguage("javascript", javascript);
 
 import { useEffect } from "react";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -25,16 +27,16 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}><code className={styles.headCode}>isValidEmail()</code></h1>
+        <h1 className={styles.title}><code className={styles.headCode_L}>normalize()</code></h1>
 
-        <p className={styles.description}>checks if the given text is an email or not.</p>
+        <p className={styles.description}>removes all symbols and capitalizes the first word of the given string. You can also provide your own symbols to remove</p>
 
         <pre><code className="js">
-          {`const {isValidEmail} = require("utility-text");
-const myEmail = "Igotnomail@chill31.com";
+          {`const {normalize} = require("utility-text");
+const myText = "this is a VERY wEiRD sentence";
 
-const checked = isValidEmail(myEmail);
-console.log(checked);
+const changed = normalize(myText, ["×", "÷"]); // also removes multiply and divide symbol if there are any
+console.log(changed);
 `}
         </code></pre>
 
@@ -42,12 +44,14 @@ console.log(checked);
 
         <ul className={styles.paramList}>
           <li className={styles.parameter}>text <span className={styles.invertCode}>String</span> <span className={styles.important}>*</span></li>
+          <br />
+          <li className={styles.parameter}>customSymbols <span className={styles.invertCode}>Array</span><br /><span className={styles.paramSub}>a list of symbols to remove while normalizing the text. There is already a <Link className={styles.link} href="/docs/presets/">preset list</Link></span></li>
         </ul>
 
         <h2 className={styles.subTitle}>Returns</h2>
-        
+
         <ul className={styles.paramList}>
-          <li className={styles.parameter}>&lt;check&gt; <span className={styles.invertCode}>Boolean</span> <br /><span className={styles.paramSub}>whether the given text is an email or not.</span></li>
+          <li className={styles.parameter}>&lt;text&gt;<span className={styles.invertCode}>String</span> <br /><span className={styles.paramSub}>the normalized text</span></li>
         </ul>
 
       </main>

@@ -77,30 +77,103 @@ export default function Home() {
 
       <section className={styles.section}>
 
-        <h1 className={styles.title}>Usage</h1>
-        <p className={styles.description}>This package can be used by both ES modules and CommonJS projects. </p>
+        <h1 className={styles.title}>Note</h1>
+        <p className={styles.description}>Check the basic structure of the package and how to get started.</p>
 
-        <h2 className={styles.subTitle}>CommonJS</h2>
-        <pre><code className="js">
-          {`const utils = require("utility-text");
-/* --- OR --- */
+        <h2 className={styles.subTitle}>Exports</h2>
+
+        <div className={styles.codeFlex}>
+          <pre className={styles.pre}>
+            <code className="js">
+              {`/* ---- COMMON JS ---- */
+module.exports = {
+  upper,
+  lower,
+  capitalize,
+  reverse,
+  toggleCase,
+  oppositeCase,
+  advanceReplace,
+  analyze,
+  extractURL,
+  extractEmail,
+  slug,
+  camelCase,
+  snakeCase,
+  formatNumber,
+  isValidEmail,
+  isValidURL,
+  charCount,
+  normalize,
+  removeDuplicates,
+  minMax
+};
+`}
+            </code>
+          </pre>
+          <pre className={styles.pre}>
+            <code className="js">
+              {`/* ---- ES MODULE ---- */
+export default {
+  upper,
+  lower,
+  capitalize,
+  reverse,
+  toggleCase,
+  oppositeCase,
+  advanceReplace,
+  analyze,
+  extractURL,
+  extractEmail,
+  slug,
+  camelCase,
+  snakeCase,
+  formatNumber,
+  isValidEmail,
+  isValidURL,
+  charCount,
+  normalize,
+  removeDuplicates,
+  minMax
+};
+`}
+            </code>
+          </pre>
+        </div>
+
+        <h2 className={styles.subTitle}>Usage</h2>
+
+        <div className={styles.codeFlex}>
+
+          <pre className={styles.pre}>
+            <code className="js">
+              {`/* ---- COMMON JS ---- */
+const allUtils = require("utility-text");
+// --- OR ---
 const {functionName} = require("utility-text");
 
-// start using the package
+console.log(allUtils);
+console.log(functionName(...))
 `}
-        </code></pre>
+            </code>
+          </pre>
 
-        <h2 className={styles.subTitle}>ES Module</h2>
-        <pre><code className="js">
-          {`import utils from 'utility-text';
-/* --- OR --- */
-import {functionName} from 'utility-text';
+          <pre className={styles.pre}>
+            <code className="js">
+              {`/* ---- ES MODULE ---- */
+import allUtils from "utility-text";
+// --- OR ---
+import {functionName} from "utility-text";
 
-// start using the package
+console.log(allUtils);
+console.log(functionName(...))
 `}
-        </code></pre>
+            </code>
+          </pre>
 
-        <Link className={styles.docsBtn} href="/docs/main"><BsFileEarmarkMedical /> Visit Docs</Link>
+        </div>
+
+        <Link className={styles.docsBtn} href="/docs/main"><BsFileEarmarkMedical /> Visit Full Documentation</Link>
 
       </section>
     </div>

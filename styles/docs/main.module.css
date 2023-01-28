@@ -100,3 +100,18 @@
   border-bottom-color: #0bcaff;
   color: #0bcaff
 }
+
+.link {
+  color: #0bcaff !important;
+}
+
+.subDescription {
+  font-size: 1.3rem;
+  position: relative;
+  top: 2rem;
+}
+
+.important {
+  font-style: italic;
+  color: rgb(240, 79, 79);
+}

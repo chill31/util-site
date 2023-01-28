@@ -57,6 +57,12 @@
   font-size: 3rem !important;
 }
 
+.subHeadCode {
+  padding: 0 !important;
+  background-color: transparent !important;
+  font-size: 2.2rem !important;
+}
+
 .subTitle {
   font-size: 2rem;
   align-self: flex-start;
@@ -109,9 +115,55 @@
   .description {
     font-size: 1.3rem;
   }
+
+  .subHeadCode {
+    font-size: 1.8rem !important;
+  }
 }
 
 .paramSub {
   font-size: 80%;
   color: #d1d1d1;
+}
+
+.codeScope {
+  background-color: transparent !important;
+  padding: 0 !important;
+  margin-top: .4rem;
+  width: fit-content;
+}
+
+.paramGrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 7rem;
+  place-items: center;
+}
+
+@media (max-width: 700px) {
+  .paramGrid {
+    grid-template-columns: auto;
+    gap: 3rem;
+    place-items: center;
+  }
+}
+
+.title[data-sub] {
+  margin-top: 10rem !important;
+}
+
+.paramFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.paramFlex .param {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  flex-direction: column;
 }
