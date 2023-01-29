@@ -37,7 +37,7 @@ export default function Menu() {
           <div className={cStyles.mobile_content}>
             <Link href="/">Home</Link>
             <Link href="/examples">Examples</Link>
-            <Link href="/docs/main">API</Link>
+            <Link href="/docs/main">Docs</Link>
             <Link href="https://npmjs.com/package/utility-text">
               Package Link
             </Link>
@@ -56,7 +56,7 @@ export default function Menu() {
             Examples
           </Link>
           <Link className={cStyles.div1_text} href="/docs/main">
-            API
+            Docs
           </Link>
         </div>
 

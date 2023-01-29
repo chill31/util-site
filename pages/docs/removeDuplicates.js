@@ -45,7 +45,7 @@ console.log(changed);
         <ul className={styles.paramList}>
           <li className={styles.parameter}>text <span className={styles.invertCode}>String</span> <span className={styles.important}>*</span></li>
           <br />
-          <li className={styles.parameter}>strict <span className={styles.invertCode}>Boolean</span><br /><span className={styles.paramSub}>whether the text should be converted to lowercaase or not before checking for duplicates. By default true.</span></li>
+          <li className={styles.parameter}>strict <span className={styles.invertCode}>Boolean</span><br /><span className={styles.paramSub}>whether the text should be converted to lowercase or not before checking for duplicates. By default true.</span></li>
         </ul>
 
         <h2 className={styles.subTitle}>Returns</h2>
