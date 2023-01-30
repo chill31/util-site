@@ -58,6 +58,7 @@ export default function Home() {
               <Link href="/docs/wrap" className={styles.refLink}>wrap()</Link>
               <Link href="/docs/multipleWrap" className={styles.refLink}>multipleWrap()</Link>
               <Link href="/docs/compare" className={styles.refLink}>compare()</Link>
+              <Link href="/docs/insertAt" className={styles.refLink}>insertAt()</Link>
             </div>
 
           </div>

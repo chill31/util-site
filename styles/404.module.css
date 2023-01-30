@@ -9,7 +9,7 @@
 /* main section codes */
 
 .main {
-  background: #38424c;
+  background-color: rgb(33, 41, 52);
   min-height: 650px;
   width: 100vw;
   padding: 4rem 0;

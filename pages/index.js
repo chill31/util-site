@@ -69,7 +69,7 @@ export default function Home() {
         <div className={styles.navFlex}>
 
           <Link className={styles.navLink} href="/examples">Examples</Link>
-          <Link className={styles.navLink} href="/docs/main">API</Link>
+          <Link className={styles.navLink} href="/docs/main">Docs</Link>
           <Link className={styles.navLink} href="/help">Help</Link>
 
         </div>
@@ -91,22 +91,7 @@ module.exports = {
   lower,
   capitalize,
   reverse,
-  toggleCase,
-  oppositeCase,
-  advanceReplace,
-  analyze,
-  extractURL,
-  extractEmail,
-  slug,
-  camelCase,
-  snakeCase,
-  formatNumber,
-  isValidEmail,
-  isValidURL,
-  charCount,
-  normalize,
-  removeDuplicates,
-  minMax
+  ...
 };
 `}
             </code>
@@ -119,22 +104,7 @@ export default {
   lower,
   capitalize,
   reverse,
-  toggleCase,
-  oppositeCase,
-  advanceReplace,
-  analyze,
-  extractURL,
-  extractEmail,
-  slug,
-  camelCase,
-  snakeCase,
-  formatNumber,
-  isValidEmail,
-  isValidURL,
-  charCount,
-  normalize,
-  removeDuplicates,
-  minMax
+  ...
 };
 `}
             </code>

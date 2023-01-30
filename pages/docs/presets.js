@@ -81,6 +81,14 @@ export default function Home() {
             </ul>
           </div>
 
+          <div className={styles.param}>
+            <Link href="/docs/insertAt" className={styles.subTitle} data-paramTitle><code className={styles.subHeadCode}>insertAt()</code></Link>
+
+            <ul className={styles.paramList}>
+              <li className={styles.parameter}>before <span className={styles.invertCode}>Boolean</span><br /><code className={styles.codeScope}>=&gt; false</code></li>
+            </ul>
+          </div>
+
         </div>
 
         <h1 className={styles.title} data-sub>Defaults</h1>
