@@ -167,3 +167,12 @@
   width: 100%;
   flex-direction: column;
 }
+
+.codeScope {
+  background-color: transparent !important;
+  padding: 0 !important;
+  margin-top: .4rem;
+  width: fit-content;
+  display: inline !important;
+  font-style: normal !important;
+}
