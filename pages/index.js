@@ -6,6 +6,8 @@ import { BsClipboard, BsFileEarmarkMedical } from "react-icons/bs";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import CopyButtonPlugin from '../scripts/hljsCopy'
+
 import hljs from "highlight.js/lib/core";
 import javascript from "highlight.js/lib/languages/javascript";
 hljs.registerLanguage("javascript", javascript);
@@ -16,7 +18,10 @@ export default function Home() {
 
   useEffect(() => {
     hljs.highlightAll();
+    
+    hljs.addPlugin(new CopyButtonPlugin())
   }, []);
+
 
   return (
     <div className={styles.container}>

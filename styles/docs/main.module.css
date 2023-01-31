@@ -64,17 +64,21 @@
   margin-bottom: 4rem;
 }
 
-@media (max-width: 570px) {
+@media (max-width: 600px) {
   .entries {
     grid-template-columns: auto auto;
     row-gap: 1rem;
+    place-items: start;
+    padding-left: 3rem;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 470px) {
   .entries {
     grid-template-columns: auto;
     row-gap: 1.5rem;
+    place-items: start;
+    padding-left: 5rem;
   }
 }
 

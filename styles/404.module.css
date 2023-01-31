@@ -25,7 +25,6 @@
 .title {
   font-size: 4.4rem;
   font-weight: 550;
-  margin-top: -3rem;
 }
 
 .sub {
@@ -55,4 +54,15 @@
   background-color: transparent;
   border: solid 2px white;
   color: white;
+}
+
+.pre code {
+  width: 40rem !important;
+  max-width: 90vw !important;
+  border-radius: .5rem;
+  margin-top: 5rem !important;
+}
+
+.pre [class*="hljs-copy-button"] {
+  margin-top: 5rem;
 }

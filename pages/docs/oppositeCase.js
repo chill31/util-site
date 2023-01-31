@@ -5,12 +5,16 @@ import hljs from "highlight.js/lib/core";
 import javascript from "highlight.js/lib/languages/javascript";
 hljs.registerLanguage("javascript", javascript);
 
+import CopyButtonPlugin from '../../scripts/hljsCopy'
+
 import { useEffect } from "react";
 
 export default function Home() {
 
   useEffect(() => {
     hljs.highlightAll();
+    
+    hljs.addPlugin(new CopyButtonPlugin())
   }, []);
 
   return (
