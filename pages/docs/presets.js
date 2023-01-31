@@ -89,6 +89,14 @@ export default function Home() {
             </ul>
           </div>
 
+          <div className={styles.param}>
+            <Link href="/docs/advanceReplace" className={styles.subTitle} data-paramTitle><code className={styles.subHeadCode}>advanceReplace()</code></Link>
+
+            <ul className={styles.paramList}>
+              <li className={styles.parameter}>skip <span className={styles.invertCode}>Number</span><br /><code className={styles.codeScope}>=&gt; 0</code></li>
+            </ul>
+          </div>
+
         </div>
 
         <h1 className={styles.title} data-sub>Defaults</h1>

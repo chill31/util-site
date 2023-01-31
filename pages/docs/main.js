@@ -37,10 +37,10 @@ export default function Home() {
               <Link href="/docs/oppositeCase" className={styles.refLink}>oppositeCase()</Link>
               <Link href="/docs/advanceReplace" className={styles.refLink}>advanceReplace()</Link>
               <Link href="/docs/analyze" className={styles.refLink}>analyze()</Link>
+              <Link href="/docs/extractURL" className={styles.refLink}>extractURL()</Link>
             </div>
 
             <div className={styles.entry}>
-              <Link href="/docs/extractURL" className={styles.refLink}>extractURL()</Link>
               <Link href="/docs/extractEmail" className={styles.refLink}>extractEmail()</Link>
               <Link href="/docs/slug" className={styles.refLink}>slug()</Link>
               <Link href="/docs/camelCase" className={styles.refLink}>camelCase()</Link>
@@ -48,17 +48,19 @@ export default function Home() {
               <Link href="/docs/formatNumber" className={styles.refLink}>formatNumber()</Link>
               <Link href="/docs/isValidEmail" className={styles.refLink}>isValidEmail()</Link>
               <Link href="/docs/isValidURL" className={styles.refLink}>isValidURL()</Link>
+              <Link href="/docs/charCount" className={styles.refLink}>charCount()</Link>
+              <Link href="/docs/normalize" className={styles.refLink}>normalize()</Link>
             </div>
 
             <div className={styles.entry}>
-              <Link href="/docs/charCount" className={styles.refLink}>charCount()</Link>
-              <Link href="/docs/normalize" className={styles.refLink}>normalize()</Link>
               <Link href="/docs/removeDuplicates" className={styles.refLink}>removeDuplicates()</Link>
               <Link href="/docs/minMax" className={styles.refLink}>minMax()</Link>
               <Link href="/docs/wrap" className={styles.refLink}>wrap()</Link>
               <Link href="/docs/multipleWrap" className={styles.refLink}>multipleWrap()</Link>
               <Link href="/docs/compare" className={styles.refLink}>compare()</Link>
               <Link href="/docs/insertAt" className={styles.refLink}>insertAt()</Link>
+              <Link href="/docs/moveText" className={styles.refLink}>moveText()</Link>
+              <Link href="/docs/moveTextByPos" className={styles.refLink}>moveTextByPos()</Link>
             </div>
 
           </div>

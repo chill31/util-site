@@ -32,13 +32,14 @@ export default function Home() {
 
         <pre><code className="js">
           {`const {advanceReplace} = require("utility-text");
-const myText = "this is a string";
+const myText = "this is a string with a lot of spaces in between the words";
 
 const changed = advanceReplace({
   text: myText,
-  countIndex: 2,
+  countIndex: 4,
   replacementText: " ",
-  replacement: "_"
+  replacement: "_",
+  skip: 3,
 });
 
 console.log(changed);
@@ -57,6 +58,8 @@ console.log(changed);
           <li className={styles.parameter}>replacementText <span className={styles.invertCode}>String</span> <span className={styles.important}>*</span><br /><span className={styles.paramSub}>specifies the text to replace</span></li>
           <br />
           <li className={styles.parameter}>replacement <span className={styles.invertCode}>String</span> <span className={styles.important}>*</span><br /><span className={styles.paramSub}>specifies the text to replace the occurence with</span></li>
+          <br />
+          <li className={styles.parameter}>skip <span className={styles.invertCode}>Number</span><br /><span className={styles.paramSub}>specifies the number of occurences to skip from the start before starting the replacing operation</span></li>
 
         </ul>
 
