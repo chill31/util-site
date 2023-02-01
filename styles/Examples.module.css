@@ -91,12 +91,42 @@
   gap: .2rem;
 }
 
-.itemEx {
-  width: 30rem;
+.pre code {
+  border-radius: .3rem;
+}
+
+.preNoCopy code {
+  border-radius: .3rem;
+}
+
+.preNoCopy [class*="hljs-copy-button"] {
+  display: none !important;
+}
+
+.example {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: .2rem;
-  max-width: calc(100vw - calc(2rem + 3rem))
+}
+
+.example .codeExplanation {
+  justify-self: left;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  text-align: center;
+}
+
+@media (max-width: 810px) {
+  .codeExplanation {
+    margin-left: 7rem !important;
+    margin-right: 7rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .codeExplanation {
+    margin-left: 3rem !important;
+    margin-right: 3rem !important;
+  }
 }

@@ -41,7 +41,7 @@ const myText = "this is a string";
 
 const analyzed = analyze({
   text: myText,
-  occurence: "I",
+  charSet: "I",
   strict: false // optional [this checks for both small i and capital I's]
 });
 console.log(analyzed);
