@@ -100,6 +100,22 @@ export default function Home() {
             </ul>
           </div>
 
+          <div className={styles.param}>
+            <Link href="/docs/listSearch" className={styles.subTitle} data-paramTitle><code className={styles.subHeadCode}>listSearch()</code></Link>
+
+            <ul className={styles.paramList}>
+              <li className={styles.parameter}>returnAll <span className={styles.invertCode}>Boolean</span><br /><code className={styles.codeScope}>=&gt; false</code></li>
+            </ul>
+          </div>
+
+          <div className={styles.param}>
+            <Link href="/docs/objectSearch" className={styles.subTitle} data-paramTitle><code className={styles.subHeadCode}>objectSearch()</code></Link>
+
+            <ul className={styles.paramList}>
+              <li className={styles.parameter}>returnAll <span className={styles.invertCode}>Boolean</span><br /><code className={styles.codeScope}>=&gt; false</code></li>
+            </ul>
+          </div>
+
         </div>
 
         <h1 className={styles.title} data-sub>Defaults</h1>
@@ -143,7 +159,7 @@ export default function Home() {
             <Link href="/docs/normalize" className={styles.subTitle} data-paramTitle><code className={styles.subHeadCode}>normalize()</code></Link>
             <legend className={styles.invertCodeLegend}>preset symbols to remove in normalize function</legend>
             <pre><code className="js">
-{`const symbols = [ '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '{', '}', '"', ':', '?', '>', '<', ';', '.', ','];
+{`const symbols = [ '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '{', '}', '"', ':', '?', '>', '<', ';', '.', ',', '-'];
 `}
             </code></pre>
           </div>
