@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/404.module.css'
-import { BsClipboard, BsHouse } from 'react-icons/bs'
+import { BsHouse } from 'react-icons/bs'
 
 import { useEffect } from "react";
 
