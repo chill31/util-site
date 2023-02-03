@@ -88,7 +88,7 @@ export default function Home() {
         <h2 className={styles.subTitle}>Exports</h2>
 
         <div className={styles.codeFlex}>
-          <pre className={styles.pre}>
+          <pre className={styles.preNoCopy}>
             <code className="js">
               {`/* ---- COMMON JS ---- */
 module.exports = {
@@ -101,7 +101,7 @@ module.exports = {
 `}
             </code>
           </pre>
-          <pre className={styles.pre}>
+          <pre className={styles.preNoCopy}>
             <code className="js">
               {`/* ---- ES MODULE ---- */
 export default {
@@ -120,7 +120,7 @@ export default {
 
         <div className={styles.codeFlex}>
 
-          <pre className={styles.pre}>
+          <pre className={styles.preNoCopy}>
             <code className="js">
               {`/* ---- COMMON JS ---- */
 const allUtils = require("utility-text");
@@ -133,7 +133,7 @@ console.log(functionName(...))
             </code>
           </pre>
 
-          <pre className={styles.pre}>
+          <pre className={styles.preNoCopy}>
             <code className="js">
               {`/* ---- ES MODULE ---- */
 import allUtils from "utility-text";

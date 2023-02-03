@@ -39,23 +39,24 @@ export default function Home() {
               <Link href="/docs/analyze" className={styles.refLink}>analyze()</Link>
               <Link href="/docs/extractEmail" className={styles.refLink}>extractEmail()</Link>
               <Link href="/docs/extractURL" className={styles.refLink}>extractURL()</Link>
+              <Link href="/docs/charCount" className={styles.refLink}>charCount()</Link>
             </div>
 
             <div className={styles.entry}>
               <Link href="/docs/slug" className={styles.refLink}>slug()</Link>
+              <Link href="/docs/unslug" className={styles.refLink}>unslug()</Link>
               <Link href="/docs/camelCase" className={styles.refLink}>camelCase()</Link>
               <Link href="/docs/snakeCase" className={styles.refLink}>snakeCase()</Link>
               <Link href="/docs/formatNumber" className={styles.refLink}>formatNumber()</Link>
               <Link href="/docs/isValidEmail" className={styles.refLink}>isValidEmail()</Link>
               <Link href="/docs/isValidURL" className={styles.refLink}>isValidURL()</Link>
-              <Link href="/docs/charCount" className={styles.refLink}>charCount()</Link>
               <Link href="/docs/normalize" className={styles.refLink}>normalize()</Link>
               <Link href="/docs/removeDuplicates" className={styles.refLink}>removeDuplicates()</Link>
               <Link href="/docs/minMax" className={styles.refLink}>minMax()</Link>
+              <Link href="/docs/wrap" className={styles.refLink}>wrap()</Link>
             </div>
 
             <div className={styles.entry}>
-              <Link href="/docs/wrap" className={styles.refLink}>wrap()</Link>
               <Link href="/docs/multipleWrap" className={styles.refLink}>multipleWrap()</Link>
               <Link href="/docs/compare" className={styles.refLink}>compare()</Link>
               <Link href="/docs/insertAt" className={styles.refLink}>insertAt()</Link>
@@ -63,6 +64,8 @@ export default function Home() {
               <Link href="/docs/moveTextByPos" className={styles.refLink}>moveTextByPos()</Link>
               <Link href="/docs/listSearch" className={styles.refLink}>listSearch()</Link>
               <Link href="/docs/objectSearch" className={styles.refLink}>objectSearch()</Link>
+              <Link href="/docs/encode" className={styles.refLink}>encode()</Link>
+              <Link href="/docs/decode" className={styles.refLink}>decode()</Link>
             </div>
 
           </div>

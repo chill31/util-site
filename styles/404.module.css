@@ -56,13 +56,49 @@
   color: white;
 }
 
-.pre code {
+.runCode {
+  --default-color: rgba(255, 255, 255, .7);
   width: 40rem !important;
   max-width: 90vw !important;
   border-radius: .5rem;
   margin-top: 5rem !important;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 4rem !important;
 }
 
-.pre [class*="hljs-copy-button"] {
-  margin-top: 5rem;
+.runCode * {
+  color: var(--default-color);
+}
+
+.runCode .function {
+  color: rgb(211, 92, 92);
+}
+
+.runCode .token {
+  color: rgba(255, 255, 255, 1);
+}
+
+.runCode .parameter {
+  color: rgb(216, 154, 216);
+}
+
+.runCode .argument {
+  font-style: italic;
+}
+
+.runCode .error {
+  background-color: rgb(255, 0, 0);
+  color: white;
+  padding: .1rem;
+}
+
+.actualCode {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
 }

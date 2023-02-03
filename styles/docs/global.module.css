@@ -176,3 +176,17 @@
   display: inline !important;
   font-style: normal !important;
 }
+
+.refLink {
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+  color: white;
+  transition: 120ms ease;
+  border-bottom: solid 1px gray;
+  transition-property: border-bottom-color, color;
+}
+
+.refLink:where(:hover, :focus) {
+  border-bottom-color: #0bcaff;
+  color: #0bcaff
+}
