@@ -164,6 +164,15 @@ export default function Home() {
             </code></pre>
           </div>
 
+          <div className={styles.param}>
+            <Link href="/docs/kebabCase" className={styles.subTitle} data-paramTitle><code className={styles.subHeadCode}>kebabCase()</code></Link>
+            <legend className={styles.invertCodeLegend}>preset regex for converting to kebab-case</legend>
+            <pre><code className="js">
+{`const reg = /[\\s_]+/
+`}
+            </code></pre>
+          </div>
+
         </div>
 
       </main>
