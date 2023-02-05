@@ -5,10 +5,11 @@ import hljs from "highlight.js/lib/core";
 import javascript from "highlight.js/lib/languages/javascript";
 hljs.registerLanguage("javascript", javascript);
 
-import CopyButtonPlugin from '../../scripts/hljsCopy'
+import CopyButtonPlugin from "../../scripts/hljsCopy";
+
+hljs.registerLanguage("javascript", javascript);
 
 import { useEffect } from "react";
-import Link from "next/link";
 
 export default function Home() {
 
@@ -30,15 +31,15 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}><code className={styles.headCode}>encode()</code></h1>
+        <h1 className={styles.title}><code className={styles.headCode}>kebabCase()</code></h1>
 
-        <p className={styles.description}>encodes text. To decode, go to <Link className={`${`${styles.refLink} refLink`} refLink`} href="/docs/decode">decode()</Link></p>
+        <p className={styles.description}>converts string to kebab-case.</p>
 
         <pre><code className="js">
-          {`const {encode} = require("utility-text");
+          {`const {kebabCase} = require("utility-text");
 const myText = "this is a string";
 
-const changed = encode(myText);
+const changed = kebabCase(myText);
 console.log(changed);
 `}
         </code></pre>
@@ -50,9 +51,8 @@ console.log(changed);
         </ul>
 
         <h2 className={styles.subTitle}>Returns</h2>
-
         <ul className={styles.paramList}>
-          <li className={styles.parameter}>&lt;text&gt;<span className={styles.invertCode}>String</span> <br /><span className={styles.paramSub}>encoded text</span></li>
+          <li className={styles.parameter}>&lt;text&gt;<span className={styles.invertCode}>String</span> <br /><span className={styles.paramSub}>the converted kebab case text</span></li>
         </ul>
 
       </main>

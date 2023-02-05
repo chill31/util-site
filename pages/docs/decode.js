@@ -32,7 +32,7 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}><code className={styles.headCode}>decode()</code></h1>
 
-        <p className={styles.description}>decodes text. To encode, go to <Link className={`${styles.refLink} refLink`} href="/docs/encode">encode()</Link></p>
+        <p className={styles.description}>decodes text. To encode, go to <Link className={`${`${styles.refLink} refLink`} refLink`} href="/docs/encode">encode()</Link></p>
 
         <pre><code className="js">
           {`const {decode} = require("utility-text");
