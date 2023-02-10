@@ -22,7 +22,7 @@ export default function Home() {
     <div className={styles.container}>
 
       <Head>
-        <title>NPM: utility-text</title>
+        <title>Function presets - utility-text</title>
         <meta
           name="description"
           content="official documentation site for npm package utility-text"

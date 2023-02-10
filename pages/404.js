@@ -19,7 +19,7 @@ export default function Home() {
     <div className={styles.container}>
 
       <Head>
-        <title>utility-text: 404</title>
+        <title>utility-text: 404 Not Found</title>
       </Head>
 
       <div className={styles.main}>

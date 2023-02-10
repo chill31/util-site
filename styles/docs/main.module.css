@@ -225,8 +225,7 @@
   margin-bottom: 3rem;
   outline: none !important;
   max-width: 90%;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-  Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family: var(--code-font);
   transition: background-color 200ms ease;
 }
 
@@ -257,8 +256,7 @@
   transition-property: color, background-color, border-color;
   outline: none !important;
   display: inherit !important;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-  Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family: var(--code-font);
 }
 
 .searchFunctions [class*="searchLink"][class*="show"]:where(:hover, :focus) {

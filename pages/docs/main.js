@@ -73,7 +73,7 @@ export default function Home() {
     <div className={styles.container}>
 
       <Head>
-        <title>NPM: utility-text</title>
+        <title>Documentation for utility-text</title>
         <meta
           name="description"
           content="official documentation site for npm package utility-text"
@@ -151,6 +151,8 @@ export default function Home() {
               <Link href="/docs/pushByFilter" className={`${styles.refLink} refLink`}>pushByFilter()</Link>
               <Link href="/docs/flatten" className={`${styles.refLink} refLink`}>flatten()</Link>
               <Link href="/docs/kebabCase" className={`${styles.refLink} refLink`}>kebabCase()</Link>
+              <Link href="/docs/pullByValue" className={`${styles.refLink} refLink`}>pullByValue()</Link>
+              <Link href="/docs/pullByIndex" className={`${styles.refLink} refLink`}>pullByIndex()</Link>
             </div>
 
           </div>

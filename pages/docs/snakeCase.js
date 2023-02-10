@@ -21,7 +21,7 @@ export default function Home() {
     <div className={styles.container}>
 
       <Head>
-        <title>NPM: utility-text</title>
+        <title>Docs: snakeCase</title>
         <meta
           name="description"
           content="official documentation site for npm package utility-text"

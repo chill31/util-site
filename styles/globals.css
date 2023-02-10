@@ -1,3 +1,7 @@
+:root {
+  --code-font: 'Lucida Console', Consolas, monospace;
+}
+
 html,
 body {
   padding: 0;
@@ -32,8 +36,6 @@ code:not(.hljs) {
   border-radius: 5px;
   padding: 1.2rem 1rem;
   font-size: 1.15rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
   color: #ccc;
   display: flex;
   justify-content: center;
@@ -41,13 +43,14 @@ code:not(.hljs) {
   gap: 1rem;
   min-width: max-content;
   max-width: fit-content;
+  font-family: var(--code-font);
 }
 
 pre code {
   display: block;
   background: #2d2d2d;
   color: #cccccc;
-  font-family: Menlo, Monaco, Consolas, monospace;
+  font-family: var(--code-font) !important;
   line-height: 1.5;
   border: 1px solid #ccc;
   padding: 10px;

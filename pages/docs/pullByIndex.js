@@ -15,7 +15,7 @@ export default function Home() {
 
   useEffect(() => {
     hljs.highlightAll();
-    
+
     hljs.addPlugin(new CopyButtonPlugin())
   }, []);
 
@@ -23,7 +23,7 @@ export default function Home() {
     <div className={styles.container}>
 
       <Head>
-        <title>Docs: isValidURL</title>
+        <title>Docs: pullByIndex</title>
         <meta
           name="description"
           content="official documentation site for npm package utility-text"
@@ -31,29 +31,31 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}><code className={styles.headCode}>isValidURL()</code></h1>
+        <h1 className={styles.title}><code className={styles.headCode_L}>pullByIndex()</code></h1>
 
-        <p className={styles.description}>checks if the given text is a url or not.</p>
+        <p className={styles.description}>pulls multiple values by their index from array</p>
 
         <pre><code className="js">
-          {`const {isValidURL} = require("utility-text");
-const myURL = "https://utility-text.vercel.app";
+          {`const {pullByIndex} = require("utility-text");
+const myList = [1, 2, 3, 4, 5, 6, 7, 8, 9 , 10];
 
-const checked = isValidURL(myURL);
-console.log(checked);
+const pulled = pullByIndex(myList, 0, 1, 2); // second third and fourth index are pulled
+console.log(pulled);
 `}
         </code></pre>
 
         <h2 className={styles.subTitle}>Parameters</h2>
 
         <ul className={styles.paramList}>
-          <li className={styles.parameter}>text <span className={styles.invertCode}>String</span> <span className={styles.important}>*</span></li>
+          <li className={styles.parameter}>array <span className={styles.invertCode}>Array</span> <span className={styles.important}>*</span></li>
+          <br />
+          <li className={styles.parameter}>...valueIndexes <span className={styles.invertCode}>&lt;array indexes&gt;</span> <span className={styles.important}>*</span> <br /><span className={styles.paramSub}>the values&apos; index you want to pull from the array</span></li>
         </ul>
 
         <h2 className={styles.subTitle}>Returns</h2>
-        
+
         <ul className={styles.paramList}>
-          <li className={styles.parameter}>&lt;check&gt; <span className={styles.invertCode}>Boolean</span> <br /><span className={styles.paramSub}>whether the given text is a url or not.</span></li>
+          <li className={styles.parameter}>&lt;array&gt; <span className={styles.invertCode}>Array</span> <br /><span className={styles.paramSub}>the modified array</span></li>
         </ul>
 
       </main>
