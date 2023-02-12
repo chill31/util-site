@@ -87,7 +87,7 @@ export default function Home() {
           click on one of the functions to get detailed information.
         </p>
 
-        <p className={styles.subDescription}>Check the <Link className={styles.link} href="/docs/presets">Presets and Defaults</Link> for any parameter in the below functions which is not required.<br /> (<span className={styles.important}>*</span> a symbol like this means the parameter is required)</p>
+        <p className={styles.subDescription}>Check the <Link className={styles.link} href="/presets/">Presets and Defaults</Link> for any parameter in the below functions which is not required.<br /> (<span className={styles.important}>*</span> a symbol like this means the parameter is required)</p>
 
         <div className={`${styles.searchBar} searchBar`}>search functions</div>
         <div className={`${styles.searchWrapper} searchWrapper`}>
@@ -123,6 +123,7 @@ export default function Home() {
               <Link href="/docs/extractURL" className={`${styles.refLink} refLink`}>extractURL()</Link>
               <Link href="/docs/charCount" className={`${styles.refLink} refLink`}>charCount()</Link>
               <Link href="/docs/formatNumber" className={`${styles.refLink} refLink`}>formatNumber()</Link>
+              <Link href="/docs/compare" className={`${styles.refLink} refLink`}>compare()</Link>
             </div>
 
             <div className={styles.entry}>
@@ -137,15 +138,14 @@ export default function Home() {
               <Link href="/docs/minMax" className={`${styles.refLink} refLink`}>minMax()</Link>
               <Link href="/docs/wrap" className={`${styles.refLink} refLink`}>wrap()</Link>
               <Link href="/docs/multipleWrap" className={`${styles.refLink} refLink`}>multipleWrap()</Link>
-              <Link href="/docs/compare" className={`${styles.refLink} refLink`}>compare()</Link>
+              <Link href="/docs/listSearch" className={`${styles.refLink} refLink`}>listSearch()</Link>
+              <Link href="/docs/objectSearch" className={`${styles.refLink} refLink`}>objectSearch()</Link>
             </div>
 
             <div className={styles.entry}>
               <Link href="/docs/insertAt" className={`${styles.refLink} refLink`}>insertAt()</Link>
               <Link href="/docs/moveText" className={`${styles.refLink} refLink`}>moveText()</Link>
               <Link href="/docs/moveTextByPos" className={`${styles.refLink} refLink`}>moveTextByPos()</Link>
-              <Link href="/docs/listSearch" className={`${styles.refLink} refLink`}>listSearch()</Link>
-              <Link href="/docs/objectSearch" className={`${styles.refLink} refLink`}>objectSearch()</Link>
               <Link href="/docs/encode" className={`${styles.refLink} refLink`}>encode()</Link>
               <Link href="/docs/decode" className={`${styles.refLink} refLink`}>decode()</Link>
               <Link href="/docs/pushByFilter" className={`${styles.refLink} refLink`}>pushByFilter()</Link>
@@ -153,6 +153,7 @@ export default function Home() {
               <Link href="/docs/kebabCase" className={`${styles.refLink} refLink`}>kebabCase()</Link>
               <Link href="/docs/pullByValue" className={`${styles.refLink} refLink`}>pullByValue()</Link>
               <Link href="/docs/pullByIndex" className={`${styles.refLink} refLink`}>pullByIndex()</Link>
+              <Link href="/docs/toAcronym" className={`${styles.refLink} refLink`}>toAcronym()</Link>
             </div>
 
           </div>

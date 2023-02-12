@@ -6,7 +6,6 @@ import javascript from "highlight.js/lib/languages/javascript";
 hljs.registerLanguage("javascript", javascript);
 
 import CopyButtonPlugin from '../scripts/hljsCopy'
-
 import { useEffect } from "react";
 
 export default function Home() {
@@ -15,6 +14,53 @@ export default function Home() {
     hljs.highlightAll();
 
     hljs.addPlugin(new CopyButtonPlugin())
+    hljs.configure({
+      ignoreUnescapedHTML: true
+    });
+
+    const box = document.querySelector(".esBox");
+    const list = document.querySelectorAll(".pre code");
+
+    const esReg = /import\s*\{\s*([^}]+)\s*\}\s*from\s*['"]([^'"]+)['"]\s*/;
+    const cjsReg = /const\s*\{([^}]+)\}\s*=\s*require\s*\(\s*['"]([^'"]+)['"]\s*\)\s*;/;
+
+    box.addEventListener("change", (e) => {
+      if(e.target.checked === true) {
+
+        list.forEach((item) => {
+          const match = item.textContent.split("\n")[0].match(cjsReg);
+          if(match) {
+
+            const content = item.textContent.split("\n");
+            content.shift();
+            
+            const names = match[1].replace(/\s+/g, "")
+            const pkgNames = match[2];
+
+            item.textContent = `import {${names}} from '${pkgNames}';` + "\n" + content.join("\n");
+            hljs.highlightAll();
+          }
+        })
+
+      } else if(e.target.checked === false) {
+
+        list.forEach((item) => {
+          const match = item.textContent.split("\n")[0].match(esReg);
+          if(match) {
+
+            const content = item.textContent.split("\n");
+            content.shift();
+            
+            const names = match[1];
+            const pkgNames = match[2];
+
+            item.textContent = `const {${names}} = require("${pkgNames}");` + "\n" + content.join("\n");
+            hljs.highlightAll();
+          }
+        })
+
+      }
+    })
   }, []);
 
   return (
@@ -36,10 +82,12 @@ export default function Home() {
           manipulation, replacement and many more functions.<br />Here you can check examples of how you can use the functions available explaining each use case as you scroll down.
         </p>
 
+        <code className={`${styles.codeScope} ${styles.esScope}`}>ES syntax? <input type="checkbox" className={`esBox`} /></code>
+
         <div className={styles.flex}>
           <div className={styles.example}>
             <p className={styles.codeExplanation}>this example shows how to use advanced replace when replacing specific occurences in a string.</p>
-            <pre className={styles.pre}><code className="js">
+            <pre className={`${styles.pre} pre`}><code className="js">
               {`const {advanceReplace} = require("utility-text");
 const text = "Hello Hello World";
 const replacedText = advanceReplace({
@@ -59,7 +107,7 @@ console.log(replacedText);
 
           <div className={styles.example}>
             <p className={styles.codeExplanation}>this example shows how to use multiple wrap to make them html elements.</p>
-            <pre className={styles.pre}><code className="js">
+            <pre className={`${styles.pre} pre`}><code className="js">
               {`const {multipleWrap} = require("utility-text");
 const text = "Hello World";
 const wrappedText = multipleWrap({
@@ -76,8 +124,8 @@ console.log(wrappedText);
           </div>
 
           <div className={styles.example}>
-            <p className={styles.codeExplanation}>this example shows how to use multiple wrap to make them html elements.</p>
-            <pre className={styles.pre}><code className="js">
+            <p className={styles.codeExplanation}>the below code shows how you can move specific parts to another part of the sentence through their indexes</p>
+            <pre className={`${styles.pre} pre`}><code className="js">
               {`const {moveTextByPos} = require("utility-text");
 const text = "Hello World ";
 const movedText = moveTextByPos({
@@ -94,8 +142,8 @@ console.log(movedText);
           </div>
 
           <div className={styles.example}>
-            <p className={styles.codeExplanation}>this example shows how to use multiple wrap to make them html elements.</p>
-            <pre className={styles.pre}><code className="js">
+            <p className={styles.codeExplanation}>this example shows how to put new text at the given position</p>
+            <pre className={`${styles.pre} pre`}><code className="js">
               {`const {insertAt} = require("utility-text");
 const text = "Hello World";
 const insertedText = insertAt({
@@ -112,8 +160,8 @@ console.log(insertedText);
           </div>
 
           <div className={styles.example}>
-            <p className={styles.codeExplanation}>analyze is not really a useful function, but when using this package&apos;s functions, you will need it. Many functions require indexes, and the analyze function returns you just that.</p>
-            <pre className={styles.pre}><code className="js">
+            <p className={styles.codeExplanation}>analyze is not really a useful function, but when using this package&apos;s functions, you will need it. Many functions require indexes and counts, and the analyze function returns you just that.</p>
+            <pre className={`${styles.pre} pre`}><code className="js">
               {`const {analyze, advanceReplace} = require("utility-text");
 const text = "Hello Hello Hello Hello Hello World";
 const toBeReplaced = "Hello "; // there's a space at the end otherwise it would leave a huge gap between Hello and World.

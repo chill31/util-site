@@ -1,9 +1,9 @@
 import Head from "next/head";
-import styles from "../../styles/docs/global.module.css";
+import styles from "../styles/docs/global.module.css";
 
 import hljs from "highlight.js/lib/core";
 import javascript from "highlight.js/lib/languages/javascript";
-import CopyButtonPlugin from '../../scripts/hljsCopy'
+import CopyButtonPlugin from '../scripts/hljsCopy'
 
 hljs.registerLanguage("javascript", javascript);
 
