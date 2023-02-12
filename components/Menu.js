@@ -38,6 +38,7 @@ export default function Menu() {
             <Link href="/">Home</Link>
             <Link href="/examples">Examples</Link>
             <Link href="/docs/main">Docs</Link>
+            <Link href="/presets">Presets and Defaults</Link>
             <Link href="https://npmjs.com/package/utility-text">
               Package Link
             </Link>

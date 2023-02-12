@@ -114,7 +114,7 @@
     flex-direction: column;
   }
 
-  .pre code, .preNoCopy {
+  .pre code, .preNoCopy code {
     width: 40rem;
     max-width: 85vw !important;
   }
