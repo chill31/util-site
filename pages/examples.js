@@ -3,6 +3,9 @@ import styles from "../styles/Examples.module.css";
 
 import hljs from "highlight.js/lib/core";
 import javascript from "highlight.js/lib/languages/javascript";
+
+import {BsXLg, BsCheckLg} from 'react-icons/bs'
+
 hljs.registerLanguage("javascript", javascript);
 
 import CopyButtonPlugin from '../scripts/hljsCopy'
@@ -26,6 +29,8 @@ export default function Home() {
 
     box.addEventListener("change", (e) => {
       if(e.target.checked === true) {
+        document.querySelector(".cross").classList.remove("valid");
+        document.querySelector(".check").classList.add("valid");
 
         list.forEach((item) => {
           const match = item.textContent.split("\n")[0].match(cjsReg);
@@ -43,6 +48,8 @@ export default function Home() {
         })
 
       } else if(e.target.checked === false) {
+        document.querySelector(".cross").classList.add("valid");
+        document.querySelector(".check").classList.remove("valid");
 
         list.forEach((item) => {
           const match = item.textContent.split("\n")[0].match(esReg);
@@ -82,7 +89,7 @@ export default function Home() {
           manipulation, replacement and many more functions.<br />Here you can check examples of how you can use the functions available explaining each use case as you scroll down.
         </p>
 
-        <code className={`${styles.codeScope} ${styles.esScope}`}>ES syntax? <input type="checkbox" className={`esBox`} /></code>
+        <label className={`${styles.esScope}`}>ES syntax? <input type="checkbox" className={`${styles.esBox} esBox`} /> <BsCheckLg className={`${styles.check} check`} /> <BsXLg className={`${styles.cross} cross valid`} /> </label>
 
         <div className={styles.flex}>
           <div className={styles.example}>

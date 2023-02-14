@@ -30,7 +30,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}><code className={styles.headCode_L}>wrap()</code></h1>
+        <h1 className={styles.title}><code className={styles.headCode}>wrap()</code></h1>
 
         <p className={styles.description}>wraps certain characters with the provided set of wraps.</p>
 

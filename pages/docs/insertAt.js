@@ -62,7 +62,7 @@ console.log(changed);
           <br />
           <li className={styles.parameter}>index <span className={styles.invertCode}>Number</span> <span className={styles.important}>*</span><br /><span className={styles.paramSub}>the string&apos;s index where the operation should be done</span></li>
           <br />
-          <li className={styles.parameter}>insertionText <span className={styles.invertCode}>Boolean</span> <span className={styles.important}>*</span><br /><span className={styles.paramSub}>whether the insertion should be done before the index or after the index</span></li>
+          <li className={styles.parameter}>insertionText <span className={styles.invertCode}>String</span> <span className={styles.important}>*</span><br /><span className={styles.paramSub}>the text you want to insert</span></li>
         </ul>
 
         <h2 className={styles.subTitle}>Returns</h2>

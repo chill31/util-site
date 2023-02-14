@@ -178,8 +178,7 @@
 }
 
 .refLink {
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family: var(--code-font);
   color: white;
   transition: 120ms ease;
   border-bottom: solid 1px gray;

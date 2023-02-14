@@ -133,4 +133,45 @@
 
 .esScope {
   margin-bottom: 3rem;
+  background: rgb(12, 14, 16);
+  border-radius: 5px;
+  padding: 1.2rem 1rem;
+  font-size: 1.15rem;
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  min-width: max-content;
+  max-width: fit-content;
+  font-family: var(--code-font);
+  cursor: pointer;
+}
+
+.esBox {
+  display: none;
+}
+
+.check, .cross {
+  padding: .1rem;
+  font-size: 1.3rem;
+  display: none;
+}
+
+.check {
+  background-color: rgb(80, 190, 80);
+  color: black;
+}
+
+.cross {
+  background-color: rgb(223, 45, 45);
+  color: white;
+}
+
+.cross[class*="valid"] {
+  display: inherit !important;
+}
+
+.check[class*="valid"] {
+  display: inherit !important;
 }

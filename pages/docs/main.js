@@ -154,6 +154,8 @@ export default function Home() {
               <Link href="/docs/pullByValue" className={`${styles.refLink} refLink`}>pullByValue()</Link>
               <Link href="/docs/pullByIndex" className={`${styles.refLink} refLink`}>pullByIndex()</Link>
               <Link href="/docs/toAcronym" className={`${styles.refLink} refLink`}>toAcronym()</Link>
+              <Link href="/docs/insertToArray" className={`${styles.refLink} refLink`}>insertToArray()</Link>
+              <Link href="/docs/shrink" className={`${styles.refLink} refLink`}>shrink()</Link>
             </div>
 
           </div>
