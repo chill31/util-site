@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from 'next/link'
-import { BsClipboard, BsGearWideConnected, BsFileEarmarkMedical, BsCodeSlash, BsPersonCircle } from "react-icons/bs";
+import { BsClipboard, BsGearWideConnected, BsFileEarmarkMedical, BsCodeSlash, BsPersonCircle, BsBraces, BsSpeedometer, BsUiChecks } from "react-icons/bs";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -53,23 +53,27 @@ export default function Home() {
     const leftObserver = new IntersectionObserver((allEntries) => {
       allEntries.forEach((entry) => {
 
-        if(entry.isIntersecting) {
+        if (entry.isIntersecting) {
           entry.target.querySelectorAll(".fromLeft").forEach((left) => left.classList.add('intersect'));
           entry.target.querySelectorAll(".featureIcon").forEach((ico) => ico.classList.add('intersect'));
         }
 
       });
+    }, {
+      threshold: .7
     });
 
     const rightObserver = new IntersectionObserver((allEntries) => {
       allEntries.forEach((entry) => {
 
-        if(entry.isIntersecting) {
+        if (entry.isIntersecting) {
           entry.target.querySelectorAll(".fromRight").forEach((left) => left.classList.add('intersect'));
           entry.target.querySelectorAll(".featureIcon").forEach((ico) => ico.classList.add('intersect'));
         }
 
       });
+    }, {
+      threshold: .7
     });
 
     allFeatureFromLeft.forEach((feature) => leftObserver.observe(feature));
@@ -158,6 +162,28 @@ export default function Home() {
           <div className={`${styles.feature} fromLeft`}>
 
             <div className={`${styles.featureInfo} fromLeft`}>
+              <h1 className={styles.featureTitle} data-dep>Efficient & Unique</h1>
+              <p className={styles.brief}>the package takes in consideration performance and tries to implement functions which run fast.<br />functions are unique and provide a lot of use cases in many projects.</p>
+            </div>
+
+            <BsSpeedometer className={`${styles.featureIcon} featureIcon`} />
+
+          </div>
+
+          <div className={`${styles.feature} fromRight`}>
+
+            <BsUiChecks className={`${styles.featureIcon} featureIcon`} />
+
+            <div className={`${styles.featureInfo} fromRight`}>
+              <h1 className={styles.featureTitle}>Useful</h1>
+              <p className={styles.brief}>this package is a must for anyone who needs to manipulate, analyze, or transform large amounts of text data efficiently</p>
+            </div>
+
+          </div>
+
+          <div className={`${styles.feature} fromLeft`}>
+
+            <div className={`${styles.featureInfo} fromLeft`}>
               <h1 className={styles.featureTitle} data-dep>No Dependencies</h1>
               <p className={styles.brief}>The package uses no external resources so you do not need to worry about your project&apos;s load</p>
             </div>
@@ -167,18 +193,18 @@ export default function Home() {
 
           <div className={`${styles.feature} fromRight`}>
 
-          <BsPersonCircle className={`${styles.featureIcon} featureIcon`} />
+            <BsPersonCircle className={`${styles.featureIcon} featureIcon`} />
 
             <div className={`${styles.featureInfo} fromRight`}>
               <h1 className={styles.featureTitle}>Clear Docs</h1>
-              <p className={styles.brief}>If you experience any problems, visit the <Link href="/docs/main" className={styles.featureLink}>docs</Link> to understand better about this package</p>
+              <p className={styles.brief}>If you experience any problems, visit the <Link href="/docs/main" className={styles.featureLink}>docs</Link> to understand better about this package. All functions have a example so you can easily understand how the function works</p>
             </div>
 
           </div>
 
         </div>
 
-        <Link className={styles.docsBtn} href="/docs/main"><BsFileEarmarkMedical /> Visit Full Documentation</Link>
+        <Link className={styles.docsBtn} href="/docs/main"><BsBraces /> Visit Full Documentation</Link>
       </main>
     </div>
   );
