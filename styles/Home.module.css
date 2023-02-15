@@ -23,6 +23,12 @@
   line-height: 1.15;
   font-size: 4rem;
   color: white;
+  opacity: 0;
+  transition: opacity 400ms ease-out;
+}
+
+.title[class*="intersect"] {
+  opacity: 1;
 }
 
 .title,
@@ -34,6 +40,16 @@
   margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
+  position: relative;
+  left: -3rem;
+  opacity: 0;
+  transition: 400ms ease-out;
+  transition-property: opacity, left;
+}
+
+.description[class*="intersect"] {
+  left: 0;
+  opacity: 1;
 }
 
 .code {
@@ -68,64 +84,164 @@
 }
 
 .navLink {
+  --time: 250ms;
+
   color: #58aeff;
+  position: relative;
+  right: -9rem;
+  opacity: 0;
+  transition: 400ms ease-out;
+  transition-property: opacity, right;
+}
+
+.firstLink {
+  transition-delay: none;
+}
+
+.secondLink {
+  transition-delay: var(--time);
+}
+
+.thirdLink {
+  transition-delay: calc(var(--time) * 2);
+}
+
+.navLink[class*="intersect"] {
+  right: 0;
+  opacity: 1;
 }
 
 .navLink:where(:hover, :focus) {
   color: #00bbff;
 }
 
-.divider {
-  width: 65vw;
-  height: 2px;
-  background-color: rgb(100, 100, 100);
-  margin-top: 7rem;
-}
+/* FEATURES SECTION */
 
-.section {
-  min-height: 650px;
+.features {
+  margin-top: 9rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 6rem;
   flex-direction: column;
-  padding: 4rem 0;
-  padding-top: 0 !important;
 }
 
-.subTitle {
-  font-size: 2.3rem;
+.feature {
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem;
+  align-items: center;
+  width: 100vw;
 }
 
-.codeFlex {
+@media (max-width: 800px) {
+  .feature {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .featureInfo {
+    text-align: unset !important;
+    align-items: center !important;
+  }
+
+  .feature[class*="fromRight"] {
+    flex-direction: column-reverse;
+  }
+
+  .featureTitle {
+    font-size: 2.7rem !important;
+  }
+
+  .featureTitle[data-dep] {
+    font-size: 2.3rem !important;
+  }
+}
+
+.featureInfo {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  opacity: 0;
+  transition: 500ms ease-out;
 }
 
-.pre code, .preNoCopy code {
-  width: 40rem;
-  max-width: 45vw !important;
-  border-radius: .5rem;
+.featureInfo[class*="fromLeft"] {
+  left: -30vw;
+  transition-property: left, opacity;
 }
 
-@media (max-width: 700px) {
-  .codeFlex {
-    flex-direction: column;
-  }
+.featureInfo[class*="fromRight"] {
+  text-align: end;
+  align-items: flex-end;
 
-  .pre code, .preNoCopy code {
-    width: 40rem;
-    max-width: 85vw !important;
-  }
+  right: -30vw;
+  transition-property: right, opacity;
+}
 
-  .subTitle {
-    font-size: 1.8rem;
-  }
+.featureInfo[class*="fromLeft"][class*="intersect"] {
+  left: 0;
+  opacity: 1;
+}
 
-  .docsBtn {
-    font-size: 1.05rem !important;
-  }
+.featureInfo[class*="fromRight"][class*="intersect"] {
+  right: 0;
+  opacity: 1;
+}
+
+.featureTitle {
+  font-size: 3rem;
+  margin: 0;
+  min-width: max-content;
+}
+
+.featureInfo .brief {
+  max-width: 30ch;
+}
+
+.featureIcon {
+  font-size: 10rem;
+  color: white;
+  opacity: 0;
+  position: relative;
+  transition: 500ms ease-out;
+  transition-delay: 250ms;
+}
+
+.feature[class*="fromLeft"] .featureIcon {
+  right: -30vw;
+  transition-property: opacity, right;
+}
+
+.feature[class*="fromLeft"] .featureIcon[class*="intersect"] {
+  opacity: 1;
+  right: 0;
+}
+
+.feature[class*="fromRight"] .featureIcon {
+  left: -30vw;
+  transition-property: opacity, left;
+}
+
+.feature[class*="fromRight"] .featureIcon[class*="intersect"] {
+  opacity: 1;
+  left: 0;
+}
+
+.featureLink {
+  font-family: var(--code-font);
+  color: #0bcaff;
+  transition: 120ms ease;
+  border-bottom-color: #0bcaff;
+  border-bottom: solid 1px;
+  transition-property: border-bottom-color, color;
+}
+
+.featureLink:where(:hover, :focus) {
+  color: white;
+  border-bottom-color: gray;
 }
 
 .docsBtn {
@@ -144,15 +260,11 @@
   justify-content: center;
   align-items: center;
   gap: .4rem;
-}
-
-.docsBtn:where(:focus, :focus-within, :hover) {
-  color: black;
-  background-color: white;
-  border-color: black;
   outline: none !important;
 }
 
-.preNoCopy [class*="hljs-copy-button"] {
-  display: none !important;
+.docsBtn:where(:hover, :focus, :focus-visible, :focus-within) {
+  color: black;
+  background-color: white;
+  border-color: black
 }

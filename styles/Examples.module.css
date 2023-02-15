@@ -17,19 +17,9 @@
   line-height: 1.15;
   font-size: 4rem;
   color: white;
-  margin-top: 4rem;
-}
-
-.title,
-.description {
+  margin-top: 6rem;
   text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-  margin: 4rem;
+  margin-bottom: 4rem;
 }
 
 .navFlex {
@@ -50,11 +40,6 @@
 @media (max-width: 560px) {
   .title {
     font-size: 3.5rem;
-  }
-
-  .description {
-    font-size: 110%;
-    margin: 2rem
   }
 }
 
@@ -152,26 +137,15 @@
   display: none;
 }
 
-.check, .cross {
+.check {
   padding: .1rem;
   font-size: 1.3rem;
-  display: none;
-}
-
-.check {
-  background-color: rgb(80, 190, 80);
-  color: black;
-}
-
-.cross {
-  background-color: rgb(223, 45, 45);
+  border-radius: .1rem;
+  background-color: rgb(179, 179, 179);
   color: white;
 }
 
-.cross[class*="valid"] {
-  display: inherit !important;
-}
-
-.check[class*="valid"] {
-  display: inherit !important;
+.check[data-valid] {
+  background-color: rgb(80, 190, 80);
+  color: black;
 }

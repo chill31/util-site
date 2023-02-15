@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from 'next/link'
-import { BsClipboard, BsFileEarmarkMedical } from "react-icons/bs";
+import { BsClipboard, BsGearWideConnected, BsFileEarmarkMedical, BsCodeSlash, BsPersonCircle } from "react-icons/bs";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -18,10 +18,63 @@ export default function Home() {
 
   useEffect(() => {
     hljs.highlightAll();
-    
-    hljs.addPlugin(new CopyButtonPlugin())
-  }, []);
 
+    hljs.addPlugin(new CopyButtonPlugin())
+
+    const title = document.querySelector(".title");
+    const codeBlock = document.querySelector(".description");
+    const navLinks = document.querySelectorAll(".navLink");
+
+    const mainObserver = new IntersectionObserver((allEntries) => {
+      allEntries.forEach((entry) => {
+        if (entry.isIntersecting) {
+
+          title.classList.add("intersect");
+
+          setTimeout(() => {
+            codeBlock.classList.add("intersect");
+          }, 400);
+
+          setTimeout(() => {
+            navLinks.forEach((link) => {
+              link.classList.add("intersect");
+            })
+          }, 800);
+
+        }
+      });
+    });
+
+    mainObserver.observe(title);
+
+    const allFeatureFromLeft = document.querySelectorAll(".fromLeft");
+    const allFeatureFromRight = document.querySelectorAll(".fromRight");
+
+    const leftObserver = new IntersectionObserver((allEntries) => {
+      allEntries.forEach((entry) => {
+
+        if(entry.isIntersecting) {
+          entry.target.querySelectorAll(".fromLeft").forEach((left) => left.classList.add('intersect'));
+          entry.target.querySelectorAll(".featureIcon").forEach((ico) => ico.classList.add('intersect'));
+        }
+
+      });
+    });
+
+    const rightObserver = new IntersectionObserver((allEntries) => {
+      allEntries.forEach((entry) => {
+
+        if(entry.isIntersecting) {
+          entry.target.querySelectorAll(".fromRight").forEach((left) => left.classList.add('intersect'));
+          entry.target.querySelectorAll(".featureIcon").forEach((ico) => ico.classList.add('intersect'));
+        }
+
+      });
+    });
+
+    allFeatureFromLeft.forEach((feature) => leftObserver.observe(feature));
+    allFeatureFromRight.forEach((feature) => rightObserver.observe(feature));
+  });
 
   return (
     <div className={styles.container}>
@@ -48,9 +101,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Documentation</h1>
+        <h1 className={`${styles.title} title`}>Documentation</h1>
 
-        <p className={styles.description}>
+        <p className={`${styles.description} description`}>
           <code
             className={styles.code}
             onClick={() => {
@@ -73,84 +126,60 @@ export default function Home() {
 
         <div className={styles.navFlex}>
 
-          <Link className={styles.navLink} href="/examples">Examples</Link>
-          <Link className={styles.navLink} href="/docs/main">Docs</Link>
-          <Link className={styles.navLink} href="/presets">Presets</Link>
+          <Link className={`${styles.navLink} ${styles.firstLink} navLink`} href="/examples">Examples</Link>
+          <Link className={`${styles.navLink} ${styles.secondLink} navLink`} href="/docs/main">Docs</Link>
+          <Link className={`${styles.navLink} ${styles.thirdLink} navLink`} href="/presets">Presets</Link>
 
         </div>
-      </main>
 
-      <section className={styles.section}>
+        <div className={styles.features}>
 
-        <h1 className={styles.title}>Note</h1>
-        <p className={styles.description}>Check the basic structure of the package and how to get started.</p>
+          <div className={`${styles.feature} fromLeft`}>
 
-        <h2 className={styles.subTitle}>Exports</h2>
+            <div className={`${styles.featureInfo} fromLeft`}>
+              <h1 className={styles.featureTitle}>Easy To Use</h1>
+              <p className={styles.brief}>Streamline your experience with this package that is both simple and straightforward to use</p>
+            </div>
+            <BsGearWideConnected className={`${styles.featureIcon} featureIcon`} />
 
-        <div className={styles.codeFlex}>
-          <pre className={styles.preNoCopy}>
-            <code className="js">
-              {`/* ---- COMMON JS ---- */
-module.exports = {
-  upper,
-  lower,
-  capitalize,
-  reverse,
-  ...
-};
-`}
-            </code>
-          </pre>
-          <pre className={styles.preNoCopy}>
-            <code className="js">
-              {`/* ---- ES MODULE ---- */
-export default {
-  upper,
-  lower,
-  capitalize,
-  reverse,
-  ...
-};
-`}
-            </code>
-          </pre>
-        </div>
+          </div>
 
-        <h2 className={styles.subTitle}>Usage</h2>
+          <div className={`${styles.feature} fromRight`}>
 
-        <div className={styles.codeFlex}>
+            <BsFileEarmarkMedical className={`${styles.featureIcon} featureIcon`} />
 
-          <pre className={styles.preNoCopy}>
-            <code className="js">
-              {`/* ---- COMMON JS ---- */
-const allUtils = require("utility-text");
-// --- OR ---
-const {functionName} = require("utility-text");
+            <div className={`${styles.featureInfo} fromRight`}>
+              <h1 className={styles.featureTitle}>Use anywhere</h1>
+              <p className={styles.brief}>This package is built to use anywhere. It supports both importing through modules or just normal Common JS projects.</p>
+            </div>
 
-console.log(allUtils);
-console.log(functionName(...))
-`}
-            </code>
-          </pre>
+          </div>
 
-          <pre className={styles.preNoCopy}>
-            <code className="js">
-              {`/* ---- ES MODULE ---- */
-import allUtils from "utility-text";
-// --- OR ---
-import {functionName} from "utility-text";
+          <div className={`${styles.feature} fromLeft`}>
 
-console.log(allUtils);
-console.log(functionName(...))
-`}
-            </code>
-          </pre>
+            <div className={`${styles.featureInfo} fromLeft`}>
+              <h1 className={styles.featureTitle} data-dep>No Dependencies</h1>
+              <p className={styles.brief}>The package uses no external resources so you do not need to worry about your project&apos;s load</p>
+            </div>
+            <BsCodeSlash className={`${styles.featureIcon} featureIcon`} />
+
+          </div>
+
+          <div className={`${styles.feature} fromRight`}>
+
+          <BsPersonCircle className={`${styles.featureIcon} featureIcon`} />
+
+            <div className={`${styles.featureInfo} fromRight`}>
+              <h1 className={styles.featureTitle}>Clear Docs</h1>
+              <p className={styles.brief}>If you experience any problems, visit the <Link href="/docs/main" className={styles.featureLink}>docs</Link> to understand better about this package</p>
+            </div>
+
+          </div>
 
         </div>
 
         <Link className={styles.docsBtn} href="/docs/main"><BsFileEarmarkMedical /> Visit Full Documentation</Link>
-
-      </section>
+      </main>
     </div>
   );
 }

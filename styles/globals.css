@@ -9,6 +9,7 @@ body {
   font-family: system-ui;
   background-color: rgb(33, 41, 52);
   min-height: 650px;
+  overflow-x: hidden;
 }
 
 a {

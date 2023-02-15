@@ -4,7 +4,7 @@ import styles from "../styles/Examples.module.css";
 import hljs from "highlight.js/lib/core";
 import javascript from "highlight.js/lib/languages/javascript";
 
-import {BsXLg, BsCheckLg} from 'react-icons/bs'
+import {BsXLg, BsCheckLg, BsChevronRight} from 'react-icons/bs'
 
 hljs.registerLanguage("javascript", javascript);
 
@@ -29,8 +29,7 @@ export default function Home() {
 
     box.addEventListener("change", (e) => {
       if(e.target.checked === true) {
-        document.querySelector(".cross").classList.remove("valid");
-        document.querySelector(".check").classList.add("valid");
+        document.querySelector(".check").setAttribute("data-valid", "");
 
         list.forEach((item) => {
           const match = item.textContent.split("\n")[0].match(cjsReg);
@@ -48,8 +47,7 @@ export default function Home() {
         })
 
       } else if(e.target.checked === false) {
-        document.querySelector(".cross").classList.add("valid");
-        document.querySelector(".check").classList.remove("valid");
+        document.querySelector(".check").removeAttribute("data-valid");
 
         list.forEach((item) => {
           const match = item.textContent.split("\n")[0].match(esReg);
@@ -83,13 +81,7 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>Examples</h1>
 
-        <p className={styles.description}>
-          utility-text is a text-based utility package with many functions which
-          javascript does not provide by default. It can help with text
-          manipulation, replacement and many more functions.<br />Here you can check examples of how you can use the functions available explaining each use case as you scroll down.
-        </p>
-
-        <label className={`${styles.esScope}`}>ES syntax? <input type="checkbox" className={`${styles.esBox} esBox`} /> <BsCheckLg className={`${styles.check} check`} /> <BsXLg className={`${styles.cross} cross valid`} /> </label>
+        <label className={`${styles.esScope}`}>ES syntax? <input type="checkbox" className={`${styles.esBox} esBox`} /> <BsCheckLg className={`${styles.check} check`} /> </label>
 
         <div className={styles.flex}>
           <div className={styles.example}>
