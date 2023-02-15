@@ -23,7 +23,7 @@ export default function Home() {
     <div className={styles.container}>
 
       <Head>
-        <title>Docs: objectSearch</title>
+        <title>Docs: listSearch</title>
         <meta
           name="description"
           content="official documentation site for npm package utility-text"
@@ -31,28 +31,28 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}><code className={styles.headCode}>objectSearch()</code></h1>
+        <h1 className={styles.title}><code className={styles.headCode_L}>objectSearch()</code></h1>
 
         <p className={styles.description}>searches a string in specified keys in the array of objects</p>
 
         <pre><code className="js">
           {`const {objectSearch} = require("utility-text");
-const searchWord = "useful";
+const searchWord = "first";
 
 const searched = objectSearch({
   searchList: [
-   {
-    title: "fnName()",
-    text: "this function does something useful"
-   },
-   {
-    title: "secondFn()",
-    text: "this function does something else"
-   }
+    {
+      "title": "name of first thing",
+      "brief": "some description of the first thing",
+    },
+    {
+      "title": "name of other thing",
+      "brief": "some description of the other thing"
+    }
   ],
-  searchKeys: ["title", "text"],
   searchText: searchWord,
-  returnAll: false,
+  searchKeys: ["title", "brief"],
+  returnAll: true,
 });
 console.log(searched);
 `}
@@ -65,9 +65,9 @@ console.log(searched);
         <ul className={styles.paramList}>
           <li className={styles.parameter}>searchList <span className={styles.invertCode}>Array of Objects <code className={styles.codeScope}>{`[{...}, {...}]`}</code></span> <span className={styles.important}>*</span><br /><span className={styles.paramSub}>this is the list of objects you want to search the text in</span></li>
           <br />
-          <li className={styles.parameter}>searchText <span className={styles.invertCode}>String</span> <span className={styles.important}>*</span><br /><span className={styles.paramSub}>the text you want to search for in the searchList array&apos;s objects</span></li>
+          <li className={styles.parameter}>searchText <span className={styles.invertCode}>String</span> <span className={styles.important}>*</span><br /><span className={styles.paramSub}>the text you want to search for in the searchList array.</span></li>
           <br />
-          <li className={styles.parameter}>searchKeys <span className={styles.invertCode}>String</span> <span className={styles.important}>*</span><br /><span className={styles.paramSub}>the list of keys you want to search in</span></li>
+          <li className={styles.parameter}>searchKeys <span className={styles.invertCode}>Array</span> <span className={styles.important}>*</span><br /><span className={styles.paramSub}>the array of keys you want to search the text in</span></li>
           <br />
           <li className={styles.parameter}>returnAll <span className={styles.invertCode}>Boolean</span><br /><span className={styles.paramSub}>whether the function should return all matches or just the first match</span></li>
         </ul>
@@ -76,57 +76,24 @@ console.log(searched);
 
         <ul className={styles.paramList}>
 
-          <li className={styles.parameter}><code className={styles.codeScope}>returnAll: false</code><br /><span className={styles.paramSub}>if the returnAll parameter is false, then the data below gets returned:</span>
-          
-            <br />
-            <br />
-
-            <legend className={styles.invertCodeLegend}>Object</legend>
-
-            <br />
-
-            <ul className={styles.paramList}>
-              <li className={styles.parameter}>found <span className={styles.invertCode}>Boolean</span><br /><span className={styles.paramSub}>whether the match was found or not</span></li>
-              <br />
-              <li className={styles.parameter}>search <span className={styles.invertCode}>String</span><br /><span className={styles.paramSub}>the search string</span></li>
-              <br />
-              <li className={styles.parameter}>match <span className={styles.invertCode}>String</span><br /><span className={styles.paramSub}>the match found</span></li>
-              <br />
-              <li className={styles.parameter}>object <span className={styles.invertCode}>Object</span><br /><span className={styles.paramSub}>the object where the match was found</span></li>
-              <br />
-              <li className={styles.parameter}>key <span className={styles.invertCode}>Object</span><br /><span className={styles.paramSub}>the key in the object where the match was found</span></li>
-              <br />
-              <li className={styles.parameter}>index <span className={styles.invertCode}>Number</span><br /><span className={styles.paramSub}>the array&apos;s index where the match was found</span></li>
-            </ul>
-          </li>
-
-          <br />
-          <br />
-
-          <li className={styles.parameter}><code className={styles.codeScope}>returnAll: true</code><br /><span className={styles.paramSub}>if the returnAll parameter is set to true, then the data below gets returned:</span>
-          
-          <br />
-          <br />
-
           <legend className={styles.invertCodeLegend}>Array of Objects <code className={styles.codeScope}>{'[{...}, {...}]'}</code></legend>
 
           <br />
           <br />
 
           <ul className={styles.paramList}>
-              <li className={styles.parameter}>found <span className={styles.invertCode}>Boolean</span><br /><span className={styles.paramSub}>whether the match was found or not</span></li>
-              <br />
-              <li className={styles.parameter}>search <span className={styles.invertCode}>String</span><br /><span className={styles.paramSub}>the search string</span></li>
-              <br />
-              <li className={styles.parameter}>match <span className={styles.invertCode}>String</span><br /><span className={styles.paramSub}>the match found</span></li>
-              <br />
-              <li className={styles.parameter}>object <span className={styles.invertCode}>Object</span><br /><span className={styles.paramSub}>the object where the match was found</span></li>
-              <br />
-              <li className={styles.parameter}>key <span className={styles.invertCode}>Object</span><br /><span className={styles.paramSub}>the key in the object where the match was found</span></li>
-              <br />
-              <li className={styles.parameter}>index <span className={styles.invertCode}>Number</span><br /><span className={styles.paramSub}>the array&apos;s index where the match was found</span></li>
-            </ul>
-        </li>
+            <li className={styles.parameter}>found <span className={styles.invertCode}>Boolean</span><br /><span className={styles.paramSub}>whether the match was found or not</span></li>
+            <br />
+            <li className={styles.parameter}>search <span className={styles.invertCode}>String</span><br /><span className={styles.paramSub}>the search string</span></li>
+            <br />
+            <li className={styles.parameter}>match <span className={styles.invertCode}>String</span><br /><span className={styles.paramSub}>the match found</span></li>
+            <br />
+            <li className={styles.parameter}>object <span className={styles.invertCode}>String</span><br /><span className={styles.paramSub}>the object where the match was found</span></li>
+            <br />
+            <li className={styles.parameter}>key <span className={styles.invertCode}>String</span><br /><span className={styles.paramSub}>the key in the object where the match found</span></li>
+            <br />
+            <li className={styles.parameter}>index <span className={styles.invertCode}>Number</span><br /><span className={styles.paramSub}>the array&apos;s index where the match was found</span></li>
+          </ul>
 
         </ul>
 

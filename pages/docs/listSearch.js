@@ -68,34 +68,6 @@ console.log(searched);
 
         <ul className={styles.paramList}>
 
-          <li className={styles.parameter}><code className={styles.codeScope}>returnAll: false</code><br /><span className={styles.paramSub}>if the returnAll parameter is false, then the data below gets returned:</span>
-          
-            <br />
-            <br />
-
-            <legend className={styles.invertCodeLegend}>Object</legend>
-
-            <br />
-
-            <ul className={styles.paramList}>
-              <li className={styles.parameter}>found <span className={styles.invertCode}>Boolean</span><br /><span className={styles.paramSub}>whether the match was found or not</span></li>
-              <br />
-              <li className={styles.parameter}>search <span className={styles.invertCode}>String</span><br /><span className={styles.paramSub}>the search string</span></li>
-              <br />
-              <li className={styles.parameter}>match <span className={styles.invertCode}>String</span><br /><span className={styles.paramSub}>the match found</span></li>
-              <br />
-              <li className={styles.parameter}>index <span className={styles.invertCode}>Number</span><br /><span className={styles.paramSub}>the array&apos;s index where the match was found</span></li>
-            </ul>
-          </li>
-
-          <br />
-          <br />
-
-          <li className={styles.parameter}><code className={styles.codeScope}>returnAll: true</code><br /><span className={styles.paramSub}>if the returnAll parameter is set to true, then the data below gets returned:</span>
-          
-          <br />
-          <br />
-
           <legend className={styles.invertCodeLegend}>Array of Objects <code className={styles.codeScope}>{'[{...}, {...}]'}</code></legend>
 
           <br />
@@ -110,7 +82,6 @@ console.log(searched);
             <br />
             <li className={styles.parameter}>index <span className={styles.invertCode}>Number</span><br /><span className={styles.paramSub}>the array&apos;s index where the match was found</span></li>
           </ul>
-        </li>
 
         </ul>
 
