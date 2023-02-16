@@ -7,11 +7,8 @@ import { useEffect } from "react";
 
 export default function Home() {
 
-  var loc;
-
   useEffect(() => {
-    loc = window.location.pathname;
-    document.querySelector(".argument-one").textContent = `--${loc.replace("/", "")}`;
+    document.querySelector(".argument-one").textContent = `--${window.location.pathname.replace("/", "")}`;
   });
 
   return (
@@ -29,7 +26,7 @@ export default function Home() {
 
         <code className={styles.runCode}>
           <code className={styles.actualCode}>
-            <span className={styles.code}>&gt;&gt;&gt; <span className={styles.function}>npm</span> <span className={styles.token}>run</span> <span className={styles.parameter}>page-load</span> <span className={`${styles.argument} argument-one`}>--{`${loc}`}</span><br /><br /><span className={styles.function}>npm</span> <span className={styles.error}>ERROR</span> page not found</span>
+            <span className={styles.code}>&gt;&gt;&gt; <span className={styles.function}>npm</span> <span className={styles.token}>run</span> <span className={styles.parameter}>page-load</span> <span className={`${styles.argument} argument-one`}></span><br /><br /><span className={styles.function}>npm</span> <span className={styles.error}>ERROR</span> page not found</span>
           </code>
         </code>
 
