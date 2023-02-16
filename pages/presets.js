@@ -127,7 +127,7 @@ export default function Home() {
             <Link href="/docs/isValidEmail" className={styles.subTitle} data-paramTitle><code className={styles.subHeadCode}>isValidEmail()</code></Link>
             <legend className={styles.invertCodeLegend}>Email RegExp</legend>
             <pre><code className="js">
-              {`const reg = /^[a-zA-Z0-9.!#$%&'*+/=?^_\`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/gi;`}
+              {`const reg = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$/gi;`}
             </code></pre>
           </div>
 
@@ -135,7 +135,7 @@ export default function Home() {
             <Link href="/docs/extractEmail" className={styles.subTitle} data-paramTitle><code className={styles.subHeadCode}>extractEmail()</code></Link>
             <legend className={styles.invertCodeLegend}>Email RegExp</legend>
             <pre><code className="js">
-              {`const reg = /^[a-zA-Z0-9.!#$%&'*+/=?^_\`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/gi;`}
+              {`const reg = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$/gi;`}
             </code></pre>
           </div>
 
