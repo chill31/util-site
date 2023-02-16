@@ -36,7 +36,7 @@ export default function Home() {
         <p className={styles.description}>returns the longest and shortest word of a sentence.</p>
 
         <pre><code className="js">
-          {`const {minMax} = require("utility-text");
+          {`const { minMax } = require("utility-text");
 const myText = "this is just a normal string";
 
 const changed = minMax(myText);

@@ -36,7 +36,7 @@ export default function Home() {
         <p className={styles.description}>moves the text which is in between the indexes given to the given move index</p>
 
         <pre><code className="js">
-          {`const {moveTextByPos} = require("utility-text");
+          {`const { moveTextByPos } = require("utility-text");
 const myText = "this is an example string";
 
 const moved = moveTextByPos({

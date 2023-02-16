@@ -36,7 +36,7 @@ export default function Home() {
         <p className={styles.description}>pulls multiple values by their index from array</p>
 
         <pre><code className="js">
-          {`const {pullByIndex} = require("utility-text");
+          {`const { pullByIndex } = require("utility-text");
 const myList = [1, 2, 3, 4, 5, 6, 7, 8, 9 , 10];
 
 const pulled = pullByIndex(myList, 0, 1, 2); // second third and fourth index are pulled

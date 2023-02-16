@@ -36,7 +36,7 @@ export default function Home() {
         <p className={styles.description}>converts string to camelCase.</p>
 
         <pre><code className="js">
-          {`const {camelCase} = require("utility-text");
+          {`const { camelCase } = require("utility-text");
 const myText = "this is a string";
 
 const changed = camelCase(myText);

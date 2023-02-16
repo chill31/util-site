@@ -35,7 +35,7 @@ export default function Home() {
         <p className={styles.description}>replaces a specific number of occurences of provided set of characters with a given replacement</p>
 
         <pre><code className="js">
-          {`const {advanceReplace} = require("utility-text");
+          {`const { advanceReplace } = require("utility-text");
 const myText = "this is a string with a lot of spaces in between the words";
 
 const changed = advanceReplace({

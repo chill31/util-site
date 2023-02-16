@@ -34,7 +34,7 @@ export default function Home() {
         <p className={styles.description}>reverses the string</p>
 
         <pre><code className="js">
-          {`const {reverse} = require("utility-text");
+          {`const { reverse } = require("utility-text");
 const myText = "this is a string";
 
 const changed = reverse(myText);

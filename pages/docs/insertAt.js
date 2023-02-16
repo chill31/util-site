@@ -37,7 +37,7 @@ export default function Home() {
         <p className={styles.description}>inserts a string into the given index in the provided text.</p>
 
         <pre><code className="js">
-          {`const {insertAt} = require("utility-text");
+          {`const { insertAt } = require("utility-text");
 const myText = "abcef"; // notice the 'd' is missing.
 
 const changed = insertAt({

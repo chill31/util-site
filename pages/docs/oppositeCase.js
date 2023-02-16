@@ -34,7 +34,7 @@ export default function Home() {
         <p className={styles.description}>alternates the case of text. For example: eEeE</p>
 
         <pre><code className="js">
-          {`const {oppositeCase} = require("utility-text");
+          {`const { oppositeCase } = require("utility-text");
 const myText = "this is a string";
 
 const changed = oppositeCase(myText, true);

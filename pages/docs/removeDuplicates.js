@@ -35,7 +35,7 @@ export default function Home() {
         <p className={styles.description}>removes all duplicates from the given string</p>
 
         <pre><code className="js">
-          {`const {removeDuplicates} = require("utility-text");
+          {`const { removeDuplicates } = require("utility-text");
 const myText = "this this this is is is is a very normal sentence.";
 
 const changed = removeDuplicates(myText, false); // if false, converts the text to lowercase, then checks for duplicates.

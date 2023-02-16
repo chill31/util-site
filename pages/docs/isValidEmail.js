@@ -36,7 +36,7 @@ export default function Home() {
         <p className={styles.description}>checks if the given text is an email or not.</p>
 
         <pre><code className="js">
-          {`const {isValidEmail} = require("utility-text");
+          {`const { isValidEmail } = require("utility-text");
 const myEmail = "Igotnomail@chill31.com";
 
 const checked = isValidEmail(myEmail);

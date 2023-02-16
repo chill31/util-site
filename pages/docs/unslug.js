@@ -34,7 +34,7 @@ export default function Home() {
         <p className={styles.description}>converts text from URL friendly strings to readable strings</p>
 
         <pre><code className="js">
-          {`const {unslug} = require("utility-text");
+          {`const { unslug } = require("utility-text");
 const myText = "https://example.com/examplefile?search=query%20not%20url%20friendly"; // using slug() function
 
 const changed = unslug(myText);

@@ -36,7 +36,7 @@ export default function Home() {
         <p className={styles.description}>converts string to kebab-case.</p>
 
         <pre><code className="js">
-          {`const {kebabCase} = require("utility-text");
+          {`const { kebabCase } = require("utility-text");
 const myText = "this is a string";
 
 const changed = kebabCase(myText);

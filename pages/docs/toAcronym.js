@@ -36,7 +36,7 @@ export default function Home() {
         <p className={styles.description}>converts text to acronym</p>
 
         <pre><code className="js">
-          {`const {toAcronym} = require("utility-text");
+          {`const { toAcronym } = require("utility-text");
 const myText = "World Health Organization";
 
 const analyzed = toAcronym(myText);

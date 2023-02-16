@@ -36,7 +36,7 @@ export default function Home() {
         <p className={styles.description}>moves the first occurence of a given part of a string to the given index.</p>
 
         <pre><code className="js">
-          {`const {moveText} = require("utility-text");
+          {`const { moveText } = require("utility-text");
 const myText = "this is an example string";
 
 const moved = moveText({

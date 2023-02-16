@@ -36,7 +36,7 @@ export default function Home() {
         <p className={styles.description}>pulls multiple values from array</p>
 
         <pre><code className="js">
-          {`const {pullByValue} = require("utility-text");
+          {`const { pullByValue } = require("utility-text");
 const myList = [1,2,3,4,5,6,7,8,9,10];
 
 const pulled = pullByValue(myList, 1,2,3);

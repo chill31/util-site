@@ -37,7 +37,7 @@ export default function Home() {
         <p className={styles.description}>gets the urls out of a string and returns them with the extracted urls.</p>
 
         <pre><code className="js">
-          {`const {extracURL} = require("utility-text");
+          {`const { extracURL } = require("utility-text");
 const myText = "this is a string with a https://example.com/ url";
 
 const extracted = extractURL({

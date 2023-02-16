@@ -37,7 +37,7 @@ export default function Home() {
         <p className={styles.description}>returns the character count with spaces, without spaces, and leaves out the given exceptions.</p>
 
         <pre><code className="js">
-          {`const {charCount} = require("utility-text");
+          {`const { charCount } = require("utility-text");
 const myText = "this is a sentence";
 
 const changed = charCount(myText, ["s", "t"]);

@@ -36,7 +36,7 @@ export default function Home() {
         <p className={styles.description}>changes each letter of each word to capital.</p>
 
         <pre><code className="js">
-          {`const {capitalize} = require("utility-text");
+          {`const { capitalize } = require("utility-text");
 const myText = "this is a string";
 
 const changed = capitalize(myText);

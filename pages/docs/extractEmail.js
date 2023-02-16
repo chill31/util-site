@@ -37,7 +37,7 @@ export default function Home() {
         <p className={styles.description}>gets the emails out of a string and returns them with the extracted mails.</p>
 
         <pre><code className="js">
-          {`const {extractEmail} = require("utility-text");
+          {`const { extractEmail } = require("utility-text");
 const myText = "this is a string with a some_example_mail@domain.com mail";
 
 const extracted = extractEmail({

@@ -35,7 +35,7 @@ export default function Home() {
         <p className={styles.description}>encodes text. To decode, go to <Link className={`${`${styles.refLink} refLink`} refLink`} href="/docs/decode">decode()</Link></p>
 
         <pre><code className="js">
-          {`const {encode} = require("utility-text");
+          {`const { encode } = require("utility-text");
 const myText = "this is a string";
 
 const changed = encode(myText);

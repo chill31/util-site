@@ -34,7 +34,7 @@ export default function Home() {
         <p className={styles.description}>removes all child arrays from the main array</p>
 
         <pre><code className="js">
-          {`const {flatten} = require("utility-text");
+          {`const { flatten } = require("utility-text");
 const myMultiArray = [
   [1,2,3],
   [4,5,6],
