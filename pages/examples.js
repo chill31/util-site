@@ -87,7 +87,7 @@ export default function Home() {
           <div className={styles.example}>
             <p className={styles.codeExplanation}>this example shows how to use advanced replace when replacing specific occurences in a string.</p>
             <pre className={`${styles.pre} pre`}><code className="js">
-              {`const {advanceReplace} = require("utility-text");
+              {`const { advanceReplace } = require("utility-text");
 const text = "Hello Hello World";
 const replacedText = advanceReplace({
   text,
@@ -107,7 +107,7 @@ console.log(replacedText);
           <div className={styles.example}>
             <p className={styles.codeExplanation}>this example shows how to use multiple wrap to make them html elements.</p>
             <pre className={`${styles.pre} pre`}><code className="js">
-              {`const {multipleWrap} = require("utility-text");
+              {`const { multipleWrap } = require("utility-text");
 const text = "Hello World";
 const wrappedText = multipleWrap({
   text,
@@ -125,7 +125,7 @@ console.log(wrappedText);
           <div className={styles.example}>
             <p className={styles.codeExplanation}>the below code shows how you can move specific parts to another part of the sentence through their indexes</p>
             <pre className={`${styles.pre} pre`}><code className="js">
-              {`const {moveTextByPos} = require("utility-text");
+              {`const { moveTextByPos } = require("utility-text");
 const text = "Hello World ";
 const movedText = moveTextByPos({
   text,
@@ -143,7 +143,7 @@ console.log(movedText);
           <div className={styles.example}>
             <p className={styles.codeExplanation}>this example shows how to put new text at the given position</p>
             <pre className={`${styles.pre} pre`}><code className="js">
-              {`const {insertAt} = require("utility-text");
+              {`const { insertAt } = require("utility-text");
 const text = "Hello World";
 const insertedText = insertAt({
   text,
@@ -162,7 +162,7 @@ console.log(insertedText);
           <div className={styles.example}>
             <p className={styles.codeExplanation}>analyze is not really a useful function, but when using this package&apos;s functions, you will need it. Many functions require indexes and counts, and the analyze function returns you just that.</p>
             <pre className={`${styles.pre} pre`}><code className="js">
-              {`const {analyze, advanceReplace} = require("utility-text");
+              {`const { analyze, advanceReplace } = require("utility-text");
 const text = "Hello Hello Hello Hello Hello World";
 const toBeReplaced = "Hello "; // there's a space at the end otherwise it would leave a huge gap between Hello and World.
 

@@ -34,7 +34,7 @@ export default function Home() {
         <p className={styles.description}>converts text to URL friendly strings.</p>
 
         <pre><code className="js">
-          {`const {slug} = require("utility-text");
+          {`const { slug } = require("utility-text");
 const myText = "this is a string";
 
 const changed = slug(myText);

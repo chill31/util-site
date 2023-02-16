@@ -34,7 +34,7 @@ export default function Home() {
         <p className={styles.description}>converts strings to snake_case.</p>
 
         <pre><code className="js">
-          {`const {snakeCase} = require("utility-text");
+          {`const { snakeCase } = require("utility-text");
 const myText = "this is a string";
 
 const changed = snakeCase(myText);

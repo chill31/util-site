@@ -36,7 +36,7 @@ export default function Home() {
         <p className={styles.description}>searches a string in an array of strings.</p>
 
         <pre><code className="js">
-          {`const {listSearch} = require("utility-text");
+          {`const { istSearch } = require("utility-text");
 const searchWord = "hello";
 
 const searched = listSearch({

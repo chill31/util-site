@@ -36,7 +36,7 @@ export default function Home() {
         <p className={styles.description}>compares 2 strings</p>
 
         <pre><code className="js">
-          {`const {compare} = require("utility-text");
+          {`const { compare } = require("utility-text");
 const myText1 = "this is a string also a sentence";
 const myText2 = "this is a sentence also a string";
 

@@ -36,7 +36,7 @@ export default function Home() {
         <p className={styles.description}>shrinks an array to a specified range. deletes all values if they are not in the specified range</p>
 
         <pre><code className="js">
-          {`const {rangeShrink} = require("utility-text");
+          {`const { rangeShrink } = require("utility-text");
 const myList = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const shrinked = rangeShrink(myList, [2, 7]) // shrinks the array from the 2nd index to the 7th index.

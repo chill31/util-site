@@ -34,7 +34,7 @@ export default function Home() {
         <p className={styles.description}>converts the first letter of each word to lower case and everything else upper case</p>
 
         <pre><code className="js">
-          {`const {toggleCase} = require("utility-text");
+          {`const { toggleCase } = require("utility-text");
 const myText = "this is a string";
 
 const changed = toggleCase(myText);

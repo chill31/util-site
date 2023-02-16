@@ -38,7 +38,7 @@ export default function Home() {
         <p className={styles.description}>removes all symbols and capitalizes the first word of the given string. You can also provide your own symbols to remove</p>
 
         <pre><code className="js">
-          {`const {normalize} = require("utility-text");
+          {`const { normalize } = require("utility-text");
 const myText = "this is a VERY wEiRD sentence";
 
 const changed = normalize(myText, ["×", "÷"]); // also removes multiply and divide symbol if there are any

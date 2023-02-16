@@ -34,7 +34,7 @@ export default function Home() {
         <p className={styles.description}>pushes data into an array by filtering</p>
 
         <pre><code className="js">
-          {`const {pushByFilter} = require("utility-text");
+          {`const { pushByFilter } = require("utility-text");
 const myArray = [1, 2, 3];
 const filter = (n) => n > 3;
 

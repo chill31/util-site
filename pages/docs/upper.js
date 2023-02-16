@@ -34,7 +34,7 @@ export default function Home() {
         <p className={styles.description}>converts a string to upper case.</p>
 
         <pre><code className="js">
-          {`const {upper} = require("utility-text");
+          {`const { upper } = require("utility-text");
 const myText = "this is a string";
 
 const changed = upper(myText);

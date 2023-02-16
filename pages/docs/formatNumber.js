@@ -15,7 +15,7 @@ export default function Home() {
 
   useEffect(() => {
     hljs.highlightAll();
-    
+
     hljs.addPlugin(new CopyButtonPlugin())
   }, []);
 
@@ -36,7 +36,7 @@ export default function Home() {
         <p className={styles.description}>formats a number according to specified/default locale</p>
 
         <pre><code className="js">
-          {`const {formatNumber} = require("utility-text");
+          {`const { formatNumber } = require("utility-text");
 const myNum = 100900300;
 
 const formatted = formatNumber(myNum);

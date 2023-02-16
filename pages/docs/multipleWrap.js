@@ -37,7 +37,7 @@ export default function Home() {
         <p className={styles.description}>wraps multiple characters/texts with different provided wrappers.</p>
 
         <pre><code className="js">
-          {`const {multipleWrap} = require("utility-text");
+          {`const { multipleWrap } = require("utility-text");
 const myText = "aaaa bbbb cccc dddd";
 
 const wrapped = multipleWrap({

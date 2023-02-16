@@ -36,7 +36,7 @@ export default function Home() {
         <p className={styles.description}>converts a string to lower case.</p>
 
         <pre><code className="js">
-          {`const {lower} = require("utility-text");
+          {`const { lower } = require("utility-text");
 const myText = "this is a string";
 
 const changed = lower(myText);

@@ -36,7 +36,7 @@ export default function Home() {
         <p className={styles.description}>searches a string in specified keys in the array of objects</p>
 
         <pre><code className="js">
-          {`const {objectSearch} = require("utility-text");
+          {`const { objectSearch } = require("utility-text");
 const searchWord = "first";
 
 const searched = objectSearch({
