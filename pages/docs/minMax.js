@@ -55,9 +55,9 @@ console.log(changed);
         <legend className={styles.invertCodeLegend}>Object</legend>
         
         <ul className={styles.paramList}>
-          <li className={styles.parameter}>&lt;longest&gt; <span className={styles.invertCode}>String</span> <br /><span className={styles.paramSub}>the longest word in the string</span></li>
+          <li className={styles.parameter}>longest <span className={styles.invertCode}>String</span> <br /><span className={styles.paramSub}>the longest word in the string</span></li>
           <br />
-          <li className={styles.parameter}>&lt;shortest&gt; <span className={styles.invertCode}>String</span> <br /><span className={styles.paramSub}>the shortest word in the string</span></li>
+          <li className={styles.parameter}>shortest <span className={styles.invertCode}>String</span> <br /><span className={styles.paramSub}>the shortest word in the string</span></li>
         </ul>
 
       </main>

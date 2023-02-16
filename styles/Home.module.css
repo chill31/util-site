@@ -185,8 +185,8 @@
   content: '';
   background-color: var(--background);
   position: absolute;
-  height: 4rem;
-  width: 4rem;
+  height: 5rem;
+  width: 5rem;
   top: 0;
   left: 0;
   z-index: 5;
@@ -486,8 +486,8 @@
   content: '';
   background-color: var(--background);
   position: absolute;
-  height: 4rem;
-  width: 4rem;
+  height: 5rem;
+  width: 5rem;
   top: 0;
   left: 0;
   z-index: 5;

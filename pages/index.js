@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from 'next/link'
 import { BsClipboard, BsGearWideConnected, BsFileEarmarkMedical, BsCodeSlash, BsPersonCircle, BsBraces, BsSpeedometer, BsUiChecks, BsGraphUp, BsPersonBoundingBox, BsStars, BsCodeSquare, BsBox } from "react-icons/bs";
+import {GoPackage} from 'react-icons/go'
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -73,7 +74,7 @@ export default function Home() {
 
       });
     }, {
-      threshold: .7
+      threshold: .5
     });
 
     const rightObserver = new IntersectionObserver((allEntries) => {
@@ -266,7 +267,7 @@ export default function Home() {
               <h1 className={styles.featureTitle} data-dep>No Dependencies</h1>
               <p className={styles.brief}>The package uses no external resources so you do not need to worry about your project&apos;s load</p>
             </div>
-            <BsCodeSlash className={`${styles.featureIcon} featureIcon`} />
+            <GoPackage className={`${styles.featureIcon} featureIcon`} />
 
           </div>
 

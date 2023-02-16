@@ -118,7 +118,7 @@ console.log(wrappedText);
 `}
             </code></pre>
             <pre className={styles.preNoCopy}><code className="js">
-              {`> "<h1>Hello</h1> <h2>World</h2>" // still a string but you can set the element's .innerHTML if you really want this kind of usage`}
+              {`> "<h1>Hello</h1> <h2>World</h2>" // still a string but you can set the element's .innerHTML if you really want this kind of usage `}
             </code></pre>
           </div>
 
@@ -129,7 +129,7 @@ console.log(wrappedText);
 const text = "Hello World ";
 const movedText = moveTextByPos({
   text,
-  coords: [0, 4],
+  coords: [0, 4], // the piece of text you want to move
   moveIndex: 7
 });
 console.log(movedText);
@@ -148,7 +148,8 @@ const text = "Hello World";
 const insertedText = insertAt({
   text,
   index: 5,
-  insertionText: "!"
+  insertionText: "!",
+  before: false, // inserts the given text after the specified index
 });
 console.log(insertedText);
 `}
@@ -165,16 +166,14 @@ console.log(insertedText);
 const text = "Hello Hello Hello Hello Hello World";
 const toBeReplaced = "Hello "; // there's a space at the end otherwise it would leave a huge gap between Hello and World.
 
-// replace all occurences of a specific character/part of text.
 const replacedText = advanceReplace({
   text,
   replacementText: toBeReplaced,
   replacement: "",
-  countIndex: analyze({text, charSet: toBeReplaced}), // specifying Infinity would be impractical, as it would cause a loop till Infinity, even though there are no occurences left.
-  skip: 1 // leaves the first, removes every other occurence.
+  countIndex: analyze({text, charSet: toBeReplaced}), // gets the total number of occurences of specific text in a string
+  skip: 1
 });
 console.log(replacedText);
-// in the countIndex parameter, you can put analyze({...}) - 1  and change the skip to 0 so the last occurence is left out and the first and every other occurence is removed.
 `}
             </code></pre>
             <pre className={styles.preNoCopy}><code className="js">
