@@ -37,7 +37,7 @@ export default function Home() {
 
         <pre><code className="js">
           {`const { pullByValue } = require("utility-text");
-const myList = [1,2,3,4,5,6,7,8,9,10];
+const myList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const pulled = pullByValue(myList, 1,2,3);
 console.log(pulled);

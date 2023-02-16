@@ -37,7 +37,7 @@ export default function Home() {
 
         <pre><code className="js">
           {`const { lower } = require("utility-text");
-const myText = "this is a string";
+const myText = "THIS IS AN ALL UPPERCASE SENTENCE";
 
 const changed = lower(myText);
 console.log(changed);

@@ -36,9 +36,9 @@ export default function Home() {
         <pre><code className="js">
           {`const { flatten } = require("utility-text");
 const myMultiArray = [
-  [1,2,3],
-  [4,5,6],
-  [7,8, [9]]
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, [9]]
 ];
 
 const flattened = flatten(myMultiArray);

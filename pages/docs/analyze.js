@@ -36,7 +36,7 @@ export default function Home() {
         <p className={styles.description}>returns occurence of provided text / characters</p>
 
         <pre><code className="js">
-          {`const { analyze} = require("utility-text");
+          {`const { analyze } = require("utility-text");
 const myText = "this is a string";
 
 const analyzed = analyze({

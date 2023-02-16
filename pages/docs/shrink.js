@@ -37,7 +37,7 @@ export default function Home() {
 
         <pre><code className="js">
           {`const { shrink } = require("utility-text");
-const myList = [1,2,3,4,5,6,7,8,9,10];
+const myList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const shrinked = shrink(myList, 5) // shrinks the array to the 5th index.
 console.log(shrinked);
