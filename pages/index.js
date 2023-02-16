@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from 'next/link'
-import { BsClipboard, BsGearWideConnected, BsFileEarmarkMedical, BsCodeSlash, BsPersonCircle, BsBraces, BsSpeedometer, BsUiChecks, BsGraphUp, BsPersonBoundingBox, BsStars, BsCodeSquare } from "react-icons/bs";
+import { BsClipboard, BsGearWideConnected, BsFileEarmarkMedical, BsCodeSlash, BsPersonCircle, BsBraces, BsSpeedometer, BsUiChecks, BsGraphUp, BsPersonBoundingBox, BsStars, BsCodeSquare, BsBox } from "react-icons/bs";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -315,6 +315,8 @@ export default function Home() {
             </div>
 
           </div>
+
+        <Link className={styles.docsBtn} href="https://github.com/chill31/utility-text/"><BsBox /> Visit Repository</Link>
 
         </div>
       </main>
