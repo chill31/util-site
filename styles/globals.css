@@ -1,5 +1,7 @@
 :root {
   --code-font: 'Lucida Console', Consolas, monospace;
+  --background: rgb(33, 41, 52);
+  --blue: #0bcaff;
 }
 
 html,
@@ -7,7 +9,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: system-ui;
-  background-color: rgb(33, 41, 52);
+  background-color: var(--background);
   min-height: 650px;
   overflow-x: hidden;
 }

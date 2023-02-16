@@ -21,7 +21,7 @@ export default function Home() {
     <div className={styles.container}>
 
       <Head>
-        <title>Docs: objectSearch</title>
+        <title>Docs: oppositeCase</title>
         <meta
           name="description"
           content="official documentation site for npm package utility-text"

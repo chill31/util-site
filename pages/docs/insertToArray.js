@@ -24,7 +24,7 @@ export default function Home() {
     <div className={styles.container}>
 
       <Head>
-        <title>Docs: insertAt</title>
+        <title>Docs: insertToArray</title>
         <meta
           name="description"
           content="official documentation site for npm package utility-text"

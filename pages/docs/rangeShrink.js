@@ -23,7 +23,7 @@ export default function Home() {
     <div className={styles.container}>
 
       <Head>
-        <title>Docs: shrink</title>
+        <title>Docs: rangeShrink</title>
         <meta
           name="description"
           content="official documentation site for npm package utility-text"
@@ -31,15 +31,15 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}><code className={styles.headCode}>shrink()</code></h1>
+        <h1 className={styles.title}><code className={styles.headCode}>rangeShrink()</code></h1>
 
-        <p className={styles.description}>shrinks an array to a specified length. deletes all values if they are not in the specified range</p>
+        <p className={styles.description}>shrinks an array to a specified range. deletes all values if they are not in the specified range</p>
 
         <pre><code className="js">
-          {`const {shrink} = require("utility-text");
-const myList = [1,2,3,4,5,6,7,8,9,10];
+          {`const {rangeShrink} = require("utility-text");
+const myList = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-const shrinked = shrink(myList, 5) // shrinks the array to the 5th index.
+const shrinked = rangeShrink(myList, [2, 7]) // shrinks the array from the 2nd index to the 7th index.
 console.log(shrinked);
 `}
         </code></pre>
@@ -49,7 +49,7 @@ console.log(shrinked);
         <ul className={styles.paramList}>
           <li className={styles.parameter}>array <span className={styles.invertCode}>Array</span> <span className={styles.important}>*</span></li>
           <br />
-          <li className={styles.parameter}>index <span className={styles.invertCode}>Number</span> <span className={styles.important}>*</span> <br /><span className={styles.paramSub}>the index till where you want to shrink the array.</span></li>
+          <li className={styles.parameter}>range <span className={styles.invertCode}>Array</span> <span className={styles.important}>*</span> <br /><span className={styles.paramSub}>the start and stop index of the range you want to shrink the array to. Both the range indexes are included in the modified array</span></li>
         </ul>
 
         <h2 className={styles.subTitle}>Returns</h2>

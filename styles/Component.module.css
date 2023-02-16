@@ -11,7 +11,7 @@
 }
 
 .footerLink {
-  color: #0bcaff;
+  color: var(--blue);
 }
 
 .menu_main {
@@ -35,7 +35,7 @@
   justify-content: center;
   align-items: center;
   gap: 3ch;
-  color: #0bcaff;
+  color: var(--blue);
 }
 
 .division1, .division2 {
@@ -62,15 +62,11 @@
 }
 
 .division1 *:where(:hover, :focus), .division2 *:where(:hover, :focus) {
-  color: #2293fa;
+  color: var(--blue);
 }
 
 .text_invite {
-  color: #2293fa;
-}
-
-.text_invite:hover {
-  color: #0bcaff;
+  color: var(--blue);
 }
 
 .menu_mobile {
@@ -151,43 +147,4 @@
 
 .mobile_footer {
   text-align: center;
-}
-
-/* --- SYMBOLS --- */
-
-.parameter_symbol {
-  border-radius: 500px;
-  padding: .2rem;
-  background-color: indianred;
-  height: 2rem;
-  aspect-ratio: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.info_symbol {
-  border-radius: 500px;
-  padding: .2rem;
-  background-color: rgb(65, 148, 162);
-  height: 2rem;
-  aspect-ratio: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.method_symbol {
-  border-radius: 500px;
-  padding: .2rem;
-  background-color: rgb(224, 118, 69);
-  height: 2rem;
-  aspect-ratio: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.parameter_symbol, .method_symbol, .info_symbol {
-  user-select: none;
 }

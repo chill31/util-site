@@ -23,7 +23,7 @@ export default function Home() {
     <div className={styles.container}>
 
       <Head>
-        <title>Docs: listSearch</title>
+        <title>Docs: objectSearch</title>
         <meta
           name="description"
           content="official documentation site for npm package utility-text"

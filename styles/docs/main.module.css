@@ -100,12 +100,12 @@
 }
 
 .refLink:where(:hover, :focus) {
-  border-bottom-color: #0bcaff;
-  color: #0bcaff
+  border-bottom-color: var(--blue);
+  color: var(--blue)
 }
 
 .link {
-  color: #0bcaff !important;
+  color: var(--blue) !important;
 }
 
 .subDescription {
@@ -133,7 +133,8 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  cursor: text;
+  gap: 1ch;
+  cursor: pointer;
   max-width: 90%;
 }
 

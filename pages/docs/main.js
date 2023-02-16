@@ -1,7 +1,8 @@
 import Head from "next/head";
 import styles from "../../styles/docs/main.module.css";
 
-import {BsXLg} from 'react-icons/bs'
+import {BsMouse, BsXLg} from 'react-icons/bs'
+import {FaRegHandPointer} from 'react-icons/fa'
 
 import Link from 'next/link'
 import { useEffect, useState } from "react";
@@ -89,17 +90,17 @@ export default function Home() {
 
         <p className={styles.subDescription}>Check the <Link className={styles.link} href="/presets/">Presets and Defaults</Link> for any parameter in the below functions which is not required.<br /> (<span className={styles.important}>*</span> a symbol like this means the parameter is required)</p>
 
-        <div className={`${styles.searchBar} searchBar`}>search functions</div>
-        <div className={`${styles.searchWrapper} searchWrapper`}>
+        <div className={`${styles.searchBar} searchBar`} tabIndex="0"><FaRegHandPointer /> search functions</div>
+        <div className={`${styles.searchWrapper} searchWrapper`} tabIndex="-1">
 
-          <div className={`${styles.searchMain} searchMain`}>
+          <div className={`${styles.searchMain} searchMain`} tabIndex="-1">
             <BsXLg className={`${styles.searchClose} searchClose`} />
             <h1 className={styles.searchTitle}>Search</h1>
-            <input className={`${styles.searchInput} searchInput`} placeholder="search..." autoFocus={true} />
+            <input className={`${styles.searchInput} searchInput`} placeholder="search..." tabIndex="1" />
 
             <div className={`${styles.searchFunctions} searchFunctions`}>
               {data.map((item, k) => (
-                <Link key={k} className="searchLink show" href={`/docs/${item.val}`}>{item.val}()</Link>
+                <Link key={k} className="searchLink show" href={`/docs/${item.val}`} tabIndex="1">{item.val}()</Link>
               ))}
             </div>
           </div>
@@ -124,10 +125,10 @@ export default function Home() {
               <Link href="/docs/charCount" className={`${styles.refLink} refLink`}>charCount()</Link>
               <Link href="/docs/formatNumber" className={`${styles.refLink} refLink`}>formatNumber()</Link>
               <Link href="/docs/compare" className={`${styles.refLink} refLink`}>compare()</Link>
+              <Link href="/docs/slug" className={`${styles.refLink} refLink`}>slug()</Link>
             </div>
 
             <div className={styles.entry}>
-              <Link href="/docs/slug" className={`${styles.refLink} refLink`}>slug()</Link>
               <Link href="/docs/unslug" className={`${styles.refLink} refLink`}>unslug()</Link>
               <Link href="/docs/camelCase" className={`${styles.refLink} refLink`}>camelCase()</Link>
               <Link href="/docs/snakeCase" className={`${styles.refLink} refLink`}>snakeCase()</Link>
@@ -140,11 +141,11 @@ export default function Home() {
               <Link href="/docs/multipleWrap" className={`${styles.refLink} refLink`}>multipleWrap()</Link>
               <Link href="/docs/listSearch" className={`${styles.refLink} refLink`}>listSearch()</Link>
               <Link href="/docs/objectSearch" className={`${styles.refLink} refLink`}>objectSearch()</Link>
+              <Link href="/docs/insertAt" className={`${styles.refLink} refLink`}>insertAt()</Link>
+              <Link href="/docs/moveText" className={`${styles.refLink} refLink`}>moveText()</Link>
             </div>
 
             <div className={styles.entry}>
-              <Link href="/docs/insertAt" className={`${styles.refLink} refLink`}>insertAt()</Link>
-              <Link href="/docs/moveText" className={`${styles.refLink} refLink`}>moveText()</Link>
               <Link href="/docs/moveTextByPos" className={`${styles.refLink} refLink`}>moveTextByPos()</Link>
               <Link href="/docs/encode" className={`${styles.refLink} refLink`}>encode()</Link>
               <Link href="/docs/decode" className={`${styles.refLink} refLink`}>decode()</Link>
@@ -156,6 +157,7 @@ export default function Home() {
               <Link href="/docs/toAcronym" className={`${styles.refLink} refLink`}>toAcronym()</Link>
               <Link href="/docs/insertToArray" className={`${styles.refLink} refLink`}>insertToArray()</Link>
               <Link href="/docs/shrink" className={`${styles.refLink} refLink`}>shrink()</Link>
+              <Link href="/docs/rangeShrink" className={`${styles.refLink} refLink`}>rangeShrink()</Link>
             </div>
 
           </div>
