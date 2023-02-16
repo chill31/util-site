@@ -41,7 +41,7 @@ export default function Home() {
             const names = match[1].replace(/\s+/g, "")
             const pkgNames = match[2];
 
-            item.textContent = `import {${names}} from '${pkgNames}';` + "\n" + content.join("\n");
+            item.textContent = `import { ${names} } from '${pkgNames}';` + "\n" + content.join("\n");
             hljs.highlightAll();
           }
         })
@@ -59,7 +59,7 @@ export default function Home() {
             const names = match[1];
             const pkgNames = match[2];
 
-            item.textContent = `const {${names}} = require("${pkgNames}");` + "\n" + content.join("\n");
+            item.textContent = `const { ${names}} = require("${pkgNames}");` + "\n" + content.join("\n");
             hljs.highlightAll();
           }
         })

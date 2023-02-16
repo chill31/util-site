@@ -1,8 +1,8 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from 'next/link'
-import { BsClipboard, BsGearWideConnected, BsFileEarmarkMedical, BsCodeSlash, BsPersonCircle, BsBraces, BsSpeedometer, BsUiChecks, BsGraphUp, BsPersonBoundingBox, BsStars, BsCodeSquare, BsBox } from "react-icons/bs";
-import {GoPackage} from 'react-icons/go'
+import { BsClipboard, BsGearWideConnected, BsFileEarmarkMedical, BsCodeSlash, BsPersonCircle, BsBraces, BsSpeedometer, BsUiChecks, BsGraphUp, BsPersonBoundingBox, BsStars, BsCodeSquare, BsBox, BsBug, BsTools } from "react-icons/bs";
+import { GoPackage } from 'react-icons/go'
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -194,7 +194,7 @@ export default function Home() {
             <div className={`${styles.statIconWrapper} statIconWrapper`}>
               <BsGraphUp className={`${styles.statIcon} statIcon`} />
             </div>
-            <h2 className={`${styles.statNum} statNum`}>1.5K+</h2>
+            <h2 className={`${styles.statNum} statNum`}>2K</h2>
             <p className={`${styles.statName} statName`}>Downloads</p>
           </div>
 
@@ -212,6 +212,14 @@ export default function Home() {
             </div>
             <h2 className={`${styles.statNum} statNum`}><Link href="https://github.com/chill31/utility-text/contributors" tabIndex="-1">1</Link></h2>
             <p className={`${styles.statName} statName`}>Contributor</p>
+          </div>
+
+          <div className={`${styles.stat} stat`}>
+            <div className={`${styles.statIconWrapper} statIconWrapper`}>
+              <BsTools className={`${styles.statIcon} statIcon`} />
+            </div>
+            <h2 className={`${styles.statNum} statNum`}><Link href="https://github.com/chill31/util-site/contributors" tabIndex="-1">2</Link></h2>
+            <p className={`${styles.statName} statName`}>Mantainers</p>
           </div>
 
         </div>
@@ -288,8 +296,8 @@ export default function Home() {
 
         <div className={styles.contributeWrapper}>
 
-          <h1 className={`${styles.contributeTitle} contributeTitle`}>Have Ideas?</h1>
-          <p className={`${styles.contributeBrief} contributeBrief`}>Your ideas and reviews keep the package running, so do not hesitate to tell your ideas here</p>
+          <h1 className={`${styles.contributeTitle} contributeTitle`}>Want to Contribute?</h1>
+          <p className={`${styles.contributeBrief} contributeBrief`}>Whether it&apos;s a bug, or it&apos;s a idea, you can report it through the following steps...</p>
 
           <div className={`${styles.contributeSteps} contributeSteps`}>
 
@@ -306,6 +314,17 @@ export default function Home() {
 
             <div className={`${styles.contributeStep} contributeStep`}>
 
+              <div className={`${styles.contributeIconWrapper} contributeIconWrapper`}>
+                <BsBug className={`${styles.contributeIcon} contributeIcon`} />
+              </div>
+
+              <h2 className={`${styles.stepTitle} stepTitle`}>Bug Report</h2>
+              <p className={`${styles.stepBrief} stepBrief`}>go to <Link className={styles.contributeLink} href="https://github.com/chill31/utility-text/issues">https://github.com/chill31/utility-text/issues</Link> and create a new issue. Describe the issue in the specific function or the package thoroughly and post the issue. It should be fixed soon after that and you will be a contributor</p>
+
+            </div>
+
+            <div className={`${styles.contributeStep} contributeStep`}>
+
               <div className={`${styles.contributeIconWrapper} ${styles.contributeIconWrapperSecond} contributeIconWrapper`}>
                 <BsCodeSquare className={`${styles.contributeIcon} contributeIcon`} />
               </div>
@@ -317,7 +336,7 @@ export default function Home() {
 
           </div>
 
-        <Link className={styles.docsBtn} href="https://github.com/chill31/utility-text/"><BsBox /> Visit Repository</Link>
+          <Link className={styles.docsBtn} href="https://github.com/chill31/utility-text/"><BsBox /> Visit Repository</Link>
 
         </div>
       </main>

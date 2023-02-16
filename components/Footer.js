@@ -10,6 +10,10 @@ export default function Footer() {
         <br />
         <br />
         <Link href="https://npmjs.com/package/utility-text" className={c2Styles.footerLink}>NPM package Link</Link>
+        <br />
+        <br />
+        <Link href="/LICENSE" className={c2Styles.footerLink}>Website - MIT License</Link>
+        <br />
 
       </span>
     </footer>
