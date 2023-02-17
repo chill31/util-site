@@ -30,7 +30,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}><code className={styles.headCode_L}>removeDuplicates()</code></h1>
+        <h1 className={styles.title}><code className={`${styles.headCode_L} ${styles.headCode_XL}`}>removeDuplicates()</code></h1>
 
         <p className={styles.description}>removes all duplicates from the given string</p>
 

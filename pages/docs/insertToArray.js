@@ -32,7 +32,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}><code className={styles.headCode_L}>insertToArray()</code></h1>
+        <h1 className={styles.title}><code className={`${styles.headCode_L} ${styles.headCode_XL}`}>insertToArray()</code></h1>
 
         <p className={styles.description}>inserts any value to a specified index in an array</p>
 

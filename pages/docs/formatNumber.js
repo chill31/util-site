@@ -55,7 +55,7 @@ console.log(formatted);
         <h2 className={styles.subTitle}>Returns</h2>
 
         <ul className={styles.paramList}>
-          <li className={styles.parameter}>&lt;number&gt;<span className={styles.invertCode}>String&lt;LocaleString&gt;</span> <br /><span className={styles.paramSub}>locally formatted number</span></li>
+          <li className={styles.parameter}>&lt;number&gt;<span className={styles.invertCode}>String</span> <br /><span className={styles.paramSub}>locally formatted number</span></li>
         </ul>
 
       </main>

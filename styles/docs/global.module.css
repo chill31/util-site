@@ -37,6 +37,11 @@
   .title {
     font-size: 3.5rem;
   }
+
+  .description {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
 }
 
 @media (max-width: 430px) {
@@ -103,6 +108,12 @@
   color: rgb(240, 79, 79);
 }
 
+@media (max-width: 650px) {
+  .headCode_XL {
+    font-size: 2.3rem !important;
+  }
+}
+
 @media (max-width: 400px) {
   .headCode {
     font-size: 2.6rem !important;
@@ -110,6 +121,10 @@
 
   .headCode_L {
     font-size: 2rem !important;
+  }
+
+  .headCode_XL {
+    font-size: 1.7rem !important;
   }
 
   .description {
@@ -177,7 +192,7 @@
   font-style: normal !important;
 }
 
-.refLink {
+/* .refLink {
   font-family: var(--code-font);
   color: white;
   transition: 120ms ease;
@@ -188,4 +203,8 @@
 .refLink:where(:hover, :focus) {
   border-bottom-color: var(--blue);
   color: var(--blue)
+} */
+
+.link {
+  color: var(--blue) !important;
 }

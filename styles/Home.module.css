@@ -131,13 +131,13 @@
   width: 100vw;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .stats {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 6rem;
-    transform: scale(1.1);
+    transform: scale(.95);
   }
 
   .stat {
@@ -155,50 +155,47 @@
 
 .statNum {
   font-size: 2.3rem;
-  margin-bottom: -3rem;
+  position: relative;
+  bottom: -3rem;
   opacity: 0;
   transition-delay: 750ms;
   transition: 750ms 500ms ease;
-  transition-property: opacity, margin-bottom;
+  transition-property: opacity, bottom;
 }
 
-.statIconWrapper[class*="intersect"] ~ .statNum {
+.statIcon[class*="intersect"] ~ .statNum {
   opacity: 1;
-  margin-bottom: 0;
+  bottom: 1rem;
 }
 
 .statName {
   font-size: 1.5rem;
   color: rgb(216, 216, 216);
   margin: 0;
+  position: relative;
+  bottom: 0;
+  opacity: 0;
+  transition: 900ms 750ms ease;
+  transition-property: bottom, opacity;
+}
+
+.statIcon[class*="intersect"] ~ .statName {
+  bottom: 3rem;
+  opacity: 1;
 }
 
 .statIcon {
   font-size: 4rem;
   color: white;
   position: relative;
-}
-
-.statIconWrapper {
-  height: 4rem;
-  width: 4rem;
-  position: relative;
-}
-
-.statIconWrapper::before {
-  content: '';
-  background-color: var(--background);
-  position: absolute;
-  height: 5rem;
-  width: 5rem;
-  top: 0;
-  left: 0;
-  z-index: 5;
+  transform: scale(0);
+  transform-origin: top;
   transition: transform 750ms ease;
 }
 
-.statIconWrapper[class*="intersect"]::before {
-  transform: scaleX(0);
+.statIcon[class*="intersect"] {
+  transform-origin: center;
+  transform: scale(1);
 }
 
 /* FEATURES SECTION */
@@ -433,15 +430,16 @@
 .stepTitle {
   font-size: 1.7rem;
   margin: .2rem;
-  margin-bottom: -3rem;
+  position: relative;
+  bottom: -3rem;
   opacity: 0;
   transition: 750ms 400ms ease;
-  transition-property: opacity, margin-bottom;
+  transition-property: opacity, bottom;
 }
 
 .stepTitle[class*="intersect"] {
   opacity: 1;
-  margin-bottom: .2rem;
+  bottom: .2rem;
 }
 
 .stepBrief {
@@ -450,11 +448,15 @@
   max-width: 30ch;
   margin: 0;
   opacity: 0;
-  transition: opacity calc(750ms + 400ms) 400ms ease;
+  position: relative;
+  bottom: -3rem;
+  transition: 400ms ease;
+  transition-property: opacity, bottom;
 }
 
 .stepBrief[class*="intersect"] {
   opacity: 1;
+  bottom: .2rem;
 }
 
 .contributeLink {
@@ -478,31 +480,12 @@
   font-size: 4rem;
   color: white;
   position: relative;
-}
-
-.contributeIconWrapper {
-  height: 4rem;
-  width: 4rem;
-  position: relative;
-}
-
-.contributeIconWrapper::before {
-  content: '';
-  background-color: var(--background);
-  position: absolute;
-  height: 5rem;
-  width: 5rem;
-  top: 0;
-  left: 0;
-  z-index: 5;
+  transform: scale(0);
+  transform-origin: top;
   transition: transform 750ms ease;
-  transform-origin: right;
 }
 
-.contributeIconWrapperSecond::before {
-  transform-origin: left !important;
-}
-
-.contributeIconWrapper[class*="intersect"]::before {
-  transform: scaleX(0);
+.contributeIcon[class*="intersect"] {
+  transform-origin: center;
+  transform: scale(1);
 }

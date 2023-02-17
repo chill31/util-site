@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from 'next/link'
-import { BsClipboard, BsGearWideConnected, BsFileEarmarkMedical, BsCodeSlash, BsPersonCircle, BsBraces, BsSpeedometer, BsUiChecks, BsGraphUp, BsPersonBoundingBox, BsStars, BsCodeSquare, BsBox, BsBug, BsTools } from "react-icons/bs";
+import { BsClipboard, BsGearWideConnected, BsFileEarmarkMedical, BsCodeSlash, BsPersonCircle, BsBraces, BsSpeedometer, BsUiChecks, BsGraphUp, BsPersonBoundingBox, BsStars, BsCodeSquare, BsBox, BsBug } from "react-icons/bs";
 import { GoPackage } from 'react-icons/go'
 
 import { ToastContainer, toast } from "react-toastify";
@@ -48,7 +48,7 @@ export default function Home() {
 
     mainObserver.observe(title);
 
-    const statIcons = document.querySelectorAll(".statIconWrapper");
+    const statIcons = document.querySelectorAll(".statIcon");
     const iconObserver = new IntersectionObserver((allEntries) => {
       allEntries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -111,7 +111,7 @@ export default function Home() {
 
     contributeObserver.observe(contributeTitle);
 
-    const stepIcons = document.querySelectorAll(".contributeIconWrapper");
+    const stepIcons = document.querySelectorAll(".contributeIcon");
     const stepTitles = document.querySelectorAll(".stepTitle");
     const stepBriefs = document.querySelectorAll(".stepBrief");
 
@@ -191,35 +191,21 @@ export default function Home() {
         <div className={styles.stats}>
 
           <div className={`${styles.stat} stat`}>
-            <div className={`${styles.statIconWrapper} statIconWrapper`}>
-              <BsGraphUp className={`${styles.statIcon} statIcon`} />
-            </div>
+            <BsGraphUp className={`${styles.statIcon} statIcon`} />
             <h2 className={`${styles.statNum} statNum`}>2K</h2>
             <p className={`${styles.statName} statName`}>Downloads</p>
           </div>
 
           <div className={`${styles.stat} stat`}>
-            <div className={`${styles.statIconWrapper} statIconWrapper`}>
-              <BsCodeSlash className={`${styles.statIcon} statIcon`} />
-            </div>
+            <BsCodeSlash className={`${styles.statIcon} statIcon`} />
             <h2 className={`${styles.statNum} statNum`}>35+</h2>
             <p className={`${styles.statName} statName`}>Functions</p>
           </div>
 
           <div className={`${styles.stat} stat`}>
-            <div className={`${styles.statIconWrapper} statIconWrapper`}>
-              <BsPersonBoundingBox className={`${styles.statIcon} statIcon`} />
-            </div>
+            <BsPersonBoundingBox className={`${styles.statIcon} statIcon`} />
             <h2 className={`${styles.statNum} statNum`}><Link href="https://github.com/chill31/utility-text/contributors" tabIndex="-1">1</Link></h2>
             <p className={`${styles.statName} statName`}>Contributor</p>
-          </div>
-
-          <div className={`${styles.stat} stat`}>
-            <div className={`${styles.statIconWrapper} statIconWrapper`}>
-              <BsTools className={`${styles.statIcon} statIcon`} />
-            </div>
-            <h2 className={`${styles.statNum} statNum`}><Link href="https://github.com/chill31/util-site/contributors" tabIndex="-1">2</Link></h2>
-            <p className={`${styles.statName} statName`}>Mantainers</p>
           </div>
 
         </div>
@@ -303,9 +289,7 @@ export default function Home() {
 
             <div className={`${styles.contributeStep} contributeStep`}>
 
-              <div className={`${styles.contributeIconWrapper} contributeIconWrapper`}>
-                <BsStars className={`${styles.contributeIcon} contributeIcon`} />
-              </div>
+              <BsStars className={`${styles.contributeIcon} contributeIcon`} />
 
               <h2 className={`${styles.stepTitle} stepTitle`}>Feature Request</h2>
               <p className={`${styles.stepBrief} stepBrief`}>go to <Link className={styles.contributeLink} href="https://github.com/chill31/utility-text/issues">https://github.com/chill31/utility-text/issues</Link> and create a new issue with the the label of feature request and describe your feature there and why it would be useful in the package. If it seems appropriate, the feature will likely be added</p>
@@ -314,9 +298,7 @@ export default function Home() {
 
             <div className={`${styles.contributeStep} contributeStep`}>
 
-              <div className={`${styles.contributeIconWrapper} contributeIconWrapper`}>
-                <BsBug className={`${styles.contributeIcon} contributeIcon`} />
-              </div>
+              <BsBug className={`${styles.contributeIcon} contributeIcon`} />
 
               <h2 className={`${styles.stepTitle} stepTitle`}>Bug Report</h2>
               <p className={`${styles.stepBrief} stepBrief`}>go to <Link className={styles.contributeLink} href="https://github.com/chill31/utility-text/issues">https://github.com/chill31/utility-text/issues</Link> and create a new issue. Describe the issue in the specific function or the package thoroughly and post the issue. It should be fixed soon after that and you will be a contributor</p>
@@ -325,9 +307,7 @@ export default function Home() {
 
             <div className={`${styles.contributeStep} contributeStep`}>
 
-              <div className={`${styles.contributeIconWrapper} ${styles.contributeIconWrapperSecond} contributeIconWrapper`}>
-                <BsCodeSquare className={`${styles.contributeIcon} contributeIcon`} />
-              </div>
+              <BsCodeSquare className={`${styles.contributeIcon} contributeIcon`} />
 
               <h2 className={`${styles.stepTitle} stepTitle`}>Pull Request</h2>
               <p className={`${styles.stepBrief} stepBrief`}>If you want to program the feature yourself, fork the <Link className={styles.contributeLink} href="https://github.com/chill31/utility-text">github repository</Link> and make the changes. Then, make a <Link className={styles.contributeLink} href="https://github.com/chill31/utility-text/pulls">pull request</Link>. The code will be reviewed and if it is good, it will be accepted and you will be a contributor</p>

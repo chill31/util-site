@@ -51,7 +51,7 @@ console.log(changed);
         <ul className={styles.paramList}>
           <li className={styles.parameter}>text <span className={styles.invertCode}>String</span> <span className={styles.important}>*</span></li>
           <br />
-          <li className={styles.parameter}>customSymbols <span className={styles.invertCode}>Array</span><br /><span className={styles.paramSub}>a list of symbols to remove while normalizing the text. There is already a <Link className={styles.link} href="/presets//">preset list</Link></span></li>
+          <li className={styles.parameter}>customSymbols <span className={styles.invertCode}>Array</span><br /><span className={styles.paramSub}>a list of symbols to remove while normalizing the text. There is already a <Link className={styles.link} href="/presets/">preset list</Link></span></li>
         </ul>
 
         <h2 className={styles.subTitle}>Returns</h2>
