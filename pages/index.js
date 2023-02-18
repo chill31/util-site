@@ -18,6 +18,7 @@ import { useEffect } from "react";
 export default function Home() {
 
   useEffect(() => {
+
     hljs.highlightAll();
 
     hljs.addPlugin(new CopyButtonPlugin())

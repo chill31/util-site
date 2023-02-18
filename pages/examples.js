@@ -4,7 +4,7 @@ import styles from "../styles/Examples.module.css";
 import hljs from "highlight.js/lib/core";
 import javascript from "highlight.js/lib/languages/javascript";
 
-import {BsXLg, BsCheckLg, BsChevronRight} from 'react-icons/bs'
+import { BsCheckLg } from 'react-icons/bs'
 
 hljs.registerLanguage("javascript", javascript);
 
@@ -28,16 +28,16 @@ export default function Home() {
     const cjsReg = /const\s*\{([^}]+)\}\s*=\s*require\s*\(\s*['"]([^'"]+)['"]\s*\)\s*;/;
 
     box.addEventListener("change", (e) => {
-      if(e.target.checked === true) {
+      if (e.target.checked === true) {
         document.querySelector(".check").setAttribute("data-valid", "");
 
         list.forEach((item) => {
           const match = item.textContent.split("\n")[0].match(cjsReg);
-          if(match) {
+          if (match) {
 
             const content = item.textContent.split("\n");
             content.shift();
-            
+
             const names = match[1].replace(/\s+/g, "")
             const pkgNames = match[2];
 
@@ -46,16 +46,16 @@ export default function Home() {
           }
         })
 
-      } else if(e.target.checked === false) {
+      } else if (e.target.checked === false) {
         document.querySelector(".check").removeAttribute("data-valid");
 
         list.forEach((item) => {
           const match = item.textContent.split("\n")[0].match(esReg);
-          if(match) {
+          if (match) {
 
             const content = item.textContent.split("\n");
             content.shift();
-            
+
             const names = match[1];
             const pkgNames = match[2];
 

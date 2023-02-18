@@ -159,7 +159,7 @@ export default function Home() {
             <Link href="/docs/normalize" className={styles.subTitle} data-paramTitle><code className={styles.subHeadCode}>normalize()</code></Link>
             <legend className={styles.invertCodeLegend}>preset symbols to remove in normalize function</legend>
             <pre><code className="js">
-{`const symbols = [ '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '{', '}', '"', ':', '?', '>', '<', ';', '.', ',', '-'];
+              {`const symbols = [ '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '{', '}', '"', ':', '?', '>', '<', ';', '.', ',', '-'];
 `}
             </code></pre>
           </div>
@@ -168,7 +168,7 @@ export default function Home() {
             <Link href="/docs/kebabCase" className={styles.subTitle} data-paramTitle><code className={styles.subHeadCode}>kebabCase()</code></Link>
             <legend className={styles.invertCodeLegend}>preset regex for converting to kebab-case</legend>
             <pre><code className="js">
-{`const reg = /[\\s_]+/
+              {`const reg = /[\\s_]+/
 `}
             </code></pre>
           </div>
