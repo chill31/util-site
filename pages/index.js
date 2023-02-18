@@ -13,9 +13,21 @@ import hljs from "highlight.js/lib/core";
 import javascript from "highlight.js/lib/languages/javascript";
 hljs.registerLanguage("javascript", javascript);
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+
+  const [version, setVersion] = useState("");
+
+  useEffect(() => {
+    fetchVersion();
+  }, []);
+
+  async function fetchVersion() {
+    const response = await fetch("https://registry.npmjs.org/utility-text/latest");
+    const data = await response.json();
+    setVersion(data.version);
+  }
 
   useEffect(() => {
 
@@ -179,6 +191,7 @@ export default function Home() {
           >
             npm i utility-text <BsClipboard></BsClipboard>
           </code>
+          <br /><span className={styles.currentVersion}>Latest: {version}</span>
         </p>
 
         <div className={styles.navFlex}>
