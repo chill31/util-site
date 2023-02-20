@@ -48,11 +48,6 @@
   font-size: 1.3rem;
 }
 
-.avatar {
-  height: 3rem;
-  width: 3rem;
-}
-
 .division1 * {
   transition: color 200ms ease;
 }
@@ -147,4 +142,11 @@
 
 .mobile_footer {
   text-align: center;
+}
+
+.activator {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
 }

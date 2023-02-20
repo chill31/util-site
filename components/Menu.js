@@ -21,9 +21,9 @@ export default function Menu() {
   return (
     <div className={cStyles.menu_container}>
       <div className={cStyles.menu_mobile}>
-        <span className={cStyles.activator}>
-          <BsList className={cStyles.icon} onClick={handleMenu}></BsList>
-        </span>
+        <button className={cStyles.activator} onClick={handleMenu}>
+          <BsList tabIndex="0" className={cStyles.icon}></BsList>
+        </button>
 
         <div
           className={`${cStyles.mobile_menu_main} mobile_menu_main`}

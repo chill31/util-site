@@ -90,7 +90,7 @@ export default function Home() {
 
         <p className={styles.subDescription}>Check the <Link className={styles.link} href="/presets/">Presets and Defaults</Link> for any parameter in the below functions which is not required.<br /> (<span className={styles.important}>*</span> a symbol like this means the parameter is required)</p>
 
-        <div className={`${styles.searchBar} searchBar`} tabIndex="0"><FaRegHandPointer /> search functions</div>
+        <button className={`${styles.searchBar} searchBar`} tabIndex="0"><FaRegHandPointer /> search functions</button>
         <div className={`${styles.searchWrapper} searchWrapper`} tabIndex="-1">
 
           <div className={`${styles.searchMain} searchMain`} tabIndex="-1">

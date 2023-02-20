@@ -137,6 +137,13 @@
   cursor: pointer;
   max-width: 90%;
   min-width: max-content;
+  outline: none !important;
+  font-family: system-ui;
+}
+
+.searchBar:where(:hover, :focus) {
+  border: solid 1px var(--blue);
+  color: var(--blue);
 }
 
 .searchWrapper {

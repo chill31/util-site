@@ -37,7 +37,7 @@ export default function Home() {
         <div className={styles.paramGrid}>
 
           <div className={styles.param}>
-            <Link href="/docs/oppositeCase" className={styles.subTitle} data-paramTitle><code className={styles.subHeadCode}>oppositeCase()</code></Link>
+            <Link href="/docs/oppositeCase" className={styles.subTitle} data-paramtitle><code className={styles.subHeadCode}>oppositeCase()</code></Link>
 
             <ul className={styles.paramList}>
               <li className={styles.parameter}>upperFirst <span className={styles.invertCode}>Boolean</span><br /><code className={styles.codeScope}>=&gt; true</code></li>
@@ -45,7 +45,7 @@ export default function Home() {
           </div>
 
           <div className={styles.param}>
-            <Link href="/docs/analyze" className={styles.subTitle} data-paramTitle><code className={styles.subHeadCode}>analyze()</code></Link>
+            <Link href="/docs/analyze" className={styles.subTitle} data-paramtitle><code className={styles.subHeadCode}>analyze()</code></Link>
 
             <ul className={styles.paramList}>
               <li className={styles.parameter}>strict <span className={styles.invertCode}>Boolean</span><br /><code className={styles.codeScope}>=&gt; true</code></li>
@@ -53,7 +53,7 @@ export default function Home() {
           </div>
 
           <div className={styles.param}>
-            <Link href="/docs/formatNumber" className={styles.subTitle} data-paramTitle><code className={styles.subHeadCode}>formatNumber()</code></Link>
+            <Link href="/docs/formatNumber" className={styles.subTitle} data-paramtitle><code className={styles.subHeadCode}>formatNumber()</code></Link>
 
             <ul className={styles.paramList}>
               <li className={styles.parameter}>locale <span className={styles.invertCode}>String</span><br /><code className={styles.codeScope}>=&gt; &lt;system locale&gt;</code></li>
@@ -61,7 +61,7 @@ export default function Home() {
           </div>
 
           <div className={styles.param}>
-            <Link href="/docs/charCount" className={styles.subTitle} data-paramTitle><code className={styles.subHeadCode}>charCount()</code></Link>
+            <Link href="/docs/charCount" className={styles.subTitle} data-paramtitle><code className={styles.subHeadCode}>charCount()</code></Link>
 
             <ul className={styles.paramList}>
               <li className={styles.parameter}>exceptions <span className={styles.invertCode}>Array</span><br /><code className={styles.codeScope}>=&gt; []</code></li>
@@ -69,7 +69,7 @@ export default function Home() {
           </div>
 
           <div className={styles.param}>
-            <Link href="/docs/removeDuplicates" className={styles.subTitle} data-paramTitle><code className={styles.subHeadCode}>removeDuplicates()</code></Link>
+            <Link href="/docs/removeDuplicates" className={styles.subTitle} data-paramtitle><code className={styles.subHeadCode}>removeDuplicates()</code></Link>
 
             <ul className={styles.paramList}>
               <li className={styles.parameter}>strict <span className={styles.invertCode}>Boolean</span><br /><code className={styles.codeScope}>=&gt; true</code></li>
@@ -77,7 +77,7 @@ export default function Home() {
           </div>
 
           <div className={styles.param}>
-            <Link href="/docs/normalize" className={styles.subTitle} data-paramTitle><code className={styles.subHeadCode}>normalize()</code></Link>
+            <Link href="/docs/normalize" className={styles.subTitle} data-paramtitle><code className={styles.subHeadCode}>normalize()</code></Link>
 
             <ul className={styles.paramList}>
               <li className={styles.parameter}>customSymbols <span className={styles.invertCode}>Array</span><br /><code className={styles.codeScope}>=&gt; []</code></li>
@@ -85,7 +85,7 @@ export default function Home() {
           </div>
 
           <div className={styles.param}>
-            <Link href="/docs/insertAt" className={styles.subTitle} data-paramTitle><code className={styles.subHeadCode}>insertAt()</code></Link>
+            <Link href="/docs/insertAt" className={styles.subTitle} data-paramtitle><code className={styles.subHeadCode}>insertAt()</code></Link>
 
             <ul className={styles.paramList}>
               <li className={styles.parameter}>before <span className={styles.invertCode}>Boolean</span><br /><code className={styles.codeScope}>=&gt; false</code></li>
@@ -93,7 +93,7 @@ export default function Home() {
           </div>
 
           <div className={styles.param}>
-            <Link href="/docs/advanceReplace" className={styles.subTitle} data-paramTitle><code className={styles.subHeadCode}>advanceReplace()</code></Link>
+            <Link href="/docs/advanceReplace" className={styles.subTitle} data-paramtitle><code className={styles.subHeadCode}>advanceReplace()</code></Link>
 
             <ul className={styles.paramList}>
               <li className={styles.parameter}>skip <span className={styles.invertCode}>Number</span><br /><code className={styles.codeScope}>=&gt; 0</code></li>
@@ -101,7 +101,7 @@ export default function Home() {
           </div>
 
           <div className={styles.param}>
-            <Link href="/docs/listSearch" className={styles.subTitle} data-paramTitle><code className={styles.subHeadCode}>listSearch()</code></Link>
+            <Link href="/docs/listSearch" className={styles.subTitle} data-paramtitle><code className={styles.subHeadCode}>listSearch()</code></Link>
 
             <ul className={styles.paramList}>
               <li className={styles.parameter}>returnAll <span className={styles.invertCode}>Boolean</span><br /><code className={styles.codeScope}>=&gt; false</code></li>
@@ -109,7 +109,7 @@ export default function Home() {
           </div>
 
           <div className={styles.param}>
-            <Link href="/docs/objectSearch" className={styles.subTitle} data-paramTitle><code className={styles.subHeadCode}>objectSearch()</code></Link>
+            <Link href="/docs/objectSearch" className={styles.subTitle} data-paramtitle><code className={styles.subHeadCode}>objectSearch()</code></Link>
 
             <ul className={styles.paramList}>
               <li className={styles.parameter}>returnAll <span className={styles.invertCode}>Boolean</span><br /><code className={styles.codeScope}>=&gt; false</code></li>
@@ -124,7 +124,7 @@ export default function Home() {
         <div className={styles.paramFlex}>
 
           <div className={styles.param}>
-            <Link href="/docs/isValidEmail" className={styles.subTitle} data-paramTitle><code className={styles.subHeadCode}>isValidEmail()</code></Link>
+            <Link href="/docs/isValidEmail" className={styles.subTitle} data-paramtitle><code className={styles.subHeadCode}>isValidEmail()</code></Link>
             <legend className={styles.invertCodeLegend}>Email RegExp</legend>
             <pre><code className="js">
               {`const reg = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$/gi;`}
@@ -132,7 +132,7 @@ export default function Home() {
           </div>
 
           <div className={styles.param}>
-            <Link href="/docs/extractEmail" className={styles.subTitle} data-paramTitle><code className={styles.subHeadCode}>extractEmail()</code></Link>
+            <Link href="/docs/extractEmail" className={styles.subTitle} data-paramtitle><code className={styles.subHeadCode}>extractEmail()</code></Link>
             <legend className={styles.invertCodeLegend}>Email RegExp</legend>
             <pre><code className="js">
               {`const reg = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$/gi;`}
@@ -140,7 +140,7 @@ export default function Home() {
           </div>
 
           <div className={styles.param}>
-            <Link href="/docs/camelCase" className={styles.subTitle} data-paramTitle><code className={styles.subHeadCode}>camelCase()</code></Link>
+            <Link href="/docs/camelCase" className={styles.subTitle} data-paramtitle><code className={styles.subHeadCode}>camelCase()</code></Link>
             <legend className={styles.invertCodeLegend}>Checking for spaces and symbols, etc. RegExp</legend>
             <pre><code className="js">
               {`const reg = /(?:^\w|[A-Z]|\b\w)/g;`}
@@ -148,7 +148,7 @@ export default function Home() {
           </div>
 
           <div className={styles.param}>
-            <Link href="/docs/snakeCase" className={styles.subTitle} data-paramTitle><code className={styles.subHeadCode}>snakeCase()</code></Link>
+            <Link href="/docs/snakeCase" className={styles.subTitle} data-paramtitle><code className={styles.subHeadCode}>snakeCase()</code></Link>
             <legend className={styles.invertCodeLegend}>checking for punctuations, etc. RegExp</legend>
             <pre><code className="js">
               {`const reg = /[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g`}
@@ -156,7 +156,7 @@ export default function Home() {
           </div>
 
           <div className={styles.param}>
-            <Link href="/docs/normalize" className={styles.subTitle} data-paramTitle><code className={styles.subHeadCode}>normalize()</code></Link>
+            <Link href="/docs/normalize" className={styles.subTitle} data-paramtitle><code className={styles.subHeadCode}>normalize()</code></Link>
             <legend className={styles.invertCodeLegend}>preset symbols to remove in normalize function</legend>
             <pre><code className="js">
               {`const symbols = [ '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '{', '}', '"', ':', '?', '>', '<', ';', '.', ',', '-'];
@@ -165,7 +165,7 @@ export default function Home() {
           </div>
 
           <div className={styles.param}>
-            <Link href="/docs/kebabCase" className={styles.subTitle} data-paramTitle><code className={styles.subHeadCode}>kebabCase()</code></Link>
+            <Link href="/docs/kebabCase" className={styles.subTitle} data-paramtitle><code className={styles.subHeadCode}>kebabCase()</code></Link>
             <legend className={styles.invertCodeLegend}>preset regex for converting to kebab-case</legend>
             <pre><code className="js">
               {`const reg = /[\\s_]+/

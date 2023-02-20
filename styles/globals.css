@@ -1,7 +1,7 @@
 :root {
   --code-font: 'Lucida Console', Consolas, monospace;
-  --background: rgb(33, 41, 52);
-  --blue: #0bcaff;
+  --background: #212934;
+  --blue: #0099ff;
 }
 
 html,
@@ -146,11 +146,11 @@ code.hljs {
   text-decoration: underline
 }
 
-[data-paramTitle] code {
+[data-paramtitle] code {
   margin-top: 4rem !important;
 }
 
-[data-paramTitle] code:hover {
+[data-paramtitle] code:hover {
   text-decoration: underline 1px;
 }
 

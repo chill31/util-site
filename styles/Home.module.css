@@ -92,7 +92,8 @@
 .navLink {
   --time: 250ms;
 
-  color: #58aeff;
+  color: var(--blue);
+  filter: brightness(1.2);
   position: relative;
   right: -9rem;
   opacity: 0;
@@ -118,7 +119,11 @@
 }
 
 .navLink:where(:hover, :focus) {
-  color: #00bbff;
+  filter: unset;
+}
+
+.navLink:focus {
+  outline: solid 2px;
 }
 
 /* STATS SECTION */
@@ -324,6 +329,7 @@
 .featureLink:where(:hover, :focus) {
   color: white;
   border-bottom-color: gray;
+  outline: solid 1px var(--blue);
 }
 
 .docsBtn {
@@ -461,6 +467,10 @@
 
 .contributeLink {
   color: var(--blue);
+}
+
+.contributeLink:focus {
+  outline: solid 1px var(--blue);
 }
 
 @media (max-width: 560px) {
