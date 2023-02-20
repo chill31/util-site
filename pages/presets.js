@@ -14,7 +14,7 @@ export default function Home() {
 
   useEffect(() => {
     hljs.highlightAll();
-    
+
     hljs.addPlugin(new CopyButtonPlugin())
   }, []);
 
@@ -30,7 +30,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Presets</h1>
+        <h1 className={styles.title}>Defaults</h1>
 
         <p className={styles.description}>for any function&apos;s parameters which are not required, you can check the default values set here.</p>
 
@@ -116,10 +116,22 @@ export default function Home() {
             </ul>
           </div>
 
+          <div className={styles.param}>
+            <Link href="/docs/truncate" className={styles.subTitle} data-paramtitle><code className={styles.subHeadCode}>truncate()</code></Link>
+
+            <ul className={styles.paramList}>
+              <li className={styles.parameter}>ellipsis <span className={styles.invertCode}>Object</span><br /><code className={styles.codeScope}>=&gt;<br />
+                {`{
+  show: true,
+  content: "..."
+}`}</code></li>
+            </ul>
+          </div>
+
         </div>
 
-        <h1 className={styles.title} data-sub>Defaults</h1>
-        <p className={styles.description}>Here you can find the regular expressions, default checks and things that the functions use.</p>
+        <h1 className={styles.title} data-sub>Presets</h1>
+        <p className={styles.description}>Here you can find the regular expressions, preset checks and things that the functions use.</p>
 
         <div className={styles.paramFlex}>
 
@@ -170,6 +182,30 @@ export default function Home() {
             <pre><code className="js">
               {`const reg = /[\\s_]+/
 `}
+            </code></pre>
+          </div>
+
+          <div className={styles.param}>
+            <Link href="/docs/escape" className={styles.subTitle} data-paramtitle><code className={styles.subHeadCode}>escape()</code></Link>
+            <legend className={styles.invertCodeLegend}>preset regex for checking unescaped characters</legend>
+            <pre><code className="js">
+              {`const reg = /[&<>"'/]/ig;`}
+            </code></pre>
+          </div>
+
+          <div className={styles.param}>
+            <Link href="/docs/unescape" className={styles.subTitle} data-paramtitle><code className={styles.subHeadCode}>unescape()</code></Link>
+            <legend className={styles.invertCodeLegend}>preset regex for checking escaped characters</legend>
+            <pre><code className="js">
+              {`const reg = /&(amp|lt|gt|quot|#039|#x2F);/ig;`}
+            </code></pre>
+          </div>
+
+          <div className={styles.param}>
+            <Link href="/docs/stripHTML" className={styles.subTitle} data-paramtitle><code className={styles.subHeadCode}>stripHTML()</code></Link>
+            <legend className={styles.invertCodeLegend}>regex for checking html tags and their attributes</legend>
+            <pre><code className="js">
+              {`const reg = /<[^>]*>/g;`}
             </code></pre>
           </div>
 

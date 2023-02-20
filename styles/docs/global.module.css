@@ -141,21 +141,13 @@
   color: #d1d1d1;
 }
 
-.codeScope {
-  background-color: transparent !important;
-  padding: 0 !important;
-  margin-top: .4rem;
-  width: fit-content;
-}
-
 .paramGrid {
   display: grid;
   grid-template-columns: auto auto;
   gap: 7rem;
-  align-items: start;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 860px) {
   .paramGrid {
     grid-template-columns: auto;
     gap: 3rem;
@@ -189,9 +181,10 @@
   width: fit-content;
   display: inline !important;
   font-style: normal !important;
+  white-space: pre;
 }
 
-/* .refLink {
+.refLink {
   font-family: var(--code-font);
   color: white;
   transition: 120ms ease;
@@ -202,7 +195,7 @@
 .refLink:where(:hover, :focus) {
   border-bottom-color: var(--blue);
   color: var(--blue)
-} */
+}
 
 .link {
   color: var(--blue) !important;

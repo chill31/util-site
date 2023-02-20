@@ -126,10 +126,10 @@ export default function Home() {
               <Link href="/docs/formatNumber" className={`${styles.refLink} refLink`}>formatNumber()</Link>
               <Link href="/docs/compare" className={`${styles.refLink} refLink`}>compare()</Link>
               <Link href="/docs/slug" className={`${styles.refLink} refLink`}>slug()</Link>
+              <Link href="/docs/unslug" className={`${styles.refLink} refLink`}>unslug()</Link>
             </div>
 
             <div className={styles.entry}>
-              <Link href="/docs/unslug" className={`${styles.refLink} refLink`}>unslug()</Link>
               <Link href="/docs/camelCase" className={`${styles.refLink} refLink`}>camelCase()</Link>
               <Link href="/docs/snakeCase" className={`${styles.refLink} refLink`}>snakeCase()</Link>
               <Link href="/docs/isValidEmail" className={`${styles.refLink} refLink`}>isValidEmail()</Link>
@@ -143,11 +143,11 @@ export default function Home() {
               <Link href="/docs/objectSearch" className={`${styles.refLink} refLink`}>objectSearch()</Link>
               <Link href="/docs/insertAt" className={`${styles.refLink} refLink`}>insertAt()</Link>
               <Link href="/docs/moveText" className={`${styles.refLink} refLink`}>moveText()</Link>
+              <Link href="/docs/moveTextByPos" className={`${styles.refLink} refLink`}>moveTextByPos()</Link>
+              <Link href="/docs/encode" className={`${styles.refLink} refLink`}>encode()</Link>
             </div>
 
             <div className={styles.entry}>
-              <Link href="/docs/moveTextByPos" className={`${styles.refLink} refLink`}>moveTextByPos()</Link>
-              <Link href="/docs/encode" className={`${styles.refLink} refLink`}>encode()</Link>
               <Link href="/docs/decode" className={`${styles.refLink} refLink`}>decode()</Link>
               <Link href="/docs/pushByFilter" className={`${styles.refLink} refLink`}>pushByFilter()</Link>
               <Link href="/docs/flatten" className={`${styles.refLink} refLink`}>flatten()</Link>
@@ -158,6 +158,10 @@ export default function Home() {
               <Link href="/docs/insertToArray" className={`${styles.refLink} refLink`}>insertToArray()</Link>
               <Link href="/docs/shrink" className={`${styles.refLink} refLink`}>shrink()</Link>
               <Link href="/docs/rangeShrink" className={`${styles.refLink} refLink`}>rangeShrink()</Link>
+              <Link href="/docs/escape" className={`${styles.refLink} refLink`}>escape()</Link>
+              <Link href="/docs/unescape" className={`${styles.refLink} refLink`}>unescape()</Link>
+              <Link href="/docs/stripHTML" className={`${styles.refLink} refLink`}>stripHTML()</Link>
+              <Link href="/docs/truncate" className={`${styles.refLink} refLink`}>truncate()</Link>
             </div>
 
           </div>
