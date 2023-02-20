@@ -48,6 +48,7 @@ const changed = insertToArray({
 });
 
 console.log(changed);
+// [ 0, 1, 2, 3, 4, 5 ]
 `}
         </code></pre>
 

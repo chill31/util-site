@@ -39,6 +39,7 @@ const myText = "this is a string";
 
 const changed = snakeCase(myText);
 console.log(changed);
+// this_is_a_string
 `}
         </code></pre>
 

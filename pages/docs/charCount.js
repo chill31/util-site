@@ -43,6 +43,7 @@ const myText = "this is a sentence";
 const changed = charCount(myText, ["s", "t"]);
 
 console.log(changed);
+// { charCount: 16, wordCount: 4, noSpacesCount: 13 }
 `}
         </code></pre>
 

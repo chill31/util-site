@@ -43,6 +43,7 @@ const myText = "this is a VERY wEiRD sentence";
 
 const changed = normalize(myText, ["×", "÷"]); // also removes multiply and divide symbol if there are any
 console.log(changed);
+// This is a very weird sentence
 `}
         </code></pre>
 

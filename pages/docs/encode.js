@@ -40,6 +40,7 @@ const myText = "this is a string";
 
 const changed = encode(myText);
 console.log(changed);
+// 74686973206973206120737472696e67
 `}
         </code></pre>
 

@@ -52,9 +52,24 @@ const searched = objectSearch({
   ],
   searchText: searchWord,
   searchKeys: ["title", "brief"],
-  returnAll: true,
+  returnAll: false,
 });
 console.log(searched);
+/*
+[
+  {
+    found: true,
+    search: 'first',
+    match: 'name of first thing',
+    object: {
+      title: 'name of first thing',
+      brief: 'some description of the first thing'
+    },
+    key: 'title',
+    index: 0
+  }
+]
+*/
 `}
         </code></pre>
 

@@ -37,11 +37,22 @@ export default function Home() {
 
         <pre><code className="js">
           {`const { compare } = require("utility-text");
-const myText1 = "this is a string also a sentence";
-const myText2 = "this is a sentence also a string";
+const myText1 = "this";
+const myText2 = "that";
 
 const compared = compare(myText1, myText2);
 console.log(compared);
+/*
+[
+  {
+    firstText: 'i',
+    secondText: 'a',
+    difference: 'a',
+    atIndex: 2,
+    type: { message: 'both indexes exist but are not equal', code: 2 }
+  },
+  ... all the other differences
+] */
 `}
         </code></pre>
 

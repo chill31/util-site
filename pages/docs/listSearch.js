@@ -41,14 +41,15 @@ const searchWord = "hello";
 
 const searched = listSearch({
   searchList: [
-    "hellO",
-    "HElLo",
-    "hello"
+    "HeLlo",
+    "nope",
+    "random text"
   ],
   searchText: searchWord,
   returnAll: true,
 });
 console.log(searched);
+// [ { found: true, search: 'hello', match: 'HeLlo', index: 0 } ]
 `}
         </code></pre>
 

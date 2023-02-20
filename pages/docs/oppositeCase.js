@@ -39,6 +39,7 @@ const myText = "this is a string";
 
 const changed = oppositeCase(myText, true);
 console.log(changed);
+// ThIs iS A StRiNg
 `}
         </code></pre>
 

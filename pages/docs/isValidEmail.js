@@ -41,6 +41,7 @@ const myEmail = "Igotnomail@chill31.com";
 
 const checked = isValidEmail(myEmail);
 console.log(checked);
+// true
 `}
         </code></pre>
 

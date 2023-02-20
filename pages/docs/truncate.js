@@ -48,6 +48,7 @@ const truncated = truncate({
   }
 });
 console.log(truncated);
+// this is a very .....
 `}
         </code></pre>
 

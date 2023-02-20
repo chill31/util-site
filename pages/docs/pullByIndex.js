@@ -37,10 +37,11 @@ export default function Home() {
 
         <pre><code className="js">
           {`const { pullByIndex } = require("utility-text");
-const myList = [1, 2, 3, 4, 5, 6, 7, 8, 9 , 10];
+const myList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const pulled = pullByIndex(myList, 0, 1, 2); // second third and fourth index are pulled
 console.log(pulled);
+// [ 4, 5, 6, 7, 8, 9, 10 ]
 `}
         </code></pre>
 

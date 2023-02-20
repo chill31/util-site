@@ -39,6 +39,7 @@ const myText = "this is a string";
 
 const changed = upper(myText);
 console.log(changed);
+// THIS IS A STRING
 `}
         </code></pre>
 

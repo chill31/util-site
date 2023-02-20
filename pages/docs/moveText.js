@@ -37,14 +37,15 @@ export default function Home() {
 
         <pre><code className="js">
           {`const { moveText } = require("utility-text");
-const myText = "this is an example string";
+const myText = "this is an example string ";
 
 const moved = moveText({
   text: myText,
-  moveText: "this",
+  moveText: "this ",
   moveIndex: 26,
 });
 console.log(moved);
+// is an example string this
 `}
         </code></pre>
 

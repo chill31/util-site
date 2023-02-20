@@ -40,6 +40,7 @@ const myText = "this this this is is is is a very normal sentence.";
 
 const changed = removeDuplicates(myText, false); // if false, converts the text to lowercase, then checks for duplicates.
 console.log(changed);
+// this is a very normal sentence
 `}
         </code></pre>
 

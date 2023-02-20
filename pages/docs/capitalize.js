@@ -41,6 +41,7 @@ const myText = "this is a string";
 
 const changed = capitalize(myText);
 console.log(changed);
+// This Is A String
 `}
         </code></pre>
 

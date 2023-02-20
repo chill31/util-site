@@ -45,6 +45,7 @@ const wrapped = wrap({
 });
 
 console.log(wrapped);
+// <t>his is a normal sen<t>ence
 `}
         </code></pre>
 

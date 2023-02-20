@@ -40,6 +40,7 @@ const myText = "&lt;p&gt;Hello, &amp;world!&lt;/p&gt;";
 
 const changed = unescape(myText);
 console.log(changed);
+// <p>Hello, world!</p>
 `}
         </code></pre>
 

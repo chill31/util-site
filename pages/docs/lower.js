@@ -41,6 +41,7 @@ const myText = "THIS IS AN ALL UPPERCASE SENTENCE";
 
 const changed = lower(myText);
 console.log(changed);
+// this is an all uppercase sentence
 `}
         </code></pre>
 

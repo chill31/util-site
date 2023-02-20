@@ -45,6 +45,7 @@ const analyzed = analyze({
   strict: false // optional [this checks for both small i and capital I's]
 });
 console.log(analyzed);
+// 3
 `}
         </code></pre>
 

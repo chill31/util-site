@@ -41,6 +41,7 @@ const myURL = "https://utility-text.vercel.app";
 
 const checked = isValidURL(myURL);
 console.log(checked);
+// true
 `}
         </code></pre>
 

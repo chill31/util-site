@@ -40,6 +40,7 @@ const myText = "<p>Hello World</p>";
 
 const changed = escape(myText);
 console.log(changed);
+// &lt;p&gt;Hello World&lt;&#x2F;p&gt;
 `}
         </code></pre>
 

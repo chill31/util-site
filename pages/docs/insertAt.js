@@ -48,6 +48,7 @@ const changed = insertAt({
 });
 
 console.log(changed);
+// abcdef
 `}
         </code></pre>
 

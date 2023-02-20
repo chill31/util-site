@@ -39,6 +39,7 @@ const myText = "this is a string";
 
 const changed = reverse(myText);
 console.log(changed);
+// gnirts a si siht
 `}
         </code></pre>
 

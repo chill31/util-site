@@ -39,6 +39,7 @@ const myText = "https://example.com/examplefile?search=query%20not%20url%20frien
 
 const changed = unslug(myText);
 console.log(changed);
+// https://example.com/examplefile?search=query not url friendly
 `}
         </code></pre>
 

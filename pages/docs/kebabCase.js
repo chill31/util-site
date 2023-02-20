@@ -41,6 +41,7 @@ const myText = "this is a string";
 
 const changed = kebabCase(myText);
 console.log(changed);
+// this-is-a-string
 `}
         </code></pre>
 

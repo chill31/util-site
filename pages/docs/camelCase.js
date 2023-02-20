@@ -41,6 +41,7 @@ const myText = "this is a string";
 
 const changed = camelCase(myText);
 console.log(changed);
+// thisIsAString
 `}
         </code></pre>
 

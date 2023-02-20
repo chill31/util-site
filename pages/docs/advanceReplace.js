@@ -47,6 +47,7 @@ const changed = advanceReplace({
 });
 
 console.log(changed);
+// this is a string_with_a_lot_of spaces in between the words
 `}
         </code></pre>
 

@@ -46,6 +46,12 @@ const extracted = extractEmail({
 });
 
 console.log(extracted);
+/*
+{
+  text: 'this is a string with a <some_example_mail@domain.com> mail',
+  mails: [ 'some_example_mail@domain.com' ]
+}
+*/
 `}
         </code></pre>
 

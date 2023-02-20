@@ -41,6 +41,7 @@ const myText = "this is just a normal string";
 
 const changed = minMax(myText);
 console.log(changed);
+// { longest: 'normal', shortest: 'a' }
 `}
         </code></pre>
 

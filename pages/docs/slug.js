@@ -39,6 +39,7 @@ const myText = "this is a string";
 
 const changed = slug(myText);
 console.log(changed);
+// this%20is%20a%20string
 `}
         </code></pre>
 

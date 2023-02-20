@@ -39,6 +39,7 @@ const myText = "this is a string";
 
 const changed = toggleCase(myText);
 console.log(changed);
+// tHIS iS a sTRING
 `}
         </code></pre>
 

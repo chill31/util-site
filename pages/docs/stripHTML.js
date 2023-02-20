@@ -41,6 +41,7 @@ const myText = "<div>this is normal html content with a <a href='#'>link</a></di
 
 const changed = stripHTML(myText);
 console.log(changed);
+// this is normal html content with a link
 `}
         </code></pre>
 

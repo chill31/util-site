@@ -36,10 +36,11 @@ export default function Home() {
         <pre><code className="js">
           {`const { pushByFilter } = require("utility-text");
 const myArray = [1, 2, 3];
-const filter = (n) => n > 3;
+const filter = (n) => n > 4;
 
 const pushed = pushByFilter(myArray, filter, 4, 5, 6);
 console.log(pushed);
+// [ 1, 2, 3, 5, 6 ]
 `}
         </code></pre>
 

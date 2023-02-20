@@ -36,10 +36,11 @@ export default function Home() {
 
         <pre><code className="js">
           {`const { decode } = require("utility-text");
-const myText = "68656c6c6f20776f726c64"; // encoded using encode() method
+const myText = "74686973206973206120737472696e67"; // encoded using encode() method
 
 const changed = decode(myText); // hello world
 console.log(changed);
+// this is a string
 `}
         </code></pre>
 

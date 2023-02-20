@@ -39,8 +39,9 @@ export default function Home() {
           {`const { formatNumber } = require("utility-text");
 const myNum = 100900300;
 
-const formatted = formatNumber(myNum);
+const formatted = formatNumber(myNum); // formatted according to your locale
 console.log(formatted);
+// 100,900,300
 `}
         </code></pre>
 

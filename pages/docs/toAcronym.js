@@ -39,8 +39,9 @@ export default function Home() {
           {`const { toAcronym } = require("utility-text");
 const myText = "World Health Organization";
 
-const analyzed = toAcronym(myText);
-console.log(analyzed);
+const changed = toAcronym(myText);
+console.log(changed);
+// WHO
 `}
         </code></pre>
 
