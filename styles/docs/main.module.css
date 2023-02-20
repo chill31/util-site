@@ -52,6 +52,24 @@
   width: 100vw;
   position: relative;
   top: 6rem;
+  gap: 6rem;
+  flex-direction: column;
+}
+
+.docSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  position: relative;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.docLabel {
+  font-size: 1.6rem;
+  font-style: italic;
+  color: white;
 }
 
 .entries {
@@ -200,7 +218,7 @@
   }
 }
  
-@media (max-height: 325px) {
+@media (max-height: 550px) {
   .searchMain[class*="visible"] {
     height: 100vh !important;
     width: 100vw !important;
