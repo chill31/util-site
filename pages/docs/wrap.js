@@ -34,6 +34,10 @@ export default function Home() {
 
         <p className={styles.description}>wraps certain characters with the provided set of wraps.</p>
 
+        <div className={styles.tags}>
+          <span className={`${styles.tag} ${styles.tagString}`}>String</span>
+        </div>
+
         <pre><code className="js">
           {`const { wrap } = require("utility-text");
 const myText = "this is a normal sentence";

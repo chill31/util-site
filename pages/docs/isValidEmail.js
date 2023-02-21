@@ -35,6 +35,10 @@ export default function Home() {
 
         <p className={styles.description}>checks if the given text is an email or not.</p>
 
+        <div className={styles.tags}>
+          <span className={`${styles.tag} ${styles.tagString}`}>String</span>
+        </div>
+
         <pre><code className="js">
           {`const { isValidEmail } = require("utility-text");
 const myEmail = "Igotnomail@chill31.com";

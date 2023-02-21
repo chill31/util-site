@@ -33,6 +33,10 @@ export default function Home() {
 
         <p className={styles.description}>removes all child arrays from the main array</p>
 
+        <div className={styles.tags}>
+          <span className={`${styles.tag} ${styles.tagArray}`}>Array</span>
+        </div>
+
         <pre><code className="js">
           {`const { flatten } = require("utility-text");
 const myMultiArray = [

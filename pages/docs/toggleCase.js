@@ -33,6 +33,10 @@ export default function Home() {
 
         <p className={styles.description}>converts the first letter of each word to lower case and everything else upper case</p>
 
+        <div className={styles.tags}>
+          <span className={`${styles.tag} ${styles.tagString}`}>String</span>
+        </div>
+
         <pre><code className="js">
           {`const { toggleCase } = require("utility-text");
 const myText = "this is a string";

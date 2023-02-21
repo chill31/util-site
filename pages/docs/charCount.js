@@ -36,6 +36,10 @@ export default function Home() {
 
         <p className={styles.description}>returns the character count with spaces, without spaces, and leaves out the given exceptions.</p>
 
+        <div className={styles.tags}>
+          <span className={`${styles.tag} ${styles.tagString}`}>String</span>
+        </div>
+
         <pre><code className="js">
           {`const { charCount } = require("utility-text");
 const myText = "this is a sentence";

@@ -35,6 +35,10 @@ export default function Home() {
 
         <p className={styles.description}>shrinks an array to a specified length. deletes all values if they are not in the specified range</p>
 
+        <div className={styles.tags}>
+          <span className={`${styles.tag} ${styles.tagArray}`}>Array</span>
+        </div>
+
         <pre><code className="js">
           {`const { shrink } = require("utility-text");
 const myList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];

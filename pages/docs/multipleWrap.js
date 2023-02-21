@@ -36,6 +36,10 @@ export default function Home() {
 
         <p className={styles.description}>wraps multiple characters/texts with different provided wrappers.</p>
 
+        <div className={styles.tags}>
+          <span className={`${styles.tag} ${styles.tagString}`}>String</span>
+        </div>
+
         <pre><code className="js">
           {`const { multipleWrap } = require("utility-text");
 const myText = "aaaa bbbb cccc dddd";

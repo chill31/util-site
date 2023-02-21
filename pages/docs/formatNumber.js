@@ -35,6 +35,10 @@ export default function Home() {
 
         <p className={styles.description}>formats a number according to specified/default locale</p>
 
+        <div className={styles.tags}>
+          <span className={`${styles.tag} ${styles.tagNumber}`}>Number</span>
+        </div>
+
         <pre><code className="js">
           {`const { formatNumber } = require("utility-text");
 const myNum = 100900300;

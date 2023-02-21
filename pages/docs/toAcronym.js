@@ -35,6 +35,10 @@ export default function Home() {
 
         <p className={styles.description}>converts text to acronym</p>
 
+        <div className={styles.tags}>
+          <span className={`${styles.tag} ${styles.tagString}`}>String</span>
+        </div>
+
         <pre><code className="js">
           {`const { toAcronym } = require("utility-text");
 const myText = "World Health Organization";

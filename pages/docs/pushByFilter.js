@@ -33,6 +33,10 @@ export default function Home() {
 
         <p className={styles.description}>pushes data into an array by filtering</p>
 
+        <div className={styles.tags}>
+          <span className={`${styles.tag} ${styles.tagArray}`}>Array</span>
+        </div>
+
         <pre><code className="js">
           {`const { pushByFilter } = require("utility-text");
 const myArray = [1, 2, 3];

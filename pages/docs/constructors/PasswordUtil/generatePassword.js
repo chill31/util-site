@@ -30,7 +30,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}><code className={styles.headCode_L}>generatePassword()</code></h1>
+        <h1 className={styles.title}><code className={` ${styles.headCode_L} ${styles.headCode_XL}`}>generatePassword()</code></h1>
 
         <p className={styles.description}>generates a customized password according to your needs</p>
 

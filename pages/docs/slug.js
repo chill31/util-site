@@ -33,6 +33,10 @@ export default function Home() {
 
         <p className={styles.description}>converts text to URL friendly strings.</p>
 
+        <div className={styles.tags}>
+          <span className={`${styles.tag} ${styles.tagString}`}>String</span>
+        </div>
+
         <pre><code className="js">
           {`const { slug } = require("utility-text");
 const myText = "this is a string";

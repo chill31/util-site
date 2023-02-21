@@ -33,6 +33,10 @@ export default function Home() {
 
         <p className={styles.description}>reverses the string</p>
 
+        <div className={styles.tags}>
+          <span className={`${styles.tag} ${styles.tagString}`}>String</span>
+        </div>
+
         <pre><code className="js">
           {`const { reverse } = require("utility-text");
 const myText = "this is a string";

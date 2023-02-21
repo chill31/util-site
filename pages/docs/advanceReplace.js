@@ -33,6 +33,10 @@ export default function Home() {
         <h1 className={styles.title}><code className={styles.headCode_L}>advanceReplace()</code></h1>
 
         <p className={styles.description}>replaces a specific number of occurences of provided set of characters with a given replacement</p>
+        
+        <div className={styles.tags}>
+          <span className={`${styles.tag} ${styles.tagString}`}>String</span>
+        </div>
 
         <pre><code className="js">
           {`const { advanceReplace } = require("utility-text");

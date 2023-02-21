@@ -206,13 +206,13 @@ export default function Home() {
 
           <div className={`${styles.stat} stat`}>
             <BsGraphUp className={`${styles.statIcon} statIcon`} />
-            <h2 className={`${styles.statNum} statNum`}>2K</h2>
+            <h2 className={`${styles.statNum} statNum`}>2.5K+</h2>
             <p className={`${styles.statName} statName`}>Downloads</p>
           </div>
 
           <div className={`${styles.stat} stat`}>
             <BsCodeSlash className={`${styles.statIcon} statIcon`} />
-            <h2 className={`${styles.statNum} statNum`}>35+</h2>
+            <h2 className={`${styles.statNum} statNum`}>45+</h2>
             <p className={`${styles.statName} statName`}>Functions</p>
           </div>
 

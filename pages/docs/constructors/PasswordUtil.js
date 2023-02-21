@@ -35,6 +35,10 @@ export default function Home() {
 
         <p className={styles.description}>provides a few password related functions</p>
 
+        <div className={styles.tags}>
+          <span className={`${styles.tag} ${styles.tagClass}`}>Constructor</span>
+        </div>
+
         <pre><code className="js">
           {`const { PasswordUtil } = require("utility-text");
 const util = new PasswordUtil();`}
@@ -64,7 +68,7 @@ const util = new PasswordUtil();`}
 
         <h2 className={styles.subTitle}>Variables</h2>
         <ul className={styles.paramList}>
-          <li className={styles.parameter}>algorithm<span className={styles.invertCode}>String</span> <br /><span className={styles.paramSub}>the algorithm through which the functions hash or generate a salt</span><br /><code className={styles.codeScope}>{`util.algorithm = 'sha512' // just for example`}</code></li>
+          <li className={styles.parameter}>algorithm<span className={styles.invertCode}>String</span> <br /><span className={styles.paramSub}>the algorithm through which the functions hash or generate a salt</span><br /><code className={styles.codeScope}>{`util.algorithm = 'sha512'`}</code></li>
         </ul>
 
       </main>

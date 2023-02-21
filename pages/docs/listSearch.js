@@ -35,6 +35,11 @@ export default function Home() {
 
         <p className={styles.description}>searches a string in an array of strings.</p>
 
+        <div className={styles.tags}>
+          <span className={`${styles.tag} ${styles.tagString}`}>String</span>
+          <span className={`${styles.tag} ${styles.tagArray}`}>Array</span>
+        </div>
+
         <pre><code className="js">
           {`const { listSearch } = require("utility-text");
 const searchWord = "hello";

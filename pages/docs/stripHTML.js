@@ -35,6 +35,10 @@ export default function Home() {
 
         <p className={styles.description}>removes all html tags and attributes from a string</p>
 
+        <div className={styles.tags}>
+          <span className={`${styles.tag} ${styles.tagString}`}>String</span>
+        </div>
+
         <pre><code className="js">
           {`const { stripHTML } = require("utility-text");
 const myText = "<div>this is normal html content with a <a href='#'>link</a></div>";
