@@ -42,7 +42,7 @@ export default function Home() {
           item.classList.add("show");
         } else {
           
-          const tags = item.getAttribute("tags").split(",");
+          const tags = item.getAttribute("tags").split(",");  
           tags.forEach((tag) => {
             const tagContent = tag.toLowerCase().trim();
             if(tagContent.includes(val)) {
@@ -77,11 +77,7 @@ export default function Home() {
     })
 
     links.forEach((item) => {
-      let itemTags = [];
-      item.getAttribute("tags").split(",").forEach((tag) => {
-        itemTags.push(tag);
-      })
-      setData(data => [...data, { val: item.textContent, href: item.getAttribute("href"), tags: itemTags }]);
+      setData(data => [...data, { val: item.textContent, href: item.getAttribute("href"), tags: item.getAttribute("tags") }]);
     });
 
     searchInput.addEventListener("keydown", (e) => {
@@ -202,6 +198,7 @@ export default function Home() {
                 <Link tags="string" href="/docs/unescape" className={`${styles.refLink} refLink`}>unescape()</Link>
                 <Link tags="string" href="/docs/stripHTML" className={`${styles.refLink} refLink`}>stripHTML()</Link>
                 <Link tags="string" href="/docs/truncate" className={`${styles.refLink} refLink`}>truncate()</Link>
+                <Link tags="string,number" href="/docs/minDistance" className={`${styles.refLink} refLink`}>minDistance()</Link>
               </div>
 
             </div>
