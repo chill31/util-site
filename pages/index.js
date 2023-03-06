@@ -191,7 +191,7 @@ export default function Home() {
           >
             npm i utility-text <BsClipboard></BsClipboard>
           </code>
-          <br /><span className={styles.currentVersion}>Latest: {version}</span>
+          <p className={styles.webLink}>do not want to use a package? go to <Link href="/web" className={styles.link}>this page</Link></p>
         </p>
 
         <div className={styles.navFlex}>

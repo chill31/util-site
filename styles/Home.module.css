@@ -51,6 +51,11 @@
   opacity: 0;
   transition: 400ms ease-out;
   transition-property: opacity, left;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .description[class*="intersect"] {
@@ -60,6 +65,16 @@
 
 .code {
   cursor: pointer;
+}
+
+.webLink {
+  color: rgb(209, 209, 209);
+  font-size: 1.2rem;
+}
+
+.webLink .link {
+  color: #67c2ff;
+  text-decoration: underline;
 }
 
 @media (max-width: 560px) {
