@@ -269,9 +269,9 @@ console.log(lower("FULL CAPITAL SENTENCE"))
                   <br />
                   <pre>
                     <code className="js">
-                      {`// *.js\n// <script> tag must be a type="module"\nimport 'https://cdn.jsdelivr.net/npm/utility-text/src/web/module.min.js';
+                      {`// *.js\n// <script> tag must be a type="module"\nimport utils from 'https://cdn.jsdelivr.net/npm/utility-text/src/web/module.min.js';
 // use the functions normally.
-console.log(lower("FULL CAPITAL SENTENCE"))`}
+console.log(utils.lower("FULL CAPITAL SENTENCE"))`}
                     </code>
                   </pre>
                 </li>
