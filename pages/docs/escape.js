@@ -34,10 +34,6 @@ export default function Home() {
 
         <p className={styles.description}>escapes text. To unescape, go to <Link className={`${styles.refLink} refLink`} href="/docs/unescape">unescape()</Link></p>
 
-        <div className={styles.tags}>
-          <span className={`${styles.tag} ${styles.tagString}`}>String</span>
-        </div>
-
         <pre><code className="js">
           {`const { escape } = require("utility-text");
 const myText = "<p>Hello World</p>";

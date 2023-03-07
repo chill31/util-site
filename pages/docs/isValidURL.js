@@ -35,10 +35,6 @@ export default function Home() {
 
         <p className={styles.description}>checks if the given text is a url or not.</p>
 
-        <div className={styles.tags}>
-          <span className={`${styles.tag} ${styles.tagString}`}>String</span>
-        </div>
-
         <pre><code className="js">
           {`const { isValidURL } = require("utility-text");
 const myURL = "https://utility-text.vercel.app";

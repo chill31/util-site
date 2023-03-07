@@ -37,10 +37,6 @@ export default function Home() {
 
         <p className={styles.description}>removes all symbols and capitalizes the first word of the given string. You can also provide your own symbols to remove</p>
 
-        <div className={styles.tags}>
-          <span className={`${styles.tag} ${styles.tagString}`}>String</span>
-        </div>
-
         <pre><code className="js">
           {`const { normalize } = require("utility-text");
 const myText = "this is a VERY wEiRD sentence";

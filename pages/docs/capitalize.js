@@ -34,11 +34,7 @@ export default function Home() {
         <h1 className={styles.title}><code className={styles.headCode}>capitalize()</code></h1>
 
         <p className={styles.description}>changes each letter of each word to capital.</p>
-
-        <div className={styles.tags}>
-          <span className={`${styles.tag} ${styles.tagString}`}>String</span>
-        </div>
-
+        
         <pre><code className="js">
           {`const { capitalize } = require("utility-text");
 const myText = "this is a string";

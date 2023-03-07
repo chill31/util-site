@@ -34,10 +34,6 @@ export default function Home() {
 
         <p className={styles.description}>decodes text. To encode, go to <Link className={`${`${styles.refLink} refLink`} refLink`} href="/docs/encode">encode()</Link></p>
 
-        <div className={styles.tags}>
-          <span className={`${styles.tag} ${styles.tagString}`}>String</span>
-        </div>
-
         <pre><code className="js">
           {`const { decode } = require("utility-text");
 const myText = "74686973206973206120737472696e67"; // encoded using encode() method

@@ -35,10 +35,6 @@ export default function Home() {
 
         <p className={styles.description}>returns occurence of provided text / characters</p>
 
-        <div className={styles.tags}>
-          <span className={`${styles.tag} ${styles.tagString}`}>String</span>
-        </div>
-
         <pre><code className="js">
           {`const { analyze } = require("utility-text");
 const myText = "this is a string";

@@ -35,11 +35,6 @@ export default function Home() {
 
         <p className={styles.description}>searches a string in specified keys in the array of objects</p>
 
-        <div className={styles.tags}>
-          <span className={`${styles.tag} ${styles.tagArray}`}>Array</span>
-          <span className={`${styles.tag} ${styles.tagObject}`}>Object</span>
-        </div>
-
         <pre><code className="js">
           {`const { objectSearch } = require("utility-text");
 const searchWord = "first";

@@ -35,10 +35,6 @@ export default function Home() {
 
         <p className={styles.description}>moves the first occurence of a given part of a string to the given index.</p>
 
-        <div className={styles.tags}>
-          <span className={`${styles.tag} ${styles.tagString}`}>String</span>
-        </div>
-
         <pre><code className="js">
           {`const { moveText } = require("utility-text");
 const myText = "this is an example string ";

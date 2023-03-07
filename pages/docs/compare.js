@@ -35,10 +35,6 @@ export default function Home() {
 
         <p className={styles.description}>compares 2 strings</p>
 
-        <div className={styles.tags}>
-          <span className={`${styles.tag} ${styles.tagString}`}>String</span>
-        </div>
-
         <pre><code className="js">
           {`const { compare } = require("utility-text");
 const myText1 = "this";

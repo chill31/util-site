@@ -35,10 +35,6 @@ export default function Home() {
 
         <p className={styles.description}>provides a few password related functions</p>
 
-        <div className={styles.tags}>
-          <span className={`${styles.tag} ${styles.tagClass}`}>Constructor</span>
-        </div>
-
         <pre><code className="js">
           {`const { PasswordUtil } = require("utility-text");
 const util = new PasswordUtil();`}

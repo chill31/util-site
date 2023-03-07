@@ -36,10 +36,6 @@ export default function Home() {
 
         <p className={styles.description}>inserts any value to a specified index in an array</p>
 
-        <div className={styles.tags}>
-          <span className={`${styles.tag} ${styles.tagArray}`}>Array</span>
-        </div>
-
         <pre><code className="js">
           {`const { insertToArray } = require("utility-text");
 const myList = [0, 1, 3, 4, 5]; // notice the '2' is missing.

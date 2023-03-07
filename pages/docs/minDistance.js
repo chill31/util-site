@@ -33,11 +33,6 @@ export default function Home() {
         <h1 className={styles.title}><code className={styles.headCode_L}>minDistance()</code></h1>
 
         <p className={styles.description}>returns minimum number of changes required to convert one string to another</p>
-        
-        <div className={styles.tags}>
-          <span className={`${styles.tag} ${styles.tagString}`}>String</span>
-          <span className={`${styles.tag} ${styles.tagNumber}`}>Number</span>
-        </div>
 
         <pre><code className="js">
           {`const { minDistance } = require("utility-text");

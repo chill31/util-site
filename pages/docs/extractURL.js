@@ -35,10 +35,6 @@ export default function Home() {
         <h1 className={styles.title}><code className={styles.headCode_L}>extractURL()</code></h1>
 
         <p className={styles.description}>gets the urls out of a string and returns them with the extracted urls.</p>
-        
-        <div className={styles.tags}>
-          <span className={`${styles.tag} ${styles.tagString}`}>String</span>
-        </div>
 
         <pre><code className="js">
           {`const { extractURL } = require("utility-text");

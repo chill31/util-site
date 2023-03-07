@@ -22,6 +22,7 @@
   margin-top: 10rem;
   line-height: 1.15;
   font-size: 4rem;
+  font-weight: 200;
   color: white;
   opacity: 0;
   transition: opacity 400ms ease-out;
@@ -40,6 +41,21 @@
 .title,
 .description {
   text-align: center;
+}
+
+.docBrief {
+  font-weight: 500;
+  font-size: 2rem;
+  font-family: var(--code-font);
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: 400ms ease-out;
+  transition-property: opacity, transform;
+}
+
+.docBrief[class*="intersect"] {
+  opacity: 1;
+  transform: unset;
 }
 
 .description {
@@ -67,19 +83,13 @@
   cursor: pointer;
 }
 
-.webLink {
-  color: rgb(209, 209, 209);
-  font-size: 1.2rem;
-}
-
-.webLink .link {
-  color: #67c2ff;
-  text-decoration: underline;
-}
-
 @media (max-width: 560px) {
   .title {
     font-size: 3.5rem;
+  }
+
+  .docBrief {
+    font-size: 1.8rem;
   }
 }
 
@@ -87,58 +97,59 @@
   .title {
     font-size: 2.6rem;
   }
-}
 
-.navFlex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  font-size: 1.7rem;
-  margin: 0;
-}
-
-@media (max-width: 560px) {
-  .navFlex {
-    font-size: 1.5rem;
+  .docBrief {
+    font-size: 1.3rem;
   }
 }
 
-.navLink {
-  --time: 250ms;
+/** USAGE DIV **/
 
-  color: var(--blue);
-  filter: brightness(1.2);
+.usage {
+  padding-top: 4rem;
+} 
+
+.usageTitle {
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.useList {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;  
+  gap: 2rem;
   position: relative;
-  right: -9rem;
-  opacity: 0;
-  transition: 400ms ease-out;
-  transition-property: opacity, right;
+  top: 1rem;
 }
 
-.firstLink {
-  transition-delay: none;
+.useItem {
+  font-size: 1.2rem;
+  color: white;
 }
 
-.secondLink {
-  transition-delay: var(--time);
+.useCode {
+  background-color: rgba(0, 0, 0, .2) !important;
+  margin-top: .4rem !important;
 }
 
-.thirdLink {
-  transition-delay: calc(var(--time) * 2);
+.useItem pre code {
+  border-radius: .3rem;
 }
 
-.navLink[class*="intersect"] {
-  right: 0;
-  opacity: 1;
+@media (max-width: 560px) {
+  .usageTitle {
+    font-size: 3.5rem;
+  }
 }
 
-.navLink:where(:hover, :focus) {
-  filter: unset;
-}
-
-.navLink:focus {
-  outline: solid 2px;
+@media (max-width: 430px) {
+  .usageTitle {
+    font-size: 2.6rem;
+  }
 }
 
 /* STATS SECTION */

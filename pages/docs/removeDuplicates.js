@@ -34,10 +34,6 @@ export default function Home() {
 
         <p className={styles.description}>removes all duplicates from the given string</p>
 
-        <div className={styles.tags}>
-          <span className={`${styles.tag} ${styles.tagString}`}>String</span>
-        </div>
-
         <pre><code className="js">
           {`const { removeDuplicates } = require("utility-text");
 const myText = "this this this is is is is a very normal sentence.";

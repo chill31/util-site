@@ -36,10 +36,6 @@ export default function Home() {
 
         <p className={styles.description}>inserts a string into the given index in the provided text.</p>
 
-        <div className={styles.tags}>
-          <span className={`${styles.tag} ${styles.tagString}`}>String</span>
-        </div>
-
         <pre><code className="js">
           {`const { insertAt } = require("utility-text");
 const myText = "abcef"; // notice the 'd' is missing.

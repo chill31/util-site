@@ -35,10 +35,6 @@ export default function Home() {
 
         <p className={styles.description}>cuts a string to a specific length and adds a ellipsis if specified</p>
 
-        <div className={styles.tags}>
-          <span className={`${styles.tag} ${styles.tagString}`}>String</span>
-        </div>
-
         <pre><code className="js">
           {`const { truncate } = require("utility-text");
 const myText = "this is a very long sentence and probably should be shortened down.";
