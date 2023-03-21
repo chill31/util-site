@@ -25,11 +25,11 @@
 .title {
   font-size: 4.4rem;
   font-weight: 550;
+  margin-top: 3rem;
 }
 
 .sub {
   font-size: 2rem;
-  margin-top: -3rem;
   color: rgb(215, 215, 215);
   text-align: center;
 }
@@ -77,11 +77,11 @@
 }
 
 .runCode .token {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .runCode .parameter {
-  color: rgb(216, 154, 216);
+  color: rgba(255, 214, 255, .7);
 }
 
 .runCode .argument {

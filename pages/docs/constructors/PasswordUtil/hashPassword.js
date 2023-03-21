@@ -35,7 +35,7 @@ export default function Home() {
         <p className={styles.description}>hashes a password according to a specific algorithm and salt if specified</p>
 
         <pre><code className="js">
-          {`const { PasswordUtil, hashPassword } = require("utility-text");
+          {`const { PasswordUtil } = require("utility-text");
 const util = new PasswordUtil();
 
 const password = util.hashPassword('thisIsNot123My@PASSword');

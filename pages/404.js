@@ -26,7 +26,7 @@ export default function Home() {
 
         <code className={styles.runCode}>
           <code className={styles.actualCode}>
-            <span className={styles.code}>&gt;&gt;&gt; <span className={styles.function}>npm</span> <span className={styles.token}>run</span> <span className={styles.parameter}>page-load</span> <span className={`${styles.argument} argument-one`}></span><br /><br /><span className={styles.function}>npm</span> <span className={styles.error}>ERROR</span> page not found</span>
+            <span className={styles.code}>&gt;&gt;&gt; <span className={styles.function}>npm</span> <span className={styles.token}>run</span> <span className={styles.parameter}>page-load</span> <span className={`${styles.argument} argument-one`}></span><br /><br /><span className={styles.function}>npm</span> <span className={styles.error}>ERR!</span> page not found</span>
           </code>
         </code>
 

@@ -35,7 +35,7 @@ export default function Home() {
         <p className={styles.description}>generates a random salt according to a specified length</p>
 
         <pre><code className="js">
-          {`const { PasswordUtil, generateSalt } = require("utility-text");
+          {`const { PasswordUtil } = require("utility-text");
 const util = new PasswordUtil();
 
 const salt = util.generateSalt(5);

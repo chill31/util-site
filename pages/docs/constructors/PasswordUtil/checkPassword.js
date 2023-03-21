@@ -35,7 +35,7 @@ export default function Home() {
         <p className={styles.description}>checks the strength of a password and shows it&apos;s weaknesses</p>
 
         <pre><code className="js">
-          {`const { PasswordUtil, checkPassword } = require("utility-text");
+          {`const { PasswordUtil } = require("utility-text");
 const util = new PasswordUtil();
 
 const weaknesses = util.checkPassword("someRandomPass123#@!");

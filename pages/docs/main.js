@@ -84,10 +84,6 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>Get Started</h1>
 
-        <p className={styles.description}>
-          click on one of the functions to get detailed information.
-        </p>
-
         <p className={styles.subDescription}>Check the <Link className={styles.link} href="/presets/">Presets and Defaults</Link> for any parameter in the below functions which is not required.<br /> (<span className={styles.important}>*</span> a symbol like this means the parameter is required)</p>
 
         <button className={`${styles.searchBar} searchBar`} tabIndex="0"><FaRegHandPointer /> search documentation</button>

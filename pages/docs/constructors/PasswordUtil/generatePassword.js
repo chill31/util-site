@@ -35,7 +35,7 @@ export default function Home() {
         <p className={styles.description}>generates a customized password according to your needs</p>
 
         <pre><code className="js">
-          {`const { PasswordUtil, generatePassword } = require("utility-text");
+          {`const { PasswordUtil } = require("utility-text");
 const util = new PasswordUtil();
 
 const password = util.generatePassword({
