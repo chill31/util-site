@@ -47,7 +47,7 @@ console.log(salt);
         <h2 className={styles.subTitle}>Parameters</h2>
 
         <ul className={styles.paramList}>
-          <li className={styles.parameter}>password <span className={styles.invertCode}>String</span> <span className={styles.important}>*</span></li>
+          <li className={styles.parameter}>length <span className={styles.invertCode}>Number</span> <span className={styles.important}>*</span></li>
         </ul>
 
         <h2 className={styles.subTitle}>Returns</h2>
