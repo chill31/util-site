@@ -26,13 +26,6 @@
   margin-top: 4rem;
 }
 
-.titleIcon {
-  font-size: 9rem;
-  color: white;
-  height: fit-content;
-  width: fit-content;
-}
-
 .title {
   font-size: 4.6rem;
   text-align: center;
@@ -48,13 +41,13 @@
 }
 
 .fnLink {
-  color: var(--secondary);
+  color: var(--blue);
   text-decoration: none;
   font-family: var(--code-font);
 }
 
 .startBtn {
-  background-color: var(--secondary);
+  background-color: var(--blue);
   padding: .7rem 1.4rem;
   color: black;
   font-size: 1.5rem;
@@ -64,8 +57,21 @@
   font-family: var(--code-font);
   outline: none;
   transition: 200ms ease;
+  transition-property: filter;
 }
 
 .startBtn:where(:hover, :focus) {
-  background-color: var(--blue);
+  filter: brightness(.8);
+}
+
+@media (max-width: 550px) {
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .brief {
+    width: 95vw;
+  }
+
 }

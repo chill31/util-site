@@ -1,69 +1,58 @@
 import Link from "next/link";
-import cStyles from "../styles/Component.module.css";
+import styles from "../styles/Component.module.css";
 
 import { BsList } from "react-icons/bs";
 import { BsXLg } from "react-icons/bs";
+import { useState } from "react";
 
 export default function Menu() {
-
-  let open = false;
-
-  function handleMenu(){
-    if(!open) {
-      open = true;
-      document.querySelector(".mobile_menu_main").setAttribute("open", "");
-    } else {
-      open = false;
-        document.querySelector(".mobile_menu_main").removeAttribute("open");
-    }
-  }
   
+  const [open, setOpen] = useState(false);
+  const handleMenu = () => {
+    setOpen(prev => !prev);
+  }
+
   return (
-    <div className={cStyles.menu_container}>
-      <div className={cStyles.menu_mobile}>
-        <button className={cStyles.activator} onClick={handleMenu}>
-          <BsList tabIndex="0" className={cStyles.icon}></BsList>
+    <div className={styles.menuWrapper}>
+      <div className={styles.mobileMenu}>
+        <button className={styles.activator} onClick={handleMenu}>
+          <BsList tabIndex="0" className={styles.icon}></BsList>
         </button>
 
-        <div
-          className={`${cStyles.mobile_menu_main} mobile_menu_main`}
-        >
-          <div className={cStyles.properties}>
-            <BsXLg className={cStyles.close_icon} onClick={handleMenu}></BsXLg>
-            <h1 className={cStyles.sub}>utility-text</h1>
+        <div className={styles.mobileMenuContentWrapper} data-open={open ? 'true' : 'false'}>
+          <div className={styles.properties}>
+            <BsXLg className={styles.closeIcon} onClick={handleMenu}></BsXLg>
+            <h1 className={styles.mobileMenuTitle}>utility-text</h1>
           </div>
-          <span className={cStyles.divider}></span>
+          <span className={styles.divider}></span>
 
-          <div className={cStyles.mobile_content}>
+          <div className={styles.mobile_content}>
             <Link href="/">Home</Link>
             <Link href="/examples">Examples</Link>
             <Link href="/docs/main">Docs</Link>
+            <Link href="/installation">Installation</Link>
             <Link href="/presets">Presets and Defaults</Link>
-            <Link href="https://npmjs.com/package/utility-text">
-              Package Link
-            </Link>
+            <Link href="https://npmjs.com/package/utility-text">Package Link</Link>
           </div>
-
-          <span className={cStyles.divider}></span>
         </div>
       </div>
 
-      <div className={cStyles.menu_main}>
-        <div className={cStyles.division1}>
-          <Link className={cStyles.div1_text} href="/">
+      <div className={styles.desktopMenu}>
+        <div className={styles.desktopMenuStartContent}>
+          <Link className={styles.startContentLink} href="/">
             Home
           </Link>
-          <Link className={cStyles.div1_text} href="/examples">
+          <Link className={styles.startContentLink} href="/examples">
             Examples
           </Link>
-          <Link className={cStyles.div1_text} href="/docs/main">
+          <Link className={styles.startContentLink} href="/docs/main">
             Docs
           </Link>
         </div>
 
-        <div className={cStyles.division2}>
+        <div className={styles.desktopMenuEndContent}>
           <Link
-            className={cStyles.text_invite}
+            className={styles.packageLink}
             href="https://npmjs.com/package/utility-text"
           >
             Package Link

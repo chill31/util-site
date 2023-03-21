@@ -13,6 +13,59 @@ import { useEffect } from "react";
 
 export default function Home() {
 
+  function clickCheckBox() {
+    const checkBox = document.getElementById("es-check-box");
+    checkBox.checked = !checkBox.checked;
+  }
+
+  function changeContent() {
+    const checkBox = document.getElementById("es-check-box");
+
+    const list = document.querySelectorAll(".pre code");
+
+    const esReg = /import\s*\{\s*([^}]+)\s*\}\s*from\s*['"]([^'"]+)['"]\s*/;
+    const cjsReg = /const\s*\{([^}]+)\}\s*=\s*require\s*\(\s*['"]([^'"]+)['"]\s*\)\s*;/;
+
+    if (checkBox.checked === true) {
+      document.getElementById("check").setAttribute("data-valid", "");
+
+      list.forEach((item) => {
+        const match = item.textContent.split("\n")[0].match(cjsReg);
+        if (match) {
+
+          const content = item.textContent.split("\n");
+          content.shift();
+
+          const names = match[1].replace(/\s+/g, "")
+          const pkgNames = match[2];
+
+          item.textContent = `import { ${names} } from '${pkgNames}';` + "\n" + content.join("\n");
+          hljs.highlightAll();
+        }
+      })
+
+    } else if (checkBox.checked === false) {
+      document.getElementById("check").removeAttribute("data-valid");
+
+      list.forEach((item) => {
+        const match = item.textContent.split("\n")[0].match(esReg);
+        if (match) {
+
+          const content = item.textContent.split("\n");
+          content.shift();
+
+          const names = match[1];
+          const pkgNames = match[2];
+
+          item.textContent = `const { ${names}} = require("${pkgNames}");` + "\n" + content.join("\n");
+          hljs.highlightAll();
+        }
+      })
+
+    }
+
+  }
+
   useEffect(() => {
     hljs.highlightAll();
 
@@ -21,51 +74,11 @@ export default function Home() {
       ignoreUnescapedHTML: true
     });
 
-    const box = document.querySelector(".esBox");
-    const list = document.querySelectorAll(".pre code");
+    const checkBox = document.getElementById("es-check-box");
 
-    const esReg = /import\s*\{\s*([^}]+)\s*\}\s*from\s*['"]([^'"]+)['"]\s*/;
-    const cjsReg = /const\s*\{([^}]+)\}\s*=\s*require\s*\(\s*['"]([^'"]+)['"]\s*\)\s*;/;
-
-    box.addEventListener("change", (e) => {
-      if (e.target.checked === true) {
-        document.querySelector(".check").setAttribute("data-valid", "");
-
-        list.forEach((item) => {
-          const match = item.textContent.split("\n")[0].match(cjsReg);
-          if (match) {
-
-            const content = item.textContent.split("\n");
-            content.shift();
-
-            const names = match[1].replace(/\s+/g, "")
-            const pkgNames = match[2];
-
-            item.textContent = `import { ${names} } from '${pkgNames}';` + "\n" + content.join("\n");
-            hljs.highlightAll();
-          }
-        })
-
-      } else if (e.target.checked === false) {
-        document.querySelector(".check").removeAttribute("data-valid");
-
-        list.forEach((item) => {
-          const match = item.textContent.split("\n")[0].match(esReg);
-          if (match) {
-
-            const content = item.textContent.split("\n");
-            content.shift();
-
-            const names = match[1];
-            const pkgNames = match[2];
-
-            item.textContent = `const { ${names}} = require("${pkgNames}");` + "\n" + content.join("\n");
-            hljs.highlightAll();
-          }
-        })
-
-      }
-    })
+    checkBox.addEventListener("change", () => {
+      changeContent();
+    });
   }, []);
 
   return (
@@ -81,7 +94,10 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>Examples</h1>
 
-        <label className={`${styles.esScope}`}>ES syntax? <input type="checkbox" className={`${styles.esBox} esBox`} /> <BsCheckLg className={`${styles.check} check`} /> </label>
+        <label className={styles.esScope}>ES syntax? <input type="checkbox" className={styles.esCheckBox} id="es-check-box" /> <button id="check" className={styles.checkBtn} onClick={() => {
+          clickCheckBox();
+          changeContent();
+        }}><BsCheckLg className={styles.check} /></button> </label>
 
         <div className={styles.flex}>
           <div className={styles.example}>

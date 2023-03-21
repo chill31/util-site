@@ -90,8 +90,8 @@
 }
 
 .option[data-active] {
-  border-bottom-color: var(--secondary);
-  color: var(--secondary);
+  border-bottom-color: var(--blue);
+  color: var(--blue);
 }
 
 .installation {
@@ -149,7 +149,7 @@
 }
 
 .readDocsBtn {
-  background-color: var(--secondary);
+  background-color: var(--blue);
   padding: .7rem 1.4rem;
   color: black;
   font-size: 1.5rem;
@@ -159,8 +159,9 @@
   font-family: var(--code-font);
   outline: none;
   transition: 200ms ease;
+  transition-property: filter;
 }
 
 .readDocsBtn:where(:hover, :focus) {
-  background-color: var(--blue);
+  filter: brightness(.8);
 }
