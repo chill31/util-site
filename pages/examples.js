@@ -163,7 +163,7 @@ console.log(movedText);
 const text = "Hello World";
 const insertedText = insertAt({
   text,
-  index: 5,
+  index: 4,
   insertionText: "!",
   before: false, // inserts the given text after the specified index
 });
