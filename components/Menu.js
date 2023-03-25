@@ -12,6 +12,8 @@ export default function Menu() {
     setOpen(prev => !prev);
   }
 
+  
+
   return (
     <div className={styles.menuWrapper}>
       <div className={styles.mobileMenu}>
@@ -27,12 +29,12 @@ export default function Menu() {
           <span className={styles.divider}></span>
 
           <div className={styles.mobile_content}>
-            <Link href="/">Home</Link>
-            <Link href="/examples">Examples</Link>
-            <Link href="/docs/main">Docs</Link>
-            <Link href="/installation">Installation</Link>
-            <Link href="/presets">Presets and Defaults</Link>
-            <Link href="https://npmjs.com/package/utility-text">Package Link</Link>
+            <Link onClick={handleMenu} href="/">Home</Link>
+            <Link onClick={handleMenu} href="/examples">Examples</Link>
+            <Link onClick={handleMenu} href="/docs/main">Docs</Link>
+            <Link onClick={handleMenu} href="/installation">Installation</Link>
+            <Link onClick={handleMenu} href="/presets">Presets and Defaults</Link>
+            <Link onClick={handleMenu} href="https://npmjs.com/package/utility-text">Package Link</Link>
           </div>
         </div>
       </div>
