@@ -124,13 +124,11 @@ export default function Home() {
                 <Link href="/docs/extractURL" className={`${styles.refLink} refLink`}>extractURL()</Link>
                 <Link href="/docs/charCount" className={`${styles.refLink} refLink`}>charCount()</Link>
                 <Link href="/docs/formatNumber" className={`${styles.refLink} refLink`}>formatNumber()</Link>
-                <Link href="/docs/compare" className={`${styles.refLink} refLink`}>compare()</Link>
                 <Link href="/docs/slug" className={`${styles.refLink} refLink`}>slug()</Link>
                 <Link href="/docs/unslug" className={`${styles.refLink} refLink`}>unslug()</Link>
               </div>
 
               <div className={styles.entry}>
-                <Link href="/docs/camelCase" className={`${styles.refLink} refLink`}>camelCase()</Link>
                 <Link href="/docs/snakeCase" className={`${styles.refLink} refLink`}>snakeCase()</Link>
                 <Link href="/docs/isValidEmail" className={`${styles.refLink} refLink`}>isValidEmail()</Link>
                 <Link href="/docs/isValidURL" className={`${styles.refLink} refLink`}>isValidURL()</Link>
@@ -139,18 +137,17 @@ export default function Home() {
                 <Link href="/docs/minMax" className={`${styles.refLink} refLink`}>minMax()</Link>
                 <Link href="/docs/wrap" className={`${styles.refLink} refLink`}>wrap()</Link>
                 <Link href="/docs/multipleWrap" className={`${styles.refLink} refLink`}>multipleWrap()</Link>
-                <Link href="/docs/listSearch" className={`${styles.refLink} refLink`}>listSearch()</Link>
-                <Link href="/docs/objectSearch" className={`${styles.refLink} refLink`}>objectSearch()</Link>
                 <Link href="/docs/insertAt" className={`${styles.refLink} refLink`}>insertAt()</Link>
                 <Link href="/docs/moveText" className={`${styles.refLink} refLink`}>moveText()</Link>
                 <Link href="/docs/moveTextByPos" className={`${styles.refLink} refLink`}>moveTextByPos()</Link>
                 <Link href="/docs/encode" className={`${styles.refLink} refLink`}>encode()</Link>
+                <Link href="/docs/decode" className={`${styles.refLink} refLink`}>decode()</Link>
+                <Link href="/docs/pushByFilter" className={`${styles.refLink} refLink`}>pushByFilter()</Link>
               </div>
 
               <div className={styles.entry}>
-                <Link href="/docs/decode" className={`${styles.refLink} refLink`}>decode()</Link>
-                <Link href="/docs/pushByFilter" className={`${styles.refLink} refLink`}>pushByFilter()</Link>
                 <Link href="/docs/flatten" className={`${styles.refLink} refLink`}>flatten()</Link>
+                <Link href="/docs/camelCase" className={`${styles.refLink} refLink`}>camelCase()</Link>
                 <Link href="/docs/kebabCase" className={`${styles.refLink} refLink`}>kebabCase()</Link>
                 <Link href="/docs/pullByValue" className={`${styles.refLink} refLink`}>pullByValue()</Link>
                 <Link href="/docs/pullByIndex" className={`${styles.refLink} refLink`}>pullByIndex()</Link>
@@ -183,7 +180,7 @@ export default function Home() {
               </div>
 
               <div className={styles.entry}>
-                
+
               </div>
 
             </div>
