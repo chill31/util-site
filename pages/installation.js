@@ -184,7 +184,7 @@ console.log(functionName(...));`}
 
             <pre id='first-html-snippet-code' className={styles.snippetPre} data-active="">
               <code className="html">
-{`<script src="https://cdn.jsdelivr.net/npm/utility-text@1.6.1/src/web/common.min.js"></script>
+{`<script src="https://cdn.jsdelivr.net/npm/utility-text-web/common.min.js"></script>
 <script>
   console.log(validFunctionName(...));
 </script>`}
@@ -193,7 +193,7 @@ console.log(functionName(...));`}
             <pre id='second-html-snippet-code' className={styles.snippetPre}>
               <code className="html">
 {`<script type="module">
-  import 'https://cdn.jsdelivr.net/npm/utility-text@1.6.1/src/web/module.min.js';
+  import 'https://cdn.jsdelivr.net/npm/utility-text-web/module.min.js';
   console.log(validFunctionName(...));
 </script>`}
               </code>
