@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../../styles/docs/main.module.css";
 
-import { BsMouse, BsXLg } from 'react-icons/bs'
+import { BsXLg } from 'react-icons/bs'
 import { FaRegHandPointer } from 'react-icons/fa'
 
 import Link from 'next/link'
@@ -159,6 +159,7 @@ export default function Home() {
                 <Link href="/docs/unescape" className={`${styles.refLink} refLink`}>unescape()</Link>
                 <Link href="/docs/stripHTML" className={`${styles.refLink} refLink`}>stripHTML()</Link>
                 <Link href="/docs/truncate" className={`${styles.refLink} refLink`}>truncate()</Link>
+                <Link href="/docs/minDistance" className={`${styles.refLink} refLink`}>minDistance()</Link>
               </div>
 
             </div>
