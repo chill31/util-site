@@ -193,8 +193,8 @@ console.log(functionName(...));`}
             <pre id='second-html-snippet-code' className={styles.snippetPre}>
               <code className="html">
 {`<script type="module">
-  import 'https://cdn.jsdelivr.net/npm/utility-text-web/module.min.js';
-  console.log(validFunctionName(...));
+  import utils from 'https://cdn.jsdelivr.net/npm/utility-text-web/module.min.js';
+  console.log(utils.validFunctionName(...));
 </script>`}
               </code>
             </pre>
