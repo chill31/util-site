@@ -134,7 +134,7 @@ console.log(wrappedText);
 `}
             </code></pre>
             <pre className={styles.preNoCopy}><code className="js">
-              {`> "<h1>Hello</h1> <h2>World</h2>" // still a string but you can set the element's .innerHTML if you really want this kind of usage `}
+              {`> "<h1>Hello</h1> <h2>World</h2>"`}
             </code></pre>
           </div>
 
