@@ -126,6 +126,8 @@ export default function Home() {
                 <Link href="/docs/formatNumber" className={`${styles.refLink} refLink`}>formatNumber()</Link>
                 <Link href="/docs/slug" className={`${styles.refLink} refLink`}>slug()</Link>
                 <Link href="/docs/unslug" className={`${styles.refLink} refLink`}>unslug()</Link>
+                <Link href="/docs/toMorseCode" className={`${styles.refLink} refLink`}>toMorseCode()</Link>
+                <Link href="/docs/fromMorseToString" className={`${styles.refLink} refLink`}>fromMorseToString()</Link>
               </div>
 
               <div className={styles.entry}>
@@ -143,6 +145,7 @@ export default function Home() {
                 <Link href="/docs/encode" className={`${styles.refLink} refLink`}>encode()</Link>
                 <Link href="/docs/decode" className={`${styles.refLink} refLink`}>decode()</Link>
                 <Link href="/docs/pushByFilter" className={`${styles.refLink} refLink`}>pushByFilter()</Link>
+                <Link href="/docs/toBinary" className={`${styles.refLink} refLink`}>toBinary()</Link>
               </div>
 
               <div className={styles.entry}>
@@ -160,6 +163,7 @@ export default function Home() {
                 <Link href="/docs/stripHTML" className={`${styles.refLink} refLink`}>stripHTML()</Link>
                 <Link href="/docs/truncate" className={`${styles.refLink} refLink`}>truncate()</Link>
                 <Link href="/docs/minDistance" className={`${styles.refLink} refLink`}>minDistance()</Link>
+                <Link href="/docs/fromBinaryToString" className={`${styles.refLink} refLink`}>fromBinaryToString()</Link>
               </div>
 
             </div>
